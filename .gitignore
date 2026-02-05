@@ -1,0 +1,7 @@
+﻿venv/
+__pycache__/
+*.pyc
+*.npy
+mask_debug/
+debug_frames/
+.DS_Store
