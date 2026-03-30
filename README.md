@@ -135,8 +135,4 @@ Everything is in `requirements.txt`. Main ones are PyTorch, HuggingFace Transfor
 
 ## Acknowledgements
 
-- PerkTutor CataractSurgery dataset from the Perk Lab
-- ICO-OSCAR evaluation scores provided by Dr. Hisey
-- SAM 3 weights from Meta AI
-- YOLOv26 from Ultralytics
-- Statistical test formatting adapted from existing Perk Lab scripts
+- PerkTutor CataractSurgery dataset from the Perk Lab, Dr. Hisey, and everyone at the Perk Lab who helped me out! Thank you!
