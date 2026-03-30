@@ -1,6 +1,6 @@
 # Cataract Surgery Tool Tracking: SAM 3 vs YOLOv26
 
-CISC 499 Undergraduate Thesis
+CISC 499 Project
 
 Sebastian Medrea, supervised by Dr. Rebecca Hisey
 
