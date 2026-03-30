@@ -6,7 +6,7 @@ Sebastian Medrea, supervised by Dr. Rebecca Hisey
 
 ## About
 
-This project compares two different deep learning methods for automatically tracking surgical instruments in simulated cataract surgery videos. Basically, can we skip expensive manual annotation and still get good bounding box predictions?
+This project compares two different deep learning methods for automatically tracking surgical instruments in simulated cataract surgery videos. Basically, can we streamline a method for skill assessment that provides a cheaper and less invasive alternative to EM tracking, and can these models automate some part of the annotation process to reduce the burden for expert labelling?
 
 The two main methods are:
 
