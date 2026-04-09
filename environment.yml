@@ -1,0 +1,38 @@
+# Conda environment for Cataract Surgery Tool Tracking Pipeline
+#
+# Create:   conda env create -f environment.yml
+# Activate: conda activate cataract-tracking
+# Update:   conda env update -f environment.yml --prune
+#
+# Note: HuggingFace Transformers is installed from git because SAM 3 support
+# requires the latest development version.
+
+name: cataract-tracking
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.10
+  - pytorch=2.2.0
+  - torchvision=0.17.0
+  - pytorch-cuda=12.1
+  - numpy=1.26.4
+  - pandas=2.2.0
+  - scipy=1.12.0
+  - matplotlib=3.8.3
+  - seaborn=0.13.2
+  - opencv=4.9.0
+  - pyyaml=6.0.1
+  - pip
+
+  - pip:
+    # SAM 3 requires the dev branch of transformers (gated model weights)
+    - git+https://github.com/huggingface/transformers.git
+    - accelerate>=0.27.0
+    - huggingface-hub>=0.21.0
+    - ultralytics>=8.1.0
+    - imageio[ffmpeg]>=2.34.0
+    - pillow>=10.2.0
