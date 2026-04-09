@@ -1,0 +1,84 @@
+# Cataract Surgery Tool Tracking Pipeline Configuration
+# 
+# CISC 499 
+# Sebastian Medrea 
+# Supervisor: Dr. Rebecca Hisey
+#
+# Edit this file to adapt the pipeline to your own dataset, model, or paths.
+# All scripts read from this config 
+# 
+# Dataset paths 
+# Point base_path to the root of your surgical video dataset
+# Expected structure:
+#   base_path/Videos/Simulated_Data/mkv/    (video files)
+#   base_path/Datasets/Simulated_Data/      (CSV label files)
+dataset:
+  base_path: "P:/data/PerkTutor/CataractSurgery"
+  video_subdir: "Videos/Simulated_Data/mkv"
+  label_subdir: "Datasets/Simulated_Data"
+  fps: 15.0
+
+# Participants and trials 
+# P1 is the expert ophthalmologist; P2-P5 are novice residents.
+# Modify these lists if your dataset has different participants or trial counts
+participants: ["P1", "P2", "P3", "P4", "P5"]
+trials_per_participant: [1, 2, 3, 4, 5]
+
+skill_map:
+  P1: "expert"
+  P2: "novice"
+  P3: "novice"
+  P4: "novice"
+  P5: "novice"
+
+# Tool classes 
+# These must match the class names in your ground truth CSV files (lowercase, spaces).
+# The 'eye' and 'lens' classes from the raw CSVs are excluded automatically.
+tool_classes:
+  - "capsulorhexis forceps"
+  - "cystotome needle"
+  - "diamond keratome iso"
+  - "diamond keratome straight"
+  - "forceps"
+  - "viscoelastic cannula"
+
+# Output directories 
+# Where each pipeline saves its results; change these for diff layout
+output:
+  sam3_results: "./results"
+  yolo_results: "./yolo26_results_fixed"
+  yolo_sam3_results: "./yolo26_sam3_trained"
+  analysis_output: "./analysis_output"
+
+# SAM 3 settings 
+sam3:
+  model_name: "facebook/sam3"       # HuggingFace model ID
+  dtype: "bfloat16"                 # bfloat16 to save VRAM
+  chunk_size: 100                   # Frames per chunk (reduce if running out of GPU mem)
+  mode: "simultaneous"              # "sequential" or "simultaneous" tool tracking (single pass or all at once)
+  run_single: false                 # true to process one video, false for all videos (test single video or run all)
+
+# YOLO settings 
+yolo:
+  model_path: "yolo26s.pt"          # Pretrained weights (yolo26s.pt for small model)
+  epochs: 100                       # Training epochs per fold
+  confidence_threshold: 0.25        # Minimum confidence for predictions
+  val_fraction: 0.2                 # Fraction of training frames used for validation
+  seed: 42                          # Random seed for reproducible train/val splits
+
+# Motion metric settings 
+motion:
+  gap_threshold_seconds: 5.0        # Skip path length accumulation if detection gap exceeds this
+
+# Expert evaluation 
+# Path to the ICO-OSCAR expert scores CSV. Set to null if not available.
+expert_scores_csv: "./results_expert_evaluations_1.csv"
+
+# Plotting 
+plotting:
+  font_family: "serif"
+  font_size: 12
+  novice_colour: "lightskyblue"
+  expert_colour: "salmon"
+  sam3_colour: "#2ecc71"
+  yolo_colour: "#e67e22"
