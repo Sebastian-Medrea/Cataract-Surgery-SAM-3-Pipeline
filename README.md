@@ -104,7 +104,7 @@ Shared utility module used by all pipelines. Contains config loading, dataset pa
 
 ### login_helper.py
 
-Logs you into HuggingFace. SAM 3 weights are gated so you need an account and access token. Only need to run this once; the token gets cached locally.
+Logs you into HuggingFace. SAM 3 weights are gated so you need an account and access token. Only need to run this once; the token gets cached locally. You will need to request access to use the SAM 3 model from Hugging Face with your own API key to login. This is a quick script for personal use to bypass some terminal issues when copying the key.
 
 ## How to Run
 
