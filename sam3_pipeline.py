@@ -22,7 +22,6 @@ Outputs:
 - visualizations/: PNG overlay of masks
 """
 
-import ast
 import csv
 import gc
 import glob
@@ -39,54 +38,14 @@ import time
 from transformers import Sam3TrackerVideoModel, Sam3TrackerVideoProcessor
 from accelerate import Accelerator
 
-class DatasetConfig:
-    '''
-    Handles path differences between P1-P5 datasets for the Perk Lab dataset structure with Revised and
-    normal labels. (Swapped through some desktops so there was not much time to download the extensive files
-    so I pulled from the network drive for training; will download at a later date.)
-    '''
+# Shared utilities (IoU, metrics, CSV export, bbox helpers, dataset paths)
+from utils import (
+    load_config, DatasetConfig, load_annotations, get_video_fps,
+    calculate_iou, calculate_metrics, export_predictions_csv,
+    export_metrics_csv, build_tool_info
+)
 
-    def __init__(self, base_path="P:/data/PerkTutor/CataractSurgery"):
-        '''
-        Init with root directory.
-        '''
-        self.base_path = Path(base_path)
-
-        # mkv files
-        self.video_dir = self.base_path / "Videos/Simulated_Data/mkv"
-        self.dataset_dir = self.base_path / "Datasets/Simulated_Data"
-    
-    def get_video_path(self, participant, trial):
-        '''
-        Construct path to video file.
-
-        Args:
-            participant (str): Participant ID (ex. 'P1')
-            trial (int): Trial number (ex. 1)
-        
-        Returns:
-            Pathlib object for .mkv
-        '''
-
-        # P1.1-1 naming 
-        video_name = f"{participant}.{trial}-1.mkv"
-        return self.video_dir / video_name
-    
-    def get_csv_path(self, participant, trial):
-        '''
-        Construct path to CSV ground truth bounding box labels for each trial.
-        '''
-
-        # Only P1 has revised labels
-        if participant == 'P1':
-            folder = self.dataset_dir / f"P1_{trial}_Revised"
-            csv_name = f"P1_{trial}_Revised_Labels.csv"
-
-        else:
-            folder = self.dataset_dir / f"{participant}_{trial}"
-            csv_name = f"{participant}_{trial}_Labels.csv"
-
-        return folder / csv_name
+_config = load_config()
 
 class SAM3Tracker:
     '''
@@ -101,11 +60,13 @@ class SAM3Tracker:
         # Use NVIDIA GPU
         self.device = Accelerator().device if torch.cuda.is_available() else "cpu"
         print(f"Device: {self.device}")
-        
+
+        model_name = _config['sam3'].get('model_name', 'facebook/sam3')
+
         # Load model in bfloat16 to save VRAM
-        self.model = Sam3TrackerVideoModel.from_pretrained("facebook/sam3").to(self.device, dtype=torch.bfloat16)
+        self.model = Sam3TrackerVideoModel.from_pretrained(model_name).to(self.device, dtype=torch.bfloat16)
+        self.processor = Sam3TrackerVideoProcessor.from_pretrained(model_name)
         
-        self.processor = Sam3TrackerVideoProcessor.from_pretrained("facebook/sam3")
         print("SAM 3 loaded.")
     
     def _load_frames(self, video_path, start_frame, num_frames):
@@ -185,159 +146,7 @@ class SAM3Tracker:
         Returns:
             dict: Nested dictionary of predictions {tool_name: {frame_idx: [predictions]}}.
         '''
-        '''
-        print(f"Tracking {len(tool_info_dict)} tools simultaneously")
         
-        # Find global start and end frames for video
-        all_first = [info['first_frame'] for info in tool_info_dict.values()]
-        all_last = [info['last_frame'] for info in tool_info_dict.values()]
-        global_start = min(all_first)
-        global_end = max(all_last)
-
-        # Break in chunks
-        total_frames = global_end - global_start + 1
-        num_chunks = (total_frames + chunk_size - 1) // chunk_size
-        
-        print(f"Frames {global_start}-{global_end} in {num_chunks} chunks")
-        
-        all_predictions = {tool: {} for tool in tool_info_dict.keys()}
-        
-        # Map tool names (str) to integer IDs (1,2, ..) since model needs object and query to intialize inference with multiple bboxes
-        tool_list = sorted(tool_info_dict.keys())
-        tool_to_obj_id = {tool: i+1 for i, tool in enumerate(tool_list)}
-
-        for chunk_idx in range(num_chunks):
-
-            # Calculate start/end frames for specific chunk
-            chunk_start = global_start + (chunk_idx * chunk_size)
-            chunk_frames_count = min(chunk_size, global_end - chunk_start + 1)
-            
-            # Load specific frames
-            frames = self._load_frames(video_path, chunk_start, chunk_frames_count)
-            if not frames:
-                continue
-            
-            # Initialize new inference session (resets memory bank; may interfere with the carry over tools)
-            session = self.processor.init_video_session(
-                video=frames,
-                inference_device=self.device,
-                dtype=torch.bfloat16
-            )
-            
-            # Determine which tools need prompts in this chunk
-            prompts_by_frame = {} # frame_idx to list of (obj_id, bbox)
-            
-            # For each tool, check if it exists in the current chunk time and init if present or reset session if tool continues from prev chunk
-            for tool_class, info in tool_info_dict.items():
-                obj_id = tool_to_obj_id[tool_class]
-                
-                # Check if tool is active in this chunk
-                if info['first_frame'] <= chunk_start + chunk_frames_count - 1 and info['last_frame'] >= chunk_start:
-                    
-                    # Determine initialization logic
-                    init_bbox = None
-                    relative_frame_idx = -1
-                    
-                    # Tool starts naturally inside this chunk
-                    if info['first_frame'] >= chunk_start:
-                        relative_frame_idx = info['first_frame'] - chunk_start
-                        init_bbox = info['init_bbox']
-                        
-                    # Tool is carried over from previous chunk
-                    # Re-prompt at frame 0 of this chunk using the last prediction
-                    else:
-                        relative_frame_idx = 0
-
-                        # Try to get the last prediction from previous processing
-                        if all_predictions[tool_class]:
-                            last_known_frame = max(all_predictions[tool_class].keys())
-
-                            if all_predictions[tool_class][last_known_frame]:
-                                init_bbox = all_predictions[tool_class][last_known_frame][0]['bbox']
-
-                            else:
-
-                                # Fallback to init if tracking lost
-                                init_bbox = info['init_bbox'] 
-                        else:
-                            init_bbox = info['init_bbox']
-
-                    # Add prompt to queue
-                    if init_bbox is not None:
-                        if relative_frame_idx not in prompts_by_frame:
-
-                            prompts_by_frame[relative_frame_idx] = []
-                        prompts_by_frame[relative_frame_idx].append((obj_id, init_bbox))
-
-            # SAM 3 needs to run inference on the frame where a prompt is added to generate memory features or it will crash
-            sorted_prompt_frames = sorted(prompts_by_frame.keys())
-            
-            # No active tools
-            if not sorted_prompt_frames:
-                continue
-
-            for frame_idx in sorted_prompt_frames:
-
-                # Input to processor
-                frame_prompts = prompts_by_frame[frame_idx]
-                p_obj_ids = [p[0] for p in frame_prompts]
-                p_boxes = [[p[1]] for p in frame_prompts] # Shape needs to be [num_objects, num_prompts, 4]
-                
-                # Add boxes and for the session and run memory encoder right after for the new prompts
-                self.processor.add_inputs_to_inference_session(
-                    inference_session=session,
-                    frame_idx=frame_idx,
-                    obj_ids=p_obj_ids,
-                    input_boxes=p_boxes
-                )
-                
-                _ = self.model(inference_session=session, frame_idx=frame_idx)
-            
-            # Propogate from earliest frame with an intialized memory bank of prompts, convert model tensor to binary mask, and map back to tool names by index
-            for sam3_output in self.model.propagate_in_video_iterator(session):
-                frame_idx = sam3_output.frame_idx + chunk_start
-                
-                masks = self.processor.post_process_masks(
-                    [sam3_output.pred_masks],
-                    original_sizes=[[session.video_height, session.video_width]],
-                    binarize=True
-                )[0]
-                
-                # Extract bbox for each tool
-                # session.obj_ids maps the model's internal index to provided obj_id
-                current_session_obj_ids = list(session.obj_ids)
-                
-                for tool_class, obj_id in tool_to_obj_id.items():
-
-                    if obj_id in current_session_obj_ids:
-                        obj_idx = current_session_obj_ids.index(obj_id)
-                        
-                        # Extract mask and convert to bounding box
-                        if obj_idx < masks.shape[0]:
-                            mask = masks[obj_idx, 0].cpu().numpy().astype(bool)
-                            
-                            rows = np.any(mask, axis=1)
-                            cols = np.any(mask, axis=0)
-                            
-                            if rows.any() and cols.any():
-                                ymin, ymax = np.where(rows)[0][[0, -1]]
-                                xmin, xmax = np.where(cols)[0][[0, -1]]
-                                score = float(mask.sum()) / mask.size
-                                
-                                all_predictions[tool_class][frame_idx] = [{
-                                    'bbox': [int(xmin), int(ymin), int(xmax), int(ymax)],
-                                    'score': score,
-                                    'obj_id': obj_id
-                                }]
-
-            # Cleanup
-            torch.cuda.empty_cache()
-            gc.collect()
-            
-        return all_predictions
-        '''
-
-
         print(f"Tracking {len(tool_info_dict)} tools simultaneously")
         
         # Find global start and end frames across all tools
@@ -507,305 +316,7 @@ class SAM3Tracker:
             gc.collect()
             
         return all_predictions
-    
-def load_annotations(csv_path, fps):
-    '''
-    Grabs ground truth CSV files for bounding boxes from dataset
-
-    Args:
-        csv_path (Path): Path to .csv file
-        fps (float): Frames per second of video to convert time to frame index
-        
-    Returns:
-        dict: A dictionary mapping frame_index to list of tool objects 
-              {'bbox': [...], 'class': '...'}
-    '''
-
-    annotations = {}
-
-    with open(csv_path, 'r') as f:
-        for row in csv.DictReader(f):
-
-            # CSV is logged in time, so multiply by FPS (15) to get frame
-            frame_idx = int(round(float(row['Time Recorded']) * fps))
-            bbox_str = row['Tool bounding box']
-
-            # No tools in this frame
-            if bbox_str == '[]':
-                continue
-            
-            # Convert lists stored as strings from the CSV to lists
-            bboxes = ast.literal_eval(bbox_str)
-            frame_tools = []
-
-            for bbox in bboxes:
-
-                # Ignore any class labelled eye and only track tools
-                if bbox['class'] != 'eye':
-                    frame_tools.append({
-                        'bbox': [bbox['xmin'], bbox['ymin'], bbox['xmax'], bbox['ymax']],
-                        'class': (bbox['class']).lower().replace('_', ' ').strip()
-                    })
-            
-            if frame_tools:
-                annotations[frame_idx] = frame_tools
-    
-    return annotations
-
-def get_video_fps(video_path):
-    '''
-    Grab FPS from video.
-    '''
-    cap = cv2.VideoCapture(str(video_path))
-    fps = cap.get(cv2.CAP_PROP_FPS)
-    cap.release()
-
-    return fps
-
-def calculate_iou(bbox1, bbox2):
-    '''
-    Calculate intersection over union between ground truth and predicted bounding box (area of overlap/area of union)
-
-    Args:
-        bbox1 (list): [xmin, ymin, xmax, ymax]
-        bbox2 (list): [xmin, ymin, xmax, ymax]
-        
-    Returns:
-        float: The IoU score (0.0 to 1.0)
-    '''
-
-    x1_min, y1_min, x1_max, y1_max = bbox1
-    x2_min, y2_min, x2_max, y2_max = bbox2
-    
-    #Coordinates of intersection rectangle
-    inter_xmin = max(x1_min, x2_min)
-    inter_ymin = max(y1_min, y2_min)
-    inter_xmax = min(x1_max, x2_max)
-    inter_ymax = min(y1_max, y2_max)
-
-    # Area of intersection (max with 0 for no overlap)
-    inter_area = max(0, inter_xmax - inter_xmin) * max(0, inter_ymax - inter_ymin)
-    
-    # Area of both boxes
-    bbox1_area = (x1_max - x1_min) * (y1_max - y1_min)
-    bbox2_area = (x2_max - x2_min) * (y2_max - y2_min)
-
-    # Union = Box Areas - Intersection
-    union_area = bbox1_area + bbox2_area - inter_area
-    
-    return inter_area / union_area if union_area > 0 else 0
-
-def calculate_metrics(ground_truth, predictions):
-    '''
-    Computes object detection metrics for tools.
-    Calculates mAP (Mean Average Precision) at various IoU thresholds (0.5 to 0.95).
-    
-    Args:
-        ground_truth (dict): Dictionary of ground truth annotations
-        predictions (dict): Dictionary of model predictions
-        
-    Returns:
-        dict: Dictionary containing 'mAP@50', 'mAP@75', 'f1', etc.
-    '''
-    iou_thresholds = np.linspace(0.5, 0.95, 10)
-
-    # Calculate metrics for frames only with data
-    common_frames = sorted(set(ground_truth.keys()) & set(predictions.keys()))
-    
-    if not common_frames:
-        return {
-            'mAP@50': 0.0, 'mAP@75': 0.0, 'mAP@50-95': 0.0,
-            'precision@50': 0.0, 'recall@50': 0.0, 'f1@50': 0.0,
-            'num_frames': 0
-        }
-    
-    aps_per_threshold = {}
-    
-    for iou_thresh in iou_thresholds:
-        frame_aps = []
-        for frame_idx in common_frames:
-            gt_bboxes = [item['bbox'] for item in ground_truth[frame_idx]]
-            pred_items = predictions[frame_idx]
-            
-            if not gt_bboxes or not pred_items:
-                frame_aps.append(0.0)
-                continue
-            
-            # Sort predictions by confidence score for highest first
-            pred_items = sorted(pred_items, key=lambda x: x['score'], reverse=True)
-            true_positives = []
-            matched_gt = set()
-            
-            for pred in pred_items:
-                max_iou = 0
-                max_gt_idx = -1
-
-                # Check prediction against all ground truth boxes
-                for gt_idx, gt_bbox in enumerate(gt_bboxes):
-
-                    # Matched
-                    if gt_idx in matched_gt:
-                        continue
-
-                    iou = calculate_iou(pred['bbox'], gt_bbox)
-                    if iou > max_iou:
-                        max_iou = iou
-                        max_gt_idx = gt_idx
-                
-                # Target hit
-                if max_iou >= iou_thresh:
-                    true_positives.append(1)
-                    matched_gt.add(max_gt_idx)
-
-                else:
-                    true_positives.append(0)
-            
-            # Calculate Average Precision for frame
-            if true_positives:
-
-                tp_cumsum = np.cumsum(true_positives)
-                precision = tp_cumsum / np.arange(1, len(true_positives) + 1)
-                recall = tp_cumsum / len(gt_bboxes)
-
-                ap = sum(precision[i] * (recall[i] - (recall[i-1] if i > 0 else 0)) 
-                        for i in range(len(recall)))
-                frame_aps.append(ap)
-
-            else:
-                frame_aps.append(0.0)
-        
-        aps_per_threshold[round(iou_thresh, 2)] = np.mean(frame_aps)
-    
-    # Precision/Recall/F1 at IoU=0.5 
-    total_tp = total_fp = total_fn = 0
-
-    for frame_idx in common_frames:
-
-        gt_bboxes = [item['bbox'] for item in ground_truth[frame_idx]]
-        pred_items = predictions[frame_idx]
-        
-        if not pred_items:
-
-            total_fn += len(gt_bboxes)
-            continue
-        
-        matched_gt = set()
-
-        for pred in pred_items:
-            matched = False
-
-            for gt_idx, gt_bbox in enumerate(gt_bboxes):
-                if gt_idx not in matched_gt:
-
-                    if calculate_iou(pred['bbox'], gt_bbox) >= 0.5:
-                        total_tp += 1
-                        matched_gt.add(gt_idx)
-                        matched = True
-                        break
-
-            if not matched:
-                total_fp += 1
-
-        total_fn += len(gt_bboxes) - len(matched_gt)
-    
-    precision = total_tp / (total_tp + total_fp) if (total_tp + total_fp) > 0 else 0
-    recall = total_tp / (total_tp + total_fn) if (total_tp + total_fn) > 0 else 0
-    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
-    
-    return {
-        'mAP@50': float(aps_per_threshold[0.5]),
-        'mAP@75': float(aps_per_threshold[0.75]),
-        'mAP@50-95': float(np.mean(list(aps_per_threshold.values()))),
-        'precision@50': float(precision),
-        'recall@50': float(recall),
-        'f1@50': float(f1),
-        'num_frames': len(common_frames)
-    }
-
-def export_predictions_csv(predictions, annotations, fps, output_path, tool_class):
-    '''
-    Writes the frame-by-frame tracking results to CSV
-    
-    Args:
-        predictions (dict): Model predictions
-        annotations (dict): Ground truth data (for comparison)
-        fps (float): Video FPS
-        output_path (Path): Destination file path
-        tool_class (str): Name of the tool being exported
-    '''
-
-    all_frames = sorted(set(annotations.keys()) | set(predictions.keys()))
-    rows = []
-    
-    for frame_idx in all_frames:
-        time_sec = frame_idx / fps
-        
-        # Grab prediction
-        pred_bbox = None
-        if frame_idx in predictions and predictions[frame_idx]:
-            bbox = predictions[frame_idx][0]['bbox']
-            score = predictions[frame_idx][0]['score']
-            pred_bbox = {'xmin': bbox[0], 'ymin': bbox[1], 'xmax': bbox[2], 'ymax': bbox[3], 'score': score}
-        
-        # Grab ground truth
-        gt_bbox = None
-        if frame_idx in annotations:
-            for item in annotations[frame_idx]:
-                if item['class'] == tool_class:
-                    gt_bbox = item['bbox']
-                    break
-        
-        # Grab IoU for frame
-        iou = 0.0
-        if gt_bbox and pred_bbox:
-            iou = calculate_iou(gt_bbox, [pred_bbox['xmin'], pred_bbox['ymin'], 
-                                         pred_bbox['xmax'], pred_bbox['ymax']])
-        
-        rows.append({
-            'frame': frame_idx,
-            'time': f"{time_sec:.2f}",
-            'tool_class': tool_class,
-            'gt_bbox': str(gt_bbox) if gt_bbox else '[]',
-            'pred_bbox': str([pred_bbox['xmin'], pred_bbox['ymin'], 
-                            pred_bbox['xmax'], pred_bbox['ymax']]) if pred_bbox else '[]',
-            'pred_score': f"{pred_bbox['score']:.6f}" if pred_bbox else '0.0',
-            'iou': f"{iou:.4f}"
-        })
-    
-    # Write
-    with open(output_path, 'w', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=['frame', 'time', 'tool_class', 'gt_bbox', 
-                                               'pred_bbox', 'pred_score', 'iou'])
-        writer.writeheader()
-        writer.writerows(rows)
-
-def export_metrics_csv(all_metrics, output_path):
-    '''
-    Writes performance metrics to CSV
-
-    Args:
-        all_metrics (dict): Dictionary of metrics for all tools + overall
-        output_path (Path): Destination file path
-    '''
-    rows = []
-    for tool_class, metrics in all_metrics.items():
-        rows.append({
-            'tool': tool_class,
-            'mAP@50': f"{metrics['mAP@50']:.4f}",
-            'mAP@75': f"{metrics['mAP@75']:.4f}",
-            'mAP@50-95': f"{metrics['mAP@50-95']:.4f}",
-            'precision': f"{metrics['precision@50']:.4f}",
-            'recall': f"{metrics['recall@50']:.4f}",
-            'f1': f"{metrics['f1@50']:.4f}",
-            'frames': metrics['num_frames']
-        })
-    
-    with open(output_path, 'w', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=['tool', 'mAP@50', 'mAP@75', 'mAP@50-95',
-                                               'precision', 'recall', 'f1', 'frames'])
-        writer.writeheader()
-        writer.writerows(rows)
-
+ 
 def visualize_tool_masks(tool_name, annotations, predictions, mask_dir, output_dir):
     '''
     Generates PNG images comparing Ground Truth vs. SAM 3 Prediction
@@ -817,63 +328,6 @@ def visualize_tool_masks(tool_name, annotations, predictions, mask_dir, output_d
         mask_dir (Path): Source directory of saved numpy masks
         output_dir (Path): Destination directory for PNGs
     '''
-    
-    '''
-    # Find all npy masks
-    mask_files = sorted(glob.glob(f'{mask_dir}/mask_*.npy'))
-    if not mask_files:
-        return
-    
-    print(f"Visualizing {len(mask_files)} masks for {tool_name}.")
-    
-    for mask_file in mask_files:
-
-        # Grab frame number from file name
-        frame_num = int(Path(mask_file).stem.split('_')[-1])
-        
-        # Load original image frame and predicted mask
-        frame = np.load(f'{mask_dir}/frame_{frame_num:04d}.npy')
-        mask = np.load(mask_file)
-        
-        fig, axes = plt.subplots(1, 3, figsize=(15, 5))
-        
-        # Ground truth
-        axes[0].imshow(frame)
-        if frame_num in annotations:
-            for item in annotations[frame_num]:
-                bbox = item['bbox']
-                axes[0].add_patch(plt.Rectangle((bbox[0], bbox[1]), bbox[2]-bbox[0], bbox[3]-bbox[1],
-                                  fill=False, edgecolor='lime', linewidth=2))
-        axes[0].set_title(f'Frame {frame_num} - Ground Truth')
-        axes[0].axis('off')
-        
-        # Mask
-        axes[1].imshow(mask, cmap='jet')
-        axes[1].set_title(f'SAM 3 Mask - {tool_name}')
-        axes[1].axis('off')
-        
-        # Prediction
-        axes[2].imshow(frame)
-        if frame_num in predictions and predictions[frame_num]:
-            bbox = predictions[frame_num][0]['bbox']
-            axes[2].add_patch(plt.Rectangle((bbox[0], bbox[1]), bbox[2]-bbox[0], bbox[3]-bbox[1],
-                              fill=False, edgecolor='cyan', linewidth=2))
-            
-            if frame_num in annotations:
-                for gt_item in annotations[frame_num]:
-                    if gt_item['class'] == tool_name:
-                        gt = gt_item['bbox']
-                        iou = calculate_iou(gt, bbox)
-                        axes[2].text(10, 30, f'IoU: {iou:.3f}', color='white', fontsize=12,
-                                   bbox=dict(facecolor='green' if iou > 0.5 else 'red', alpha=0.8))
-                        break
-        axes[2].set_title('Prediction')
-        axes[2].axis('off')
-        
-        plt.tight_layout()
-        plt.savefig(output_dir / f'{tool_name}_frame{frame_num:04d}.png', dpi=100)
-        plt.close()
-        '''
     
     # Find all npy masks
     mask_files = sorted(glob.glob(f'{mask_dir}/mask_*.npy'))
@@ -957,7 +411,7 @@ def track_video(participant, trial, mode='sequential', config=None, output_dir='
     '''
     
     if config is None:
-        config = DatasetConfig()
+        config = DatasetConfig(_config)
     
     print(f"Video: {participant}.{trial} (Mode: {mode.upper()})")
     
@@ -996,40 +450,18 @@ def track_video(participant, trial, mode='sequential', config=None, output_dir='
     
     print(f"Tools: {len(all_tools)}: {sorted(all_tools)}\n")
     
-    # Build tool info
-    tool_info_dict = {}
-    for tool_class in sorted(all_tools):
-        tool_frames = sorted([
-            f for f, items in annotations.items()
-            if any(item['class'] == tool_class for item in items)
-        ])
-        
-        if not tool_frames:
-            continue
-        
-        # The first apperance of the tool with its GT bbox is used for the zero-shot inference
-        first_frame = tool_frames[0]
-        init_bbox = next(item['bbox'] for item in annotations[first_frame] 
-                        if item['class'] == tool_class)
-        
-        tool_mask_dir = masks_dir / tool_class.replace(' ', '_')
-        
-        tool_info_dict[tool_class] = {
-            'first_frame': tool_frames[0],
-            'last_frame': tool_frames[-1],
-            'init_bbox': init_bbox,
-            'mask_dir': tool_mask_dir
-        }
+    tool_info_dict = build_tool_info(annotations, masks_dir)
     
     # Track
     tracker = SAM3Tracker()
+    chunk_size = _config['sam3'].get('chunk_size', 100)
     
     start_time = time.time()
     
     if mode == 'sequential':
-        all_tool_predictions = tracker.track_sequential(video_path, tool_info_dict, chunk_size=100)
+        all_tool_predictions = tracker.track_sequential(video_path, tool_info_dict, chunk_size=chunk_size)
     else:  # simultaneous
-        all_tool_predictions = tracker.track_simultaneous(video_path, tool_info_dict, chunk_size=100)
+        all_tool_predictions = tracker.track_simultaneous(video_path, tool_info_dict, chunk_size=chunk_size)
     
     elapsed_time = time.time() - start_time
     print(f"\nTracking complete in {elapsed_time:.1f}s")
@@ -1061,7 +493,7 @@ def track_video(participant, trial, mode='sequential', config=None, output_dir='
             if any(item['class'] == tool_class for item in items)
         }
         
-        metrics = calculate_metrics(tool_annotations, tool_predictions)
+        metrics = calculate_metrics(tool_annotations, tool_predictions, eval_mode="common")
         all_metrics[tool_class] = metrics
         
         print(f"{tool_class:30s} mAP@50={metrics['mAP@50']:.3f} F1={metrics['f1@50']:.3f}")
@@ -1122,7 +554,7 @@ def process_datasets(participants=None, trials=None, mode='sequential',
     if trials is None:
         trials = {p: [1, 2, 3, 4, 5] for p in participants}
     
-    config = DatasetConfig()
+    config = DatasetConfig(_config)
     all_results = {}
     
     for participant in participants:
@@ -1211,4 +643,5 @@ def main():
     print(f"Inference complete.")
     
 
-main()
+if __name__ == '__main__':
+    main()
