@@ -1,0 +1,451 @@
+participant,trial,video_id,skill_level,tool,path_length,usage_time,num_detections,method
+P1,1,P1.1,expert,capsulorhexis forceps,10510.17715968413,66.66666666666667,1000,SAM3_simultaneous
+P1,1,P1.1,expert,cystotome needle,7465.910860743768,51.266666666666666,769,SAM3_simultaneous
+P1,1,P1.1,expert,diamond keratome iso,506.16349652625814,6.333333333333333,95,SAM3_simultaneous
+P1,1,P1.1,expert,diamond keratome straight,1187.879116417527,11.733333333333333,176,SAM3_simultaneous
+P1,1,P1.1,expert,forceps,5297.678977209385,59.86666666666667,898,SAM3_simultaneous
+P1,1,P1.1,expert,viscoelastic cannula,2294.536832214105,17.533333333333335,263,SAM3_simultaneous
+P1,2,P1.2,expert,capsulorhexis forceps,6990.689667381235,41.2,618,SAM3_simultaneous
+P1,2,P1.2,expert,cystotome needle,2449.316445990681,25.4,381,SAM3_simultaneous
+P1,2,P1.2,expert,diamond keratome iso,258.3996330493278,4.133333333333334,62,SAM3_simultaneous
+P1,2,P1.2,expert,diamond keratome straight,871.2077663056509,9.6,144,SAM3_simultaneous
+P1,2,P1.2,expert,forceps,2397.657779151315,48.266666666666666,724,SAM3_simultaneous
+P1,2,P1.2,expert,viscoelastic cannula,1197.7043194610299,9.2,138,SAM3_simultaneous
+P1,3,P1.3,expert,capsulorhexis forceps,2137.5695642984315,44.266666666666666,664,SAM3_simultaneous
+P1,3,P1.3,expert,cystotome needle,2621.2267314540422,26.266666666666666,394,SAM3_simultaneous
+P1,3,P1.3,expert,diamond keratome iso,715.7165426160078,8.866666666666667,133,SAM3_simultaneous
+P1,3,P1.3,expert,diamond keratome straight,3215.8583602878,19.2,288,SAM3_simultaneous
+P1,3,P1.3,expert,forceps,10274.401282216932,50.2,753,SAM3_simultaneous
+P1,3,P1.3,expert,viscoelastic cannula,1401.8984203682217,8.6,129,SAM3_simultaneous
+P1,4,P1.4,expert,capsulorhexis forceps,2957.805565325128,62.46666666666667,937,SAM3_simultaneous
+P1,4,P1.4,expert,cystotome needle,1072.1289919001724,13.333333333333334,200,SAM3_simultaneous
+P1,4,P1.4,expert,diamond keratome iso,451.28297352674764,7.866666666666666,118,SAM3_simultaneous
+P1,4,P1.4,expert,diamond keratome straight,1785.972496125392,13.066666666666666,196,SAM3_simultaneous
+P1,4,P1.4,expert,forceps,7231.058120325702,36.0,540,SAM3_simultaneous
+P1,4,P1.4,expert,viscoelastic cannula,1093.5308743039213,9.4,141,SAM3_simultaneous
+P1,5,P1.5,expert,capsulorhexis forceps,6164.173490497281,44.13333333333333,662,SAM3_simultaneous
+P1,5,P1.5,expert,cystotome needle,2805.4092430471833,21.933333333333334,329,SAM3_simultaneous
+P1,5,P1.5,expert,diamond keratome iso,1266.0901373736758,12.0,180,SAM3_simultaneous
+P1,5,P1.5,expert,diamond keratome straight,1672.0220955159998,11.066666666666666,166,SAM3_simultaneous
+P1,5,P1.5,expert,forceps,5670.807163193121,44.733333333333334,671,SAM3_simultaneous
+P1,5,P1.5,expert,viscoelastic cannula,1056.5179707031878,6.866666666666666,103,SAM3_simultaneous
+P2,1,P2.1,novice,capsulorhexis forceps,18932.91405363879,192.06666666666666,2881,SAM3_simultaneous
+P2,1,P2.1,novice,cystotome needle,12329.099426850202,116.26666666666667,1744,SAM3_simultaneous
+P2,1,P2.1,novice,diamond keratome iso,2376.351789957291,17.466666666666665,262,SAM3_simultaneous
+P2,1,P2.1,novice,diamond keratome straight,170.3862173397972,1.1333333333333333,17,SAM3_simultaneous
+P2,1,P2.1,novice,forceps,3564.534406936611,60.13333333333333,902,SAM3_simultaneous
+P2,1,P2.1,novice,viscoelastic cannula,9709.639560657937,208.86666666666667,3133,SAM3_simultaneous
+P2,2,P2.2,novice,capsulorhexis forceps,25523.68243908157,175.53333333333333,2633,SAM3_simultaneous
+P2,2,P2.2,novice,cystotome needle,8106.931456961986,55.46666666666667,832,SAM3_simultaneous
+P2,2,P2.2,novice,diamond keratome iso,28351.913284942046,168.46666666666667,2527,SAM3_simultaneous
+P2,2,P2.2,novice,diamond keratome straight,1842.0618296716932,11.333333333333334,170,SAM3_simultaneous
+P2,2,P2.2,novice,forceps,6305.18617418967,64.86666666666666,973,SAM3_simultaneous
+P2,2,P2.2,novice,viscoelastic cannula,9291.091127301743,169.66666666666666,2545,SAM3_simultaneous
+P2,3,P2.3,novice,capsulorhexis forceps,9472.543487172086,66.2,993,SAM3_simultaneous
+P2,3,P2.3,novice,cystotome needle,5156.30480199377,46.333333333333336,695,SAM3_simultaneous
+P2,3,P2.3,novice,diamond keratome iso,10302.127308699311,92.93333333333334,1394,SAM3_simultaneous
+P2,3,P2.3,novice,diamond keratome straight,375.8740292875808,3.0,45,SAM3_simultaneous
+P2,3,P2.3,novice,forceps,0.0,0.0,0,SAM3_simultaneous
+P2,3,P2.3,novice,viscoelastic cannula,1828.064715428787,13.6,204,SAM3_simultaneous
+P2,4,P2.4,novice,capsulorhexis forceps,13531.64402627805,110.0,1650,SAM3_simultaneous
+P2,4,P2.4,novice,cystotome needle,2682.4538593930884,26.066666666666666,391,SAM3_simultaneous
+P2,4,P2.4,novice,diamond keratome iso,1229.7060257641667,16.333333333333332,245,SAM3_simultaneous
+P2,4,P2.4,novice,diamond keratome straight,106.26140337837167,2.533333333333333,38,SAM3_simultaneous
+P2,4,P2.4,novice,forceps,860.8502242727537,14.533333333333333,218,SAM3_simultaneous
+P2,4,P2.4,novice,viscoelastic cannula,816.686870009526,9.666666666666666,145,SAM3_simultaneous
+P2,5,P2.5,novice,capsulorhexis forceps,5228.746176719875,51.666666666666664,775,SAM3_simultaneous
+P2,5,P2.5,novice,cystotome needle,3257.4314065022654,29.0,435,SAM3_simultaneous
+P2,5,P2.5,novice,diamond keratome iso,2999.615433375144,15.933333333333334,239,SAM3_simultaneous
+P2,5,P2.5,novice,diamond keratome straight,283.36962365186577,4.8,72,SAM3_simultaneous
+P2,5,P2.5,novice,forceps,7858.837864202602,56.733333333333334,851,SAM3_simultaneous
+P2,5,P2.5,novice,viscoelastic cannula,8294.423713259952,79.33333333333333,1190,SAM3_simultaneous
+P3,1,P3.1,novice,capsulorhexis forceps,14633.472377082566,77.86666666666666,1168,SAM3_simultaneous
+P3,1,P3.1,novice,cystotome needle,6998.921027359937,42.0,630,SAM3_simultaneous
+P3,1,P3.1,novice,diamond keratome iso,3434.839198160966,22.666666666666668,340,SAM3_simultaneous
+P3,1,P3.1,novice,diamond keratome straight,359.0832285970295,11.333333333333334,170,SAM3_simultaneous
+P3,1,P3.1,novice,forceps,1586.5363975149182,11.6,174,SAM3_simultaneous
+P3,1,P3.1,novice,viscoelastic cannula,722.5356824731674,11.2,168,SAM3_simultaneous
+P3,2,P3.2,novice,capsulorhexis forceps,7734.896501713482,57.06666666666667,856,SAM3_simultaneous
+P3,2,P3.2,novice,cystotome needle,5107.099950965565,45.93333333333333,689,SAM3_simultaneous
+P3,2,P3.2,novice,diamond keratome iso,6690.298428181244,12.066666666666666,181,SAM3_simultaneous
+P3,2,P3.2,novice,diamond keratome straight,596.4240237492623,10.333333333333334,155,SAM3_simultaneous
+P3,2,P3.2,novice,forceps,4290.263739975881,51.266666666666666,769,SAM3_simultaneous
+P3,2,P3.2,novice,viscoelastic cannula,884.4678906480107,9.866666666666667,148,SAM3_simultaneous
+P3,3,P3.3,novice,capsulorhexis forceps,13995.651309871848,76.6,1149,SAM3_simultaneous
+P3,3,P3.3,novice,cystotome needle,2501.682900160586,23.866666666666667,358,SAM3_simultaneous
+P3,3,P3.3,novice,diamond keratome iso,2945.5551958267856,10.733333333333333,161,SAM3_simultaneous
+P3,3,P3.3,novice,diamond keratome straight,132.85287024353119,2.6666666666666665,40,SAM3_simultaneous
+P3,3,P3.3,novice,forceps,1445.2004788688105,8.066666666666666,121,SAM3_simultaneous
+P3,3,P3.3,novice,viscoelastic cannula,1175.8682367443932,8.2,123,SAM3_simultaneous
+P3,4,P3.4,novice,capsulorhexis forceps,7370.428689752226,64.2,963,SAM3_simultaneous
+P3,4,P3.4,novice,cystotome needle,1315.0934826021937,28.666666666666668,430,SAM3_simultaneous
+P3,4,P3.4,novice,diamond keratome iso,2417.7353753528646,10.866666666666667,163,SAM3_simultaneous
+P3,4,P3.4,novice,diamond keratome straight,252.44644804302683,3.8666666666666667,58,SAM3_simultaneous
+P3,4,P3.4,novice,forceps,1844.2344105753623,12.2,183,SAM3_simultaneous
+P3,4,P3.4,novice,viscoelastic cannula,991.1061990401886,7.6,114,SAM3_simultaneous
+P3,5,P3.5,novice,capsulorhexis forceps,5571.208424262428,46.2,693,SAM3_simultaneous
+P3,5,P3.5,novice,cystotome needle,3415.5347853186827,27.266666666666666,409,SAM3_simultaneous
+P3,5,P3.5,novice,diamond keratome iso,2314.3129221898375,10.2,153,SAM3_simultaneous
+P3,5,P3.5,novice,diamond keratome straight,207.61800492210241,3.066666666666667,46,SAM3_simultaneous
+P3,5,P3.5,novice,forceps,4632.6209073930795,10.466666666666667,157,SAM3_simultaneous
+P3,5,P3.5,novice,viscoelastic cannula,795.558347449014,8.666666666666666,130,SAM3_simultaneous
+P4,1,P4.1,novice,capsulorhexis forceps,10163.275948075909,69.33333333333333,1040,SAM3_simultaneous
+P4,1,P4.1,novice,cystotome needle,6955.829269161322,63.266666666666666,949,SAM3_simultaneous
+P4,1,P4.1,novice,diamond keratome iso,787.229692080574,9.0,135,SAM3_simultaneous
+P4,1,P4.1,novice,diamond keratome straight,1593.7935664963807,7.8,117,SAM3_simultaneous
+P4,1,P4.1,novice,forceps,3854.8732047284716,51.0,765,SAM3_simultaneous
+P4,1,P4.1,novice,viscoelastic cannula,2594.8234769233495,19.4,291,SAM3_simultaneous
+P4,2,P4.2,novice,capsulorhexis forceps,10874.95362042146,88.93333333333334,1334,SAM3_simultaneous
+P4,2,P4.2,novice,cystotome needle,5393.471566020858,38.8,582,SAM3_simultaneous
+P4,2,P4.2,novice,diamond keratome iso,553.354078296735,6.066666666666666,91,SAM3_simultaneous
+P4,2,P4.2,novice,diamond keratome straight,858.3477019438023,8.733333333333333,131,SAM3_simultaneous
+P4,2,P4.2,novice,forceps,5711.007821430406,37.266666666666666,559,SAM3_simultaneous
+P4,2,P4.2,novice,viscoelastic cannula,294.1703041905124,9.066666666666666,136,SAM3_simultaneous
+P4,3,P4.3,novice,capsulorhexis forceps,10821.88236265291,78.53333333333333,1178,SAM3_simultaneous
+P4,3,P4.3,novice,cystotome needle,4531.085535762086,28.533333333333335,428,SAM3_simultaneous
+P4,3,P4.3,novice,diamond keratome iso,1051.8994701065124,7.866666666666666,118,SAM3_simultaneous
+P4,3,P4.3,novice,diamond keratome straight,2210.3467420643938,8.333333333333334,125,SAM3_simultaneous
+P4,3,P4.3,novice,forceps,3087.553249250369,42.13333333333333,632,SAM3_simultaneous
+P4,3,P4.3,novice,viscoelastic cannula,1872.218414034314,12.0,180,SAM3_simultaneous
+P4,4,P4.4,novice,capsulorhexis forceps,10347.183309459286,65.26666666666667,979,SAM3_simultaneous
+P4,4,P4.4,novice,cystotome needle,4085.1225315298366,21.2,318,SAM3_simultaneous
+P4,4,P4.4,novice,diamond keratome iso,1762.5323010769284,12.333333333333334,185,SAM3_simultaneous
+P4,4,P4.4,novice,diamond keratome straight,484.42172102065877,6.133333333333334,92,SAM3_simultaneous
+P4,4,P4.4,novice,forceps,4034.292913584364,39.06666666666667,586,SAM3_simultaneous
+P4,4,P4.4,novice,viscoelastic cannula,1550.284891053119,8.133333333333333,122,SAM3_simultaneous
+P4,5,P4.5,novice,capsulorhexis forceps,7029.180178235613,55.53333333333333,833,SAM3_simultaneous
+P4,5,P4.5,novice,cystotome needle,2960.827798933324,19.266666666666666,289,SAM3_simultaneous
+P4,5,P4.5,novice,diamond keratome iso,2155.8434143867107,9.066666666666666,136,SAM3_simultaneous
+P4,5,P4.5,novice,diamond keratome straight,319.03324255902504,4.2,63,SAM3_simultaneous
+P4,5,P4.5,novice,forceps,2095.574012872304,23.533333333333335,353,SAM3_simultaneous
+P4,5,P4.5,novice,viscoelastic cannula,607.7589904766919,4.8,72,SAM3_simultaneous
+P5,1,P5.1,novice,capsulorhexis forceps,8035.640429698356,62.4,936,SAM3_simultaneous
+P5,1,P5.1,novice,cystotome needle,3819.9144901243576,19.2,288,SAM3_simultaneous
+P5,1,P5.1,novice,diamond keratome iso,322.0075115137539,8.6,129,SAM3_simultaneous
+P5,1,P5.1,novice,diamond keratome straight,973.672281516714,7.4,111,SAM3_simultaneous
+P5,1,P5.1,novice,forceps,3382.0134152106184,55.86666666666667,838,SAM3_simultaneous
+P5,1,P5.1,novice,viscoelastic cannula,2359.711370193751,17.866666666666667,268,SAM3_simultaneous
+P5,2,P5.2,novice,capsulorhexis forceps,5890.26982137487,46.46666666666667,697,SAM3_simultaneous
+P5,2,P5.2,novice,cystotome needle,932.6535447144272,21.933333333333334,329,SAM3_simultaneous
+P5,2,P5.2,novice,diamond keratome iso,1307.486119718793,4.533333333333333,68,SAM3_simultaneous
+P5,2,P5.2,novice,diamond keratome straight,1104.9411966232296,8.333333333333334,125,SAM3_simultaneous
+P5,2,P5.2,novice,forceps,6794.263112422455,46.93333333333333,704,SAM3_simultaneous
+P5,2,P5.2,novice,viscoelastic cannula,1481.892188180846,16.333333333333332,245,SAM3_simultaneous
+P5,3,P5.3,novice,capsulorhexis forceps,5316.194097226604,39.06666666666667,586,SAM3_simultaneous
+P5,3,P5.3,novice,cystotome needle,1195.3706611848122,17.133333333333333,257,SAM3_simultaneous
+P5,3,P5.3,novice,diamond keratome iso,739.2019429160868,2.6,39,SAM3_simultaneous
+P5,3,P5.3,novice,diamond keratome straight,754.3326922223575,6.8,102,SAM3_simultaneous
+P5,3,P5.3,novice,forceps,4818.88370525119,46.6,699,SAM3_simultaneous
+P5,3,P5.3,novice,viscoelastic cannula,1627.7939642110784,16.466666666666665,247,SAM3_simultaneous
+P5,4,P5.4,novice,capsulorhexis forceps,1987.311645935266,54.6,819,SAM3_simultaneous
+P5,4,P5.4,novice,cystotome needle,1032.4573056904371,13.8,207,SAM3_simultaneous
+P5,4,P5.4,novice,diamond keratome iso,380.82042831170554,2.2666666666666666,34,SAM3_simultaneous
+P5,4,P5.4,novice,diamond keratome straight,670.0512783260732,7.066666666666666,106,SAM3_simultaneous
+P5,4,P5.4,novice,forceps,7532.097766181077,42.4,636,SAM3_simultaneous
+P5,4,P5.4,novice,viscoelastic cannula,2090.0952298151037,16.466666666666665,247,SAM3_simultaneous
+P5,5,P5.5,novice,capsulorhexis forceps,7044.671400992658,48.2,723,SAM3_simultaneous
+P5,5,P5.5,novice,cystotome needle,1201.642526511566,11.8,177,SAM3_simultaneous
+P5,5,P5.5,novice,diamond keratome iso,342.08960774484603,6.333333333333333,95,SAM3_simultaneous
+P5,5,P5.5,novice,diamond keratome straight,878.9233730742285,8.2,123,SAM3_simultaneous
+P5,5,P5.5,novice,forceps,2160.794298622874,44.93333333333333,674,SAM3_simultaneous
+P5,5,P5.5,novice,viscoelastic cannula,1844.6070265558237,14.933333333333334,224,SAM3_simultaneous
+P1,1,P1.1,expert,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P1,1,P1.1,expert,cystotome needle,7359.438026821463,55.8,837,SAM3_sequential
+P1,1,P1.1,expert,diamond keratome iso,494.2738091203982,6.333333333333333,95,SAM3_sequential
+P1,1,P1.1,expert,diamond keratome straight,1025.0161841554307,11.666666666666666,175,SAM3_sequential
+P1,1,P1.1,expert,forceps,4131.476087440339,59.86666666666667,898,SAM3_sequential
+P1,1,P1.1,expert,viscoelastic cannula,2429.6316865438857,17.533333333333335,263,SAM3_sequential
+P1,2,P1.2,expert,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P1,2,P1.2,expert,cystotome needle,2732.0039899133103,25.866666666666667,388,SAM3_sequential
+P1,2,P1.2,expert,diamond keratome iso,262.96481995394976,4.133333333333334,62,SAM3_sequential
+P1,2,P1.2,expert,diamond keratome straight,887.9891275206026,9.6,144,SAM3_sequential
+P1,2,P1.2,expert,forceps,4626.034747608554,48.266666666666666,724,SAM3_sequential
+P1,2,P1.2,expert,viscoelastic cannula,1197.7043194610299,9.2,138,SAM3_sequential
+P1,3,P1.3,expert,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P1,3,P1.3,expert,cystotome needle,2757.030138006889,26.2,393,SAM3_sequential
+P1,3,P1.3,expert,diamond keratome iso,730.8057617683728,8.866666666666667,133,SAM3_sequential
+P1,3,P1.3,expert,diamond keratome straight,3217.2566374538064,19.2,288,SAM3_sequential
+P1,3,P1.3,expert,forceps,12984.125552213945,46.0,690,SAM3_sequential
+P1,3,P1.3,expert,viscoelastic cannula,1402.987474327754,8.6,129,SAM3_sequential
+P1,4,P1.4,expert,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P1,4,P1.4,expert,cystotome needle,1108.7398613760886,13.333333333333334,200,SAM3_sequential
+P1,4,P1.4,expert,diamond keratome iso,449.0752619767552,7.866666666666666,118,SAM3_sequential
+P1,4,P1.4,expert,diamond keratome straight,1845.5651914660261,13.066666666666666,196,SAM3_sequential
+P1,4,P1.4,expert,forceps,6678.7829453642335,38.53333333333333,578,SAM3_sequential
+P1,4,P1.4,expert,viscoelastic cannula,1097.9886219200096,9.4,141,SAM3_sequential
+P1,5,P1.5,expert,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P1,5,P1.5,expert,cystotome needle,2377.926954012417,21.933333333333334,329,SAM3_sequential
+P1,5,P1.5,expert,diamond keratome iso,1267.412676769716,12.0,180,SAM3_sequential
+P1,5,P1.5,expert,diamond keratome straight,1867.7485922810604,11.066666666666666,166,SAM3_sequential
+P1,5,P1.5,expert,forceps,4453.766489526216,44.733333333333334,671,SAM3_sequential
+P1,5,P1.5,expert,viscoelastic cannula,1047.1732430247384,6.866666666666666,103,SAM3_sequential
+P2,1,P2.1,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P2,1,P2.1,novice,cystotome needle,7594.093183318958,116.26666666666667,1744,SAM3_sequential
+P2,1,P2.1,novice,diamond keratome iso,2364.2524658278394,17.466666666666665,262,SAM3_sequential
+P2,1,P2.1,novice,diamond keratome straight,277.436011939905,1.0,15,SAM3_sequential
+P2,1,P2.1,novice,forceps,4980.811362521899,65.4,981,SAM3_sequential
+P2,1,P2.1,novice,viscoelastic cannula,8616.442697598433,218.86666666666667,3283,SAM3_sequential
+P2,2,P2.2,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P2,2,P2.2,novice,cystotome needle,6975.056072762153,52.06666666666667,781,SAM3_sequential
+P2,2,P2.2,novice,diamond keratome iso,19334.97770063402,202.13333333333333,3032,SAM3_sequential
+P2,2,P2.2,novice,diamond keratome straight,1898.3170988833403,9.866666666666667,148,SAM3_sequential
+P2,2,P2.2,novice,forceps,6305.18617418967,64.86666666666666,973,SAM3_sequential
+P2,2,P2.2,novice,viscoelastic cannula,9578.752513103544,186.33333333333334,2795,SAM3_sequential
+P2,3,P2.3,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P2,3,P2.3,novice,cystotome needle,4819.922304024745,44.0,660,SAM3_sequential
+P2,3,P2.3,novice,diamond keratome iso,10738.36632105039,96.73333333333333,1451,SAM3_sequential
+P2,3,P2.3,novice,diamond keratome straight,375.8740292875808,3.0,45,SAM3_sequential
+P2,3,P2.3,novice,forceps,0.0,0.0,0,SAM3_sequential
+P2,3,P2.3,novice,viscoelastic cannula,2201.3966852439903,13.6,204,SAM3_sequential
+P2,4,P2.4,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P2,4,P2.4,novice,cystotome needle,2645.7921305804675,26.066666666666666,391,SAM3_sequential
+P2,4,P2.4,novice,diamond keratome iso,2024.9518590518546,15.266666666666667,229,SAM3_sequential
+P2,4,P2.4,novice,diamond keratome straight,126.2525756558138,2.533333333333333,38,SAM3_sequential
+P2,4,P2.4,novice,forceps,860.8502242727537,14.533333333333333,218,SAM3_sequential
+P2,4,P2.4,novice,viscoelastic cannula,826.6617366094206,9.666666666666666,145,SAM3_sequential
+P2,5,P2.5,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P2,5,P2.5,novice,cystotome needle,3250.826357833253,29.0,435,SAM3_sequential
+P2,5,P2.5,novice,diamond keratome iso,3007.1488446347184,15.933333333333334,239,SAM3_sequential
+P2,5,P2.5,novice,diamond keratome straight,370.66828703377445,4.8,72,SAM3_sequential
+P2,5,P2.5,novice,forceps,7858.837864202602,56.733333333333334,851,SAM3_sequential
+P2,5,P2.5,novice,viscoelastic cannula,5319.689631615297,77.93333333333334,1169,SAM3_sequential
+P3,1,P3.1,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P3,1,P3.1,novice,cystotome needle,6198.412929571663,41.06666666666667,616,SAM3_sequential
+P3,1,P3.1,novice,diamond keratome iso,3332.3555312693206,22.666666666666668,340,SAM3_sequential
+P3,1,P3.1,novice,diamond keratome straight,499.89973901842495,10.533333333333333,158,SAM3_sequential
+P3,1,P3.1,novice,forceps,1586.5363975149182,11.6,174,SAM3_sequential
+P3,1,P3.1,novice,viscoelastic cannula,732.9342155722898,11.2,168,SAM3_sequential
+P3,2,P3.2,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P3,2,P3.2,novice,cystotome needle,5132.298598242827,45.93333333333333,689,SAM3_sequential
+P3,2,P3.2,novice,diamond keratome iso,4544.471633158719,12.066666666666666,181,SAM3_sequential
+P3,2,P3.2,novice,diamond keratome straight,827.5310584044578,10.333333333333334,155,SAM3_sequential
+P3,2,P3.2,novice,forceps,9030.079309613368,51.0,765,SAM3_sequential
+P3,2,P3.2,novice,viscoelastic cannula,890.4505427160793,9.866666666666667,148,SAM3_sequential
+P3,3,P3.3,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P3,3,P3.3,novice,cystotome needle,2111.580149972586,24.266666666666666,364,SAM3_sequential
+P3,3,P3.3,novice,diamond keratome iso,704.5006729457269,4.4,66,SAM3_sequential
+P3,3,P3.3,novice,diamond keratome straight,125.54434681149885,2.6666666666666665,40,SAM3_sequential
+P3,3,P3.3,novice,forceps,1445.2004788688105,8.066666666666666,121,SAM3_sequential
+P3,3,P3.3,novice,viscoelastic cannula,1328.5463305995756,9.2,138,SAM3_sequential
+P3,4,P3.4,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P3,4,P3.4,novice,cystotome needle,2690.4838358742345,28.666666666666668,430,SAM3_sequential
+P3,4,P3.4,novice,diamond keratome iso,2430.4969592082825,10.866666666666667,163,SAM3_sequential
+P3,4,P3.4,novice,diamond keratome straight,253.2338943548399,3.8666666666666667,58,SAM3_sequential
+P3,4,P3.4,novice,forceps,1844.2344105753623,12.2,183,SAM3_sequential
+P3,4,P3.4,novice,viscoelastic cannula,994.0668870006203,7.6,114,SAM3_sequential
+P3,5,P3.5,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P3,5,P3.5,novice,cystotome needle,3406.8462681883802,27.266666666666666,409,SAM3_sequential
+P3,5,P3.5,novice,diamond keratome iso,2429.4908777554347,10.2,153,SAM3_sequential
+P3,5,P3.5,novice,diamond keratome straight,236.64211060547484,3.066666666666667,46,SAM3_sequential
+P3,5,P3.5,novice,forceps,4632.6209073930795,10.466666666666667,157,SAM3_sequential
+P3,5,P3.5,novice,viscoelastic cannula,795.558347449014,8.666666666666666,130,SAM3_sequential
+P4,1,P4.1,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P4,1,P4.1,novice,cystotome needle,6474.361004730629,63.4,951,SAM3_sequential
+P4,1,P4.1,novice,diamond keratome iso,736.1951130755559,9.0,135,SAM3_sequential
+P4,1,P4.1,novice,diamond keratome straight,1400.2509971651364,7.8,117,SAM3_sequential
+P4,1,P4.1,novice,forceps,4119.1885256445985,51.0,765,SAM3_sequential
+P4,1,P4.1,novice,viscoelastic cannula,3473.672324623869,19.4,291,SAM3_sequential
+P4,2,P4.2,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P4,2,P4.2,novice,cystotome needle,4847.453979384816,37.86666666666667,568,SAM3_sequential
+P4,2,P4.2,novice,diamond keratome iso,547.8423165216805,6.066666666666666,91,SAM3_sequential
+P4,2,P4.2,novice,diamond keratome straight,1200.7178898552863,8.733333333333333,131,SAM3_sequential
+P4,2,P4.2,novice,forceps,2808.6226058344823,37.2,558,SAM3_sequential
+P4,2,P4.2,novice,viscoelastic cannula,3519.2051806560844,9.066666666666666,136,SAM3_sequential
+P4,3,P4.3,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P4,3,P4.3,novice,cystotome needle,4342.806631861002,28.533333333333335,428,SAM3_sequential
+P4,3,P4.3,novice,diamond keratome iso,879.4763995086776,7.8,117,SAM3_sequential
+P4,3,P4.3,novice,diamond keratome straight,1044.3908655885261,8.333333333333334,125,SAM3_sequential
+P4,3,P4.3,novice,forceps,3087.553249250369,42.13333333333333,632,SAM3_sequential
+P4,3,P4.3,novice,viscoelastic cannula,1785.7634702807686,12.0,180,SAM3_sequential
+P4,4,P4.4,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P4,4,P4.4,novice,cystotome needle,3888.60089291114,21.2,318,SAM3_sequential
+P4,4,P4.4,novice,diamond keratome iso,1801.4392558090594,12.4,186,SAM3_sequential
+P4,4,P4.4,novice,diamond keratome straight,449.34510004059337,6.133333333333334,92,SAM3_sequential
+P4,4,P4.4,novice,forceps,4034.292913584364,39.06666666666667,586,SAM3_sequential
+P4,4,P4.4,novice,viscoelastic cannula,1568.3787838909184,8.133333333333333,122,SAM3_sequential
+P4,5,P4.5,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P4,5,P4.5,novice,cystotome needle,3202.1215690341282,19.266666666666666,289,SAM3_sequential
+P4,5,P4.5,novice,diamond keratome iso,1957.1030281069227,9.066666666666666,136,SAM3_sequential
+P4,5,P4.5,novice,diamond keratome straight,349.19559992682423,4.2,63,SAM3_sequential
+P4,5,P4.5,novice,forceps,1981.2460711503443,21.666666666666668,325,SAM3_sequential
+P4,5,P4.5,novice,viscoelastic cannula,555.0112612717569,4.8,72,SAM3_sequential
+P5,1,P5.1,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P5,1,P5.1,novice,cystotome needle,2152.3533696448485,17.666666666666668,265,SAM3_sequential
+P5,1,P5.1,novice,diamond keratome iso,150.85317105994739,2.2,33,SAM3_sequential
+P5,1,P5.1,novice,diamond keratome straight,989.8819499639852,7.4,111,SAM3_sequential
+P5,1,P5.1,novice,forceps,3382.0134152106184,55.86666666666667,838,SAM3_sequential
+P5,1,P5.1,novice,viscoelastic cannula,2473.1996321063953,17.866666666666667,268,SAM3_sequential
+P5,2,P5.2,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P5,2,P5.2,novice,cystotome needle,1008.3804624140503,21.933333333333334,329,SAM3_sequential
+P5,2,P5.2,novice,diamond keratome iso,1294.0619510773001,4.533333333333333,68,SAM3_sequential
+P5,2,P5.2,novice,diamond keratome straight,1099.091851853033,8.333333333333334,125,SAM3_sequential
+P5,2,P5.2,novice,forceps,6801.550191884267,47.0,705,SAM3_sequential
+P5,2,P5.2,novice,viscoelastic cannula,1504.2411019410358,16.333333333333332,245,SAM3_sequential
+P5,3,P5.3,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P5,3,P5.3,novice,cystotome needle,1184.278043687499,17.133333333333333,257,SAM3_sequential
+P5,3,P5.3,novice,diamond keratome iso,1113.0973492769758,7.8,117,SAM3_sequential
+P5,3,P5.3,novice,diamond keratome straight,468.26642195202106,6.8,102,SAM3_sequential
+P5,3,P5.3,novice,forceps,4765.605365805515,46.6,699,SAM3_sequential
+P5,3,P5.3,novice,viscoelastic cannula,1570.9036557873958,16.466666666666665,247,SAM3_sequential
+P5,4,P5.4,novice,capsulorhexis forceps,0.0,0.0,0,SAM3_sequential
+P5,4,P5.4,novice,cystotome needle,1036.4045616452659,13.8,207,SAM3_sequential
+P5,4,P5.4,novice,diamond keratome iso,513.0815380113092,2.0,30,SAM3_sequential
+P5,4,P5.4,novice,diamond keratome straight,933.2110527149637,7.066666666666666,106,SAM3_sequential
+P5,4,P5.4,novice,forceps,3658.0344090191024,44.13333333333333,662,SAM3_sequential
+P5,4,P5.4,novice,viscoelastic cannula,2090.855026269535,16.533333333333335,248,SAM3_sequential
+P5,5,P5.5,novice,capsulorhexis forceps,6228.067665872632,48.2,723,SAM3_sequential
+P5,5,P5.5,novice,cystotome needle,1053.2793453194577,11.8,177,SAM3_sequential
+P5,5,P5.5,novice,diamond keratome iso,359.7267181617083,6.333333333333333,95,SAM3_sequential
+P5,5,P5.5,novice,diamond keratome straight,876.4358434772697,8.2,123,SAM3_sequential
+P5,5,P5.5,novice,forceps,2939.9227487038793,43.6,654,SAM3_sequential
+P5,5,P5.5,novice,viscoelastic cannula,1999.115089779166,14.933333333333334,224,SAM3_sequential
+P1,1,P1.1,expert,capsulorhexis forceps,3081.5241185682216,8.6,129,YOLO26
+P1,1,P1.1,expert,cystotome needle,0.0,0.0,0,YOLO26
+P1,1,P1.1,expert,diamond keratome iso,21.50581316760657,0.13333333333333333,2,YOLO26
+P1,1,P1.1,expert,diamond keratome straight,0.0,0.0,0,YOLO26
+P1,1,P1.1,expert,forceps,4726.446720247441,15.333333333333334,230,YOLO26
+P1,1,P1.1,expert,viscoelastic cannula,0.0,0.0,0,YOLO26
+P1,2,P1.2,expert,capsulorhexis forceps,3307.149981796322,5.2,78,YOLO26
+P1,2,P1.2,expert,cystotome needle,0.0,0.0,0,YOLO26
+P1,2,P1.2,expert,diamond keratome iso,0.0,0.0,0,YOLO26
+P1,2,P1.2,expert,diamond keratome straight,0.0,0.0,0,YOLO26
+P1,2,P1.2,expert,forceps,173.65512922658294,0.6666666666666666,10,YOLO26
+P1,2,P1.2,expert,viscoelastic cannula,0.0,0.0,0,YOLO26
+P1,3,P1.3,expert,capsulorhexis forceps,5049.930253236331,14.866666666666667,223,YOLO26
+P1,3,P1.3,expert,cystotome needle,0.0,0.0,0,YOLO26
+P1,3,P1.3,expert,diamond keratome iso,0.0,0.06666666666666667,1,YOLO26
+P1,3,P1.3,expert,diamond keratome straight,176.25504378681865,0.2,3,YOLO26
+P1,3,P1.3,expert,forceps,2609.6692855479764,4.666666666666667,70,YOLO26
+P1,3,P1.3,expert,viscoelastic cannula,373.1241245485499,1.0,15,YOLO26
+P1,4,P1.4,expert,capsulorhexis forceps,7169.822846643603,23.666666666666668,355,YOLO26
+P1,4,P1.4,expert,cystotome needle,0.0,0.0,0,YOLO26
+P1,4,P1.4,expert,diamond keratome iso,0.0,0.0,0,YOLO26
+P1,4,P1.4,expert,diamond keratome straight,0.0,0.0,0,YOLO26
+P1,4,P1.4,expert,forceps,2747.759643644493,2.933333333333333,44,YOLO26
+P1,4,P1.4,expert,viscoelastic cannula,202.62345255825255,1.8,27,YOLO26
+P1,5,P1.5,expert,capsulorhexis forceps,4335.053267420901,10.466666666666667,157,YOLO26
+P1,5,P1.5,expert,cystotome needle,0.0,0.0,0,YOLO26
+P1,5,P1.5,expert,diamond keratome iso,0.0,0.0,0,YOLO26
+P1,5,P1.5,expert,diamond keratome straight,25.13573662495024,0.4,6,YOLO26
+P1,5,P1.5,expert,forceps,7462.736942614576,7.666666666666667,115,YOLO26
+P1,5,P1.5,expert,viscoelastic cannula,258.36632959799806,1.4,21,YOLO26
+P2,1,P2.1,novice,capsulorhexis forceps,15762.127082099361,101.33333333333333,1520,YOLO26
+P2,1,P2.1,novice,cystotome needle,10155.257533819622,50.86666666666667,763,YOLO26
+P2,1,P2.1,novice,diamond keratome iso,1403.3500258798174,8.466666666666667,127,YOLO26
+P2,1,P2.1,novice,diamond keratome straight,251.94234821211998,2.8666666666666667,43,YOLO26
+P2,1,P2.1,novice,forceps,906.5375997114699,14.266666666666667,214,YOLO26
+P2,1,P2.1,novice,viscoelastic cannula,4893.196050469085,27.866666666666667,418,YOLO26
+P2,2,P2.2,novice,capsulorhexis forceps,20412.14317148653,116.26666666666667,1744,YOLO26
+P2,2,P2.2,novice,cystotome needle,6307.300017050992,33.93333333333333,509,YOLO26
+P2,2,P2.2,novice,diamond keratome iso,6095.3056898441355,21.466666666666665,322,YOLO26
+P2,2,P2.2,novice,diamond keratome straight,917.8687048316564,6.266666666666667,94,YOLO26
+P2,2,P2.2,novice,forceps,6541.66058548353,12.666666666666666,190,YOLO26
+P2,2,P2.2,novice,viscoelastic cannula,1406.023756650623,14.4,216,YOLO26
+P2,3,P2.3,novice,capsulorhexis forceps,6089.134273564776,51.733333333333334,776,YOLO26
+P2,3,P2.3,novice,cystotome needle,5811.012286110409,37.06666666666667,556,YOLO26
+P2,3,P2.3,novice,diamond keratome iso,3258.2984363791566,22.066666666666666,331,YOLO26
+P2,3,P2.3,novice,diamond keratome straight,320.4227757666614,2.533333333333333,38,YOLO26
+P2,3,P2.3,novice,forceps,0.0,0.0,0,YOLO26
+P2,3,P2.3,novice,viscoelastic cannula,1532.7043975587214,12.733333333333333,191,YOLO26
+P2,4,P2.4,novice,capsulorhexis forceps,12113.357985592584,107.13333333333334,1607,YOLO26
+P2,4,P2.4,novice,cystotome needle,8030.452671126888,23.2,348,YOLO26
+P2,4,P2.4,novice,diamond keratome iso,2778.7874750719516,14.466666666666667,217,YOLO26
+P2,4,P2.4,novice,diamond keratome straight,99.55115331812628,2.466666666666667,37,YOLO26
+P2,4,P2.4,novice,forceps,1033.6327772530803,14.466666666666667,217,YOLO26
+P2,4,P2.4,novice,viscoelastic cannula,836.7525137930978,9.666666666666666,145,YOLO26
+P2,5,P2.5,novice,capsulorhexis forceps,5049.764278473178,50.333333333333336,755,YOLO26
+P2,5,P2.5,novice,cystotome needle,4012.118325461604,28.866666666666667,433,YOLO26
+P2,5,P2.5,novice,diamond keratome iso,2002.1419204129832,11.666666666666666,175,YOLO26
+P2,5,P2.5,novice,diamond keratome straight,300.3497232949138,4.266666666666667,64,YOLO26
+P2,5,P2.5,novice,forceps,2769.3695780623234,17.2,258,YOLO26
+P2,5,P2.5,novice,viscoelastic cannula,1359.5877606562235,12.866666666666667,193,YOLO26
+P3,1,P3.1,novice,capsulorhexis forceps,14588.73382582777,74.53333333333333,1118,YOLO26
+P3,1,P3.1,novice,cystotome needle,4474.248226765915,21.933333333333334,329,YOLO26
+P3,1,P3.1,novice,diamond keratome iso,2847.854789471831,20.933333333333334,314,YOLO26
+P3,1,P3.1,novice,diamond keratome straight,97.7578586042813,2.3333333333333335,35,YOLO26
+P3,1,P3.1,novice,forceps,1367.655987860255,11.533333333333333,173,YOLO26
+P3,1,P3.1,novice,viscoelastic cannula,827.2410827583387,11.0,165,YOLO26
+P3,2,P3.2,novice,capsulorhexis forceps,7264.6758778304475,55.86666666666667,838,YOLO26
+P3,2,P3.2,novice,cystotome needle,3057.5080502457727,21.0,315,YOLO26
+P3,2,P3.2,novice,diamond keratome iso,2199.5047299494504,8.933333333333334,134,YOLO26
+P3,2,P3.2,novice,diamond keratome straight,524.6174097818135,9.266666666666667,139,YOLO26
+P3,2,P3.2,novice,forceps,5341.273670357281,26.266666666666666,394,YOLO26
+P3,2,P3.2,novice,viscoelastic cannula,838.6912143222526,9.733333333333333,146,YOLO26
+P3,3,P3.3,novice,capsulorhexis forceps,10313.887520804117,60.46666666666667,907,YOLO26
+P3,3,P3.3,novice,cystotome needle,1616.6059603453405,11.0,165,YOLO26
+P3,3,P3.3,novice,diamond keratome iso,1323.1701016972274,8.066666666666666,121,YOLO26
+P3,3,P3.3,novice,diamond keratome straight,247.2063705456191,3.066666666666667,46,YOLO26
+P3,3,P3.3,novice,forceps,667.9302745964831,3.4,51,YOLO26
+P3,3,P3.3,novice,viscoelastic cannula,1021.3194209702091,7.6,114,YOLO26
+P3,4,P3.4,novice,capsulorhexis forceps,7830.931772964963,63.13333333333333,947,YOLO26
+P3,4,P3.4,novice,cystotome needle,1397.709990065036,14.0,210,YOLO26
+P3,4,P3.4,novice,diamond keratome iso,2324.805131667292,10.4,156,YOLO26
+P3,4,P3.4,novice,diamond keratome straight,208.90184608258105,3.8666666666666667,58,YOLO26
+P3,4,P3.4,novice,forceps,2711.555277667176,12.066666666666666,181,YOLO26
+P3,4,P3.4,novice,viscoelastic cannula,903.7698762542614,7.4,111,YOLO26
+P3,5,P3.5,novice,capsulorhexis forceps,4978.092337137995,44.53333333333333,668,YOLO26
+P3,5,P3.5,novice,cystotome needle,1473.6407086086624,8.333333333333334,125,YOLO26
+P3,5,P3.5,novice,diamond keratome iso,2194.137178844351,9.533333333333333,143,YOLO26
+P3,5,P3.5,novice,diamond keratome straight,159.01703914298994,2.933333333333333,44,YOLO26
+P3,5,P3.5,novice,forceps,2489.912441918069,9.4,141,YOLO26
+P3,5,P3.5,novice,viscoelastic cannula,779.8719338864189,8.533333333333333,128,YOLO26
+P4,1,P4.1,novice,capsulorhexis forceps,16786.019021336797,62.46666666666667,937,YOLO26
+P4,1,P4.1,novice,cystotome needle,6364.402285835841,14.0,210,YOLO26
+P4,1,P4.1,novice,diamond keratome iso,2326.844574609281,8.866666666666667,133,YOLO26
+P4,1,P4.1,novice,diamond keratome straight,0.0,0.06666666666666667,1,YOLO26
+P4,1,P4.1,novice,forceps,1944.0939987163626,13.933333333333334,209,YOLO26
+P4,1,P4.1,novice,viscoelastic cannula,3201.5674547963686,16.066666666666666,241,YOLO26
+P4,2,P4.2,novice,capsulorhexis forceps,10473.845123596206,78.0,1170,YOLO26
+P4,2,P4.2,novice,cystotome needle,9372.019944175714,36.86666666666667,553,YOLO26
+P4,2,P4.2,novice,diamond keratome iso,574.3308422151506,5.266666666666667,79,YOLO26
+P4,2,P4.2,novice,diamond keratome straight,0.0,0.0,0,YOLO26
+P4,2,P4.2,novice,forceps,1443.8581383562498,13.066666666666666,196,YOLO26
+P4,2,P4.2,novice,viscoelastic cannula,1328.9966081330388,7.333333333333333,110,YOLO26
+P4,3,P4.3,novice,capsulorhexis forceps,10055.308970801862,65.33333333333333,980,YOLO26
+P4,3,P4.3,novice,cystotome needle,3703.642833378372,24.6,369,YOLO26
+P4,3,P4.3,novice,diamond keratome iso,740.195238899989,7.0,105,YOLO26
+P4,3,P4.3,novice,diamond keratome straight,40.22881918570846,0.2,3,YOLO26
+P4,3,P4.3,novice,forceps,2068.0396316284778,9.8,147,YOLO26
+P4,3,P4.3,novice,viscoelastic cannula,2079.409358330276,9.2,138,YOLO26
+P4,4,P4.4,novice,capsulorhexis forceps,10331.811027175992,56.93333333333333,854,YOLO26
+P4,4,P4.4,novice,cystotome needle,3534.8520737147173,14.333333333333334,215,YOLO26
+P4,4,P4.4,novice,diamond keratome iso,2264.426082247088,12.0,180,YOLO26
+P4,4,P4.4,novice,diamond keratome straight,619.2099456191361,6.0,90,YOLO26
+P4,4,P4.4,novice,forceps,1363.671791213951,5.133333333333334,77,YOLO26
+P4,4,P4.4,novice,viscoelastic cannula,1084.3520403406833,4.933333333333334,74,YOLO26
+P4,5,P4.5,novice,capsulorhexis forceps,10617.56480169387,49.6,744,YOLO26
+P4,5,P4.5,novice,cystotome needle,1868.732841043423,4.8,72,YOLO26
+P4,5,P4.5,novice,diamond keratome iso,1944.626684883997,8.333333333333334,125,YOLO26
+P4,5,P4.5,novice,diamond keratome straight,249.66419341703178,2.7333333333333334,41,YOLO26
+P4,5,P4.5,novice,forceps,2042.0333404115863,9.533333333333333,143,YOLO26
+P4,5,P4.5,novice,viscoelastic cannula,708.8097323392972,2.933333333333333,44,YOLO26
+P5,1,P5.1,novice,capsulorhexis forceps,10403.057178760942,57.733333333333334,866,YOLO26
+P5,1,P5.1,novice,cystotome needle,1539.4921085564765,9.333333333333334,140,YOLO26
+P5,1,P5.1,novice,diamond keratome iso,436.9487467121421,5.533333333333333,83,YOLO26
+P5,1,P5.1,novice,diamond keratome straight,267.6295448868665,0.8666666666666667,13,YOLO26
+P5,1,P5.1,novice,forceps,2321.9060324662487,21.8,327,YOLO26
+P5,1,P5.1,novice,viscoelastic cannula,2394.1521111649236,13.4,201,YOLO26
+P5,2,P5.2,novice,capsulorhexis forceps,5468.581352205017,30.866666666666667,463,YOLO26
+P5,2,P5.2,novice,cystotome needle,1499.4189195679219,4.8,72,YOLO26
+P5,2,P5.2,novice,diamond keratome iso,3848.402961188296,8.2,123,YOLO26
+P5,2,P5.2,novice,diamond keratome straight,321.9668248607845,0.4666666666666667,7,YOLO26
+P5,2,P5.2,novice,forceps,7954.392406378045,13.2,198,YOLO26
+P5,2,P5.2,novice,viscoelastic cannula,1159.401496931912,11.266666666666667,169,YOLO26
+P5,3,P5.3,novice,capsulorhexis forceps,5506.111060947516,29.2,438,YOLO26
+P5,3,P5.3,novice,cystotome needle,893.4998632151837,5.533333333333333,83,YOLO26
+P5,3,P5.3,novice,diamond keratome iso,9.517147640331036,0.4666666666666667,7,YOLO26
+P5,3,P5.3,novice,diamond keratome straight,0.0,0.06666666666666667,1,YOLO26
+P5,3,P5.3,novice,forceps,3978.9594024109697,18.6,279,YOLO26
+P5,3,P5.3,novice,viscoelastic cannula,1175.5070010357358,8.866666666666667,133,YOLO26
+P5,4,P5.4,novice,capsulorhexis forceps,5877.174263219192,51.06666666666667,766,YOLO26
+P5,4,P5.4,novice,cystotome needle,768.8164328709247,7.866666666666666,118,YOLO26
+P5,4,P5.4,novice,diamond keratome iso,608.1454495431003,4.8,72,YOLO26
+P5,4,P5.4,novice,diamond keratome straight,271.53605605605156,1.5333333333333334,23,YOLO26
+P5,4,P5.4,novice,forceps,5753.971250468649,12.266666666666667,184,YOLO26
+P5,4,P5.4,novice,viscoelastic cannula,1146.567139712786,10.733333333333333,161,YOLO26
+P5,5,P5.5,novice,capsulorhexis forceps,7043.957811497026,44.8,672,YOLO26
+P5,5,P5.5,novice,cystotome needle,381.3628952030117,3.533333333333333,53,YOLO26
+P5,5,P5.5,novice,diamond keratome iso,387.994233153584,6.266666666666667,94,YOLO26
+P5,5,P5.5,novice,diamond keratome straight,268.0146817759329,1.6,24,YOLO26
+P5,5,P5.5,novice,forceps,2044.6193936741174,10.266666666666667,154,YOLO26
+P5,5,P5.5,novice,viscoelastic cannula,1463.8395133442616,9.266666666666667,139,YOLO26

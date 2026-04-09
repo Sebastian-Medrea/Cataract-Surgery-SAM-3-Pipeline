@@ -1,0 +1,337 @@
+method,tool,metric,criterion,spearman_rho,p_value,significant
+SAM3_simultaneous,capsulorhexis forceps,path_length,(4),-0.057781270440128034,0.7838199000416238,False
+SAM3_simultaneous,capsulorhexis forceps,path_length,(5),-0.3755338080994053,0.06432641565926822,False
+SAM3_simultaneous,capsulorhexis forceps,path_length,(6),-0.46746762445841017,0.018461718999318803,True
+SAM3_simultaneous,capsulorhexis forceps,path_length,(7),-0.5809748080009386,0.0023237426950777685,True
+SAM3_simultaneous,capsulorhexis forceps,path_length,(14),-0.7106387759941715,6.868795224562274e-05,True
+SAM3_simultaneous,capsulorhexis forceps,path_length,(15),-0.4905725094074283,0.012781550343825377,True
+SAM3_simultaneous,capsulorhexis forceps,path_length,(16),-0.3438408989284533,0.0923853913175373,False
+SAM3_simultaneous,capsulorhexis forceps,path_length,(17),-0.4348789876788852,0.02981762922964051,True
+SAM3_simultaneous,capsulorhexis forceps,usage_time,(4),-0.09245003270420483,0.6602789385659686,False
+SAM3_simultaneous,capsulorhexis forceps,usage_time,(5),-0.31749676502949725,0.12197428530674229,False
+SAM3_simultaneous,capsulorhexis forceps,usage_time,(6),-0.4896149907610083,0.012984143912219219,True
+SAM3_simultaneous,capsulorhexis forceps,usage_time,(7),-0.5322920159177575,0.006162172671618392,True
+SAM3_simultaneous,capsulorhexis forceps,usage_time,(14),-0.6101907144020335,0.0011996706708128867,True
+SAM3_simultaneous,capsulorhexis forceps,usage_time,(15),-0.3988691288234094,0.048258058564646655,True
+SAM3_simultaneous,capsulorhexis forceps,usage_time,(16),-0.43285096080612123,0.03067696340399615,True
+SAM3_simultaneous,capsulorhexis forceps,usage_time,(17),-0.5839685551547423,0.002177668030294706,True
+SAM3_simultaneous,cystotome needle,path_length,(4),-0.28890635220064015,0.16131730964054208,False
+SAM3_simultaneous,cystotome needle,path_length,(5),-0.3960174703593729,0.050032979483471386,False
+SAM3_simultaneous,cystotome needle,path_length,(6),-0.5908600938585997,0.0018709100138854951,True
+SAM3_simultaneous,cystotome needle,path_length,(7),-0.7165624190094679,5.59400131586746e-05,True
+SAM3_simultaneous,cystotome needle,path_length,(14),-0.7581536267058053,1.1307893304947102e-05,True
+SAM3_simultaneous,cystotome needle,path_length,(15),-0.6070276874057178,0.0012926510712346845,True
+SAM3_simultaneous,cystotome needle,path_length,(16),-0.3555884197854044,0.08108062056430976,False
+SAM3_simultaneous,cystotome needle,path_length,(17),-0.5278018482940315,0.006694756409330698,True
+SAM3_simultaneous,cystotome needle,usage_time,(4),-0.4970145146915898,0.01148525264448707,True
+SAM3_simultaneous,cystotome needle,usage_time,(5),-0.2492658311764621,0.22951756571423668,False
+SAM3_simultaneous,cystotome needle,usage_time,(6),-0.6487262087570747,0.0004518445837265914,True
+SAM3_simultaneous,cystotome needle,usage_time,(7),-0.5307847512264551,0.006336836159272742,True
+SAM3_simultaneous,cystotome needle,usage_time,(14),-0.565702241597966,0.0032060116956040955,True
+SAM3_simultaneous,cystotome needle,usage_time,(15),-0.30641314516979284,0.13629440181781624,False
+SAM3_simultaneous,cystotome needle,usage_time,(16),-0.2734083573736112,0.1860290941782331,False
+SAM3_simultaneous,cystotome needle,usage_time,(17),-0.40109090765071387,0.0469096831574077,True
+SAM3_simultaneous,diamond keratome iso,path_length,(4),-0.2195688276724865,0.29161913755955604,False
+SAM3_simultaneous,diamond keratome iso,path_length,(5),-0.047795211939924316,0.8205242985767393,False
+SAM3_simultaneous,diamond keratome iso,path_length,(6),-0.3068992187645738,0.13564211029243267,False
+SAM3_simultaneous,diamond keratome iso,path_length,(7),-0.03178463284769678,0.8801140893545378,False
+SAM3_simultaneous,diamond keratome iso,path_length,(14),-0.16838596217105295,0.42105300643250276,False
+SAM3_simultaneous,diamond keratome iso,path_length,(15),-0.013796083804675403,0.9478143081781317,False
+SAM3_simultaneous,diamond keratome iso,path_length,(16),-0.2959471600501142,0.15089208414740407,False
+SAM3_simultaneous,diamond keratome iso,path_length,(17),-0.3415431365721158,0.09472810517264757,False
+SAM3_simultaneous,diamond keratome iso,usage_time,(4),-0.4046245478463584,0.04482623567332221,True
+SAM3_simultaneous,diamond keratome iso,usage_time,(5),-0.22199173901355632,0.28619231719459215,False
+SAM3_simultaneous,diamond keratome iso,usage_time,(6),-0.4395570208129324,0.027908901800378375,True
+SAM3_simultaneous,diamond keratome iso,usage_time,(7),-0.31595618784293783,0.1238961205028598,False
+SAM3_simultaneous,diamond keratome iso,usage_time,(14),-0.4111199324329412,0.04118692244709905,True
+SAM3_simultaneous,diamond keratome iso,usage_time,(15),-0.1976846593319932,0.34353040231963733,False
+SAM3_simultaneous,diamond keratome iso,usage_time,(16),-0.41493747383396856,0.03915947105177206,True
+SAM3_simultaneous,diamond keratome iso,usage_time,(17),-0.4912346672980015,0.01264298063891986,True
+SAM3_simultaneous,diamond keratome straight,path_length,(4),0.12711879496828168,0.5448344489665293,False
+SAM3_simultaneous,diamond keratome straight,path_length,(5),-0.14338563581977296,0.49412008328779766,False
+SAM3_simultaneous,diamond keratome straight,path_length,(6),0.2653729069472024,0.19981875201267116,False
+SAM3_simultaneous,diamond keratome straight,path_length,(7),0.1794423575958578,0.39074028912795666,False
+SAM3_simultaneous,diamond keratome straight,path_length,(14),-0.11170157886594603,0.5950149463651078,False
+SAM3_simultaneous,diamond keratome straight,path_length,(15),-0.08318226999877816,0.6926181548810831,False
+SAM3_simultaneous,diamond keratome straight,path_length,(16),-0.10346854908622313,0.6225912127253234,False
+SAM3_simultaneous,diamond keratome straight,path_length,(17),0.269682791029736,0.19233852841475985,False
+SAM3_simultaneous,diamond keratome straight,usage_time,(4),0.22543367665725683,0.2785932844450159,False
+SAM3_simultaneous,diamond keratome straight,usage_time,(5),-0.09904246817527897,0.6376262219804891,False
+SAM3_simultaneous,diamond keratome straight,usage_time,(6),0.13669392501428276,0.5146929179796211,False
+SAM3_simultaneous,diamond keratome straight,usage_time,(7),0.12577873719862173,0.5491170348080964,False
+SAM3_simultaneous,diamond keratome straight,usage_time,(14),-0.20764475289209405,0.31925931165506144,False
+SAM3_simultaneous,diamond keratome straight,usage_time,(15),-0.0278057477705165,0.895034827610632,False
+SAM3_simultaneous,diamond keratome straight,usage_time,(16),-0.20340072246763166,0.329470103569107,False
+SAM3_simultaneous,diamond keratome straight,usage_time,(17),0.22082836809990058,0.28879002932497266,False
+SAM3_simultaneous,forceps,path_length,(4),-0.011556254088025604,0.9562781039242625,False
+SAM3_simultaneous,forceps,path_length,(5),-0.15362746694975674,0.4634479164231439,False
+SAM3_simultaneous,forceps,path_length,(6),0.05932330259624495,0.7781897896600711,False
+SAM3_simultaneous,forceps,path_length,(7),0.1746143121000051,0.40382176088216415,False
+SAM3_simultaneous,forceps,path_length,(14),0.23924144130243663,0.2494079650413989,False
+SAM3_simultaneous,forceps,path_length,(15),0.33151177848293545,0.10547826521716876,False
+SAM3_simultaneous,forceps,path_length,(16),-0.11114962041576809,0.5968473459886295,False
+SAM3_simultaneous,forceps,path_length,(17),0.026431391463863866,0.9001969547951959,False
+SAM3_simultaneous,forceps,usage_time,(4),-0.20801257358446093,0.3183835663684244,False
+SAM3_simultaneous,forceps,usage_time,(5),-0.4574684571392756,0.021487951155854584,True
+SAM3_simultaneous,forceps,usage_time,(6),-0.07870224811101828,0.7084446179722543,False
+SAM3_simultaneous,forceps,usage_time,(7),-0.11587309190046423,0.5812445692321606,False
+SAM3_simultaneous,forceps,usage_time,(14),-0.2150672190105528,0.30187189502302064,False
+SAM3_simultaneous,forceps,usage_time,(15),-0.030432537804431038,0.8851802186621199,False
+SAM3_simultaneous,forceps,usage_time,(16),0.07726254102071684,0.7135560498084824,False
+SAM3_simultaneous,forceps,usage_time,(17),0.1784118923810811,0.39351194326994365,False
+SAM3_simultaneous,viscoelastic cannula,path_length,(4),-0.28890635220064015,0.16131730964054208,False
+SAM3_simultaneous,viscoelastic cannula,path_length,(5),-0.4574684571392756,0.021487951155854584,True
+SAM3_simultaneous,viscoelastic cannula,path_length,(6),-0.1605684056938363,0.4432391727072002,False
+SAM3_simultaneous,viscoelastic cannula,path_length,(7),-0.15650914149055756,0.4550002763260623,False
+SAM3_simultaneous,viscoelastic cannula,path_length,(14),-0.15546525715297713,0.4580510405334595,False
+SAM3_simultaneous,viscoelastic cannula,path_length,(15),-0.22317194389916092,0.28357211503582336,False
+SAM3_simultaneous,viscoelastic cannula,path_length,(16),-0.013103004032753147,0.9504327502015215,False
+SAM3_simultaneous,viscoelastic cannula,path_length,(17),0.058644649810447945,0.7806662970126295,False
+SAM3_simultaneous,viscoelastic cannula,usage_time,(4),-0.2889619271462731,0.16123308488813298,False
+SAM3_simultaneous,viscoelastic cannula,usage_time,(5),-0.22194902775986353,0.2862874266486975,False
+SAM3_simultaneous,viscoelastic cannula,usage_time,(6),-0.2559304006498947,0.2168933419721812,False
+SAM3_simultaneous,viscoelastic cannula,usage_time,(7),-0.24587527141725857,0.23612346332922352,False
+SAM3_simultaneous,viscoelastic cannula,usage_time,(14),-0.2530444072586333,0.22230156786997532,False
+SAM3_simultaneous,viscoelastic cannula,usage_time,(15),-0.21103951720303613,0.31123254576956094,False
+SAM3_simultaneous,viscoelastic cannula,usage_time,(16),0.03615317122295685,0.8637779639232702,False
+SAM3_simultaneous,viscoelastic cannula,usage_time,(17),0.054525231524092936,0.7957424490547464,False
+SAM3_simultaneous,ALL_TOOLS,total_path_length,(4),-0.34668762264076824,0.08954348972847302,False
+SAM3_simultaneous,ALL_TOOLS,total_path_length,(5),-0.43357085116931343,0.030369683795327257,True
+SAM3_simultaneous,ALL_TOOLS,total_path_length,(6),-0.7019924140555652,9.187821270435426e-05,True
+SAM3_simultaneous,ALL_TOOLS,total_path_length,(7),-0.5898262247433352,0.0019144233358011915,True
+SAM3_simultaneous,ALL_TOOLS,total_path_length,(14),-0.6439512662234576,0.0005136264764476043,True
+SAM3_simultaneous,ALL_TOOLS,total_path_length,(15),-0.4418804489203387,0.026998102445690807,True
+SAM3_simultaneous,ALL_TOOLS,total_path_length,(16),-0.46312341839903365,0.019730667946467884,True
+SAM3_simultaneous,ALL_TOOLS,total_path_length,(17),-0.5744697738474162,0.002670193480361213,True
+SAM3_simultaneous,ALL_TOOLS,total_usage_time,(4),-0.42758140125694744,0.033002782884426915,True
+SAM3_simultaneous,ALL_TOOLS,total_usage_time,(5),-0.3277385961594811,0.10974694258635373,False
+SAM3_simultaneous,ALL_TOOLS,total_usage_time,(6),-0.6501833964548447,0.0004343257598404144,True
+SAM3_simultaneous,ALL_TOOLS,total_usage_time,(7),-0.5745374140064685,0.0026663766328101505,True
+SAM3_simultaneous,ALL_TOOLS,total_usage_time,(14),-0.6618735344743368,0.00031387240388265413,True
+SAM3_simultaneous,ALL_TOOLS,total_usage_time,(15),-0.4499957923348536,0.024002793532365018,True
+SAM3_simultaneous,ALL_TOOLS,total_usage_time,(16),-0.3723060456202963,0.06683948655548991,False
+SAM3_simultaneous,ALL_TOOLS,total_usage_time,(17),-0.4055566627736612,0.044288975603679594,True
+SAM3_sequential,capsulorhexis forceps,path_length,(4),0.15309310892394862,0.4650232961601233,False
+SAM3_sequential,capsulorhexis forceps,path_length,(5),0.12562972690740148,0.5495942005062286,False
+SAM3_sequential,capsulorhexis forceps,path_length,(6),0.24741102165623058,0.23311596008241672,False
+SAM3_sequential,capsulorhexis forceps,path_length,(7),0.2220840795370942,0.28598676131979495,False
+SAM3_sequential,capsulorhexis forceps,path_length,(14),0.21472796736775718,0.3026535221461688,False
+SAM3_sequential,capsulorhexis forceps,path_length,(15),-0.0447954827407028,0.8316257480613787,False
+SAM3_sequential,capsulorhexis forceps,path_length,(16),0.14964129083767916,0.4752664501352701,False
+SAM3_sequential,capsulorhexis forceps,path_length,(17),0.24316221747202577,0.24149882689642757,False
+SAM3_sequential,capsulorhexis forceps,usage_time,(4),0.15309310892394862,0.4650232961601233,False
+SAM3_sequential,capsulorhexis forceps,usage_time,(5),0.12562972690740148,0.5495942005062286,False
+SAM3_sequential,capsulorhexis forceps,usage_time,(6),0.24741102165623058,0.23311596008241672,False
+SAM3_sequential,capsulorhexis forceps,usage_time,(7),0.2220840795370942,0.28598676131979495,False
+SAM3_sequential,capsulorhexis forceps,usage_time,(14),0.21472796736775718,0.3026535221461688,False
+SAM3_sequential,capsulorhexis forceps,usage_time,(15),-0.0447954827407028,0.8316257480613787,False
+SAM3_sequential,capsulorhexis forceps,usage_time,(16),0.14964129083767916,0.4752664501352701,False
+SAM3_sequential,capsulorhexis forceps,usage_time,(17),0.24316221747202577,0.24149882689642757,False
+SAM3_sequential,cystotome needle,path_length,(4),-0.36980013081681934,0.06884199120916286,False
+SAM3_sequential,cystotome needle,path_length,(5),-0.3345664835794702,0.10211343018213281,False
+SAM3_sequential,cystotome needle,path_length,(6),-0.6268495641003216,0.0007990265740295741,True
+SAM3_sequential,cystotome needle,path_length,(7),-0.6574188616852726,0.00035580164192684983,True
+SAM3_sequential,cystotome needle,path_length,(14),-0.7139731514827072,6.122970092892474e-05,True
+SAM3_sequential,cystotome needle,path_length,(15),-0.5189762113582307,0.007854383463755962,True
+SAM3_sequential,cystotome needle,path_length,(16),-0.34745552073059205,0.08878825929629573,False
+SAM3_sequential,cystotome needle,path_length,(17),-0.5364746486181119,0.005698511145726268,True
+SAM3_sequential,cystotome needle,usage_time,(4),-0.4738975605198879,0.016706427236381927,True
+SAM3_sequential,cystotome needle,usage_time,(5),-0.2492658311764621,0.22951756571423668,False
+SAM3_sequential,cystotome needle,usage_time,(6),-0.6455616906655768,0.0004920173133173167,True
+SAM3_sequential,cystotome needle,usage_time,(7),-0.5323944093044732,0.00615045526854184,True
+SAM3_sequential,cystotome needle,usage_time,(14),-0.5606997162485368,0.0035507552413700538,True
+SAM3_sequential,cystotome needle,usage_time,(15),-0.29180271705573646,0.15696899627478184,False
+SAM3_sequential,cystotome needle,usage_time,(16),-0.24810113751754145,0.23177277788007214,False
+SAM3_sequential,cystotome needle,usage_time,(17),-0.38580732002653634,0.056809638534324025,False
+SAM3_sequential,diamond keratome iso,path_length,(4),-0.323575114464717,0.11460348844958426,False
+SAM3_sequential,diamond keratome iso,path_length,(5),0.08534859274986484,0.6850094402209758,False
+SAM3_sequential,diamond keratome iso,path_length,(6),-0.2883112506177504,0.1622211394992751,False
+SAM3_sequential,diamond keratome iso,path_length,(7),-0.09414688716912718,0.6544194327541759,False
+SAM3_sequential,diamond keratome iso,path_length,(14),-0.21173284352201707,0.30960862058186367,False
+SAM3_sequential,diamond keratome iso,path_length,(15),-0.004869206048708966,0.9815707786486693,False
+SAM3_sequential,diamond keratome iso,path_length,(16),-0.20738892589771363,0.31986927711243585,False
+SAM3_sequential,diamond keratome iso,path_length,(17),-0.2874413821695196,0.1635486847445355,False
+SAM3_sequential,diamond keratome iso,usage_time,(4),-0.4393066519474748,0.02800850433606103,True
+SAM3_sequential,diamond keratome iso,usage_time,(5),-0.054644120372567696,0.7953063160320716,False
+SAM3_sequential,diamond keratome iso,usage_time,(6),-0.43045728050807414,0.0317166288893933,True
+SAM3_sequential,diamond keratome iso,usage_time,(7),-0.2986490336044075,0.14702158463471438,False
+SAM3_sequential,diamond keratome iso,usage_time,(14),-0.36817332691509846,0.0701663893933018,False
+SAM3_sequential,diamond keratome iso,usage_time,(15),-0.16236933004681167,0.4380736919307618,False
+SAM3_sequential,diamond keratome iso,usage_time,(16),-0.38284535984463114,0.058903067102855894,False
+SAM3_sequential,diamond keratome iso,usage_time,(17),-0.4714034948587214,0.01737030417680575,True
+SAM3_sequential,diamond keratome straight,path_length,(4),0.09245003270420483,0.6602789385659686,False
+SAM3_sequential,diamond keratome straight,path_length,(5),-0.1263159172698,0.5473984437190899,False
+SAM3_sequential,diamond keratome straight,path_length,(6),0.15740449622203656,0.4523921235485614,False
+SAM3_sequential,diamond keratome straight,path_length,(7),0.11426374340184665,0.5865406175090038,False
+SAM3_sequential,diamond keratome straight,path_length,(14),-0.15921642957757978,0.44713819733687316,False
+SAM3_sequential,diamond keratome straight,path_length,(15),-0.07182078921845725,0.732983010504304,False
+SAM3_sequential,diamond keratome straight,path_length,(16),-0.20784075362298093,0.318792470111112,False
+SAM3_sequential,diamond keratome straight,path_length,(17),0.16643516812401776,0.4265315866822826,False
+SAM3_sequential,diamond keratome straight,usage_time,(4),0.2542864958887204,0.21996301448507394,False
+SAM3_sequential,diamond keratome straight,usage_time,(5),-0.06487740811442165,0.758002950971247,False
+SAM3_sequential,diamond keratome straight,usage_time,(6),0.15624808076771007,0.4557622264305682,False
+SAM3_sequential,diamond keratome straight,usage_time,(7),0.1342052422547557,0.5224484884933553,False
+SAM3_sequential,diamond keratome straight,usage_time,(14),-0.17279556311153788,0.4088122721743488,False
+SAM3_sequential,diamond keratome straight,usage_time,(15),-0.0032467618031236326,0.9877109226980549,False
+SAM3_sequential,diamond keratome straight,usage_time,(16),-0.16178544122273195,0.43974487513907345,False
+SAM3_sequential,diamond keratome straight,usage_time,(17),0.2505269160557755,0.22709218607012388,False
+SAM3_sequential,forceps,path_length,(4),-0.2195688276724865,0.29161913755955604,False
+SAM3_sequential,forceps,path_length,(5),-0.21166451001966483,0.3097684404941511,False
+SAM3_sequential,forceps,path_length,(6),0.012260149203223955,0.9536177100213844,False
+SAM3_sequential,forceps,path_length,(7),0.20157089945184922,0.33393269049322705,False
+SAM3_sequential,forceps,path_length,(14),0.13879337971029862,0.508194031915966,False
+SAM3_sequential,forceps,path_length,(15),0.36640775516534974,0.0716257306606434,False
+SAM3_sequential,forceps,path_length,(16),-0.046086427977269695,0.8268442244884543,False
+SAM3_sequential,forceps,path_length,(17),0.10861649929681556,0.6052873755522635,False
+SAM3_sequential,forceps,usage_time,(4),-0.19071487191654027,0.36114997614271754,False
+SAM3_sequential,forceps,usage_time,(5),-0.4165812521031284,0.03831120041942793,True
+SAM3_sequential,forceps,usage_time,(6),-0.07693734609954331,0.7147122703591811,False
+SAM3_sequential,forceps,usage_time,(7),-0.13058351157921505,0.5338341514213379,False
+SAM3_sequential,forceps,usage_time,(14),-0.19509848862774365,0.35000747274041166,False
+SAM3_sequential,forceps,usage_time,(15),-0.01968349343143702,0.9255956407031479,False
+SAM3_sequential,forceps,usage_time,(16),0.12427652607891419,0.5539361718151085,False
+SAM3_sequential,forceps,usage_time,(17),0.20323040840798276,0.329883938332426,False
+SAM3_sequential,viscoelastic cannula,path_length,(4),-0.24268133584853777,0.2424599098190516,False
+SAM3_sequential,viscoelastic cannula,path_length,(5),-0.40967324519935133,0.04197655533180343,True
+SAM3_sequential,viscoelastic cannula,path_length,(6),-0.3155999698120231,0.12434361422966696,False
+SAM3_sequential,viscoelastic cannula,path_length,(7),-0.3246860595960925,0.11329246326616349,False
+SAM3_sequential,viscoelastic cannula,path_length,(14),-0.2496613647041107,0.22875501354117367,False
+SAM3_sequential,viscoelastic cannula,path_length,(15),-0.3789865374578478,0.06171938341560807,False
+SAM3_sequential,viscoelastic cannula,path_length,(16),-0.2191364467546647,0.29259431957815396,False
+SAM3_sequential,viscoelastic cannula,path_length,(17),-0.18171581631406405,0.38466462757551945,False
+SAM3_sequential,viscoelastic cannula,usage_time,(4),-0.2600657344316458,0.20929899353144288,False
+SAM3_sequential,viscoelastic cannula,usage_time,(5),-0.24414393053584985,0.23954456572132096,False
+SAM3_sequential,viscoelastic cannula,usage_time,(6),-0.2515791882740851,0.22508149980259676,False
+SAM3_sequential,viscoelastic cannula,usage_time,(7),-0.21951712038971286,0.2917356495631059,False
+SAM3_sequential,viscoelastic cannula,usage_time,(14),-0.23365962152959469,0.2609560098621326,False
+SAM3_sequential,viscoelastic cannula,usage_time,(15),-0.19379109512394183,0.35330915767392246,False
+SAM3_sequential,viscoelastic cannula,usage_time,(16),0.0345714699819525,0.8696868070828366,False
+SAM3_sequential,viscoelastic cannula,usage_time,(17),0.0553513713956701,0.79271306699373,False
+SAM3_sequential,ALL_TOOLS,total_path_length,(4),-0.42758140125694744,0.033002782884426915,True
+SAM3_sequential,ALL_TOOLS,total_path_length,(5),-0.344808314709454,0.09141213883995888,False
+SAM3_sequential,ALL_TOOLS,total_path_length,(6),-0.5204631081110557,0.007648042865271202,True
+SAM3_sequential,ALL_TOOLS,total_path_length,(7),-0.28244066150738156,0.1713288281050508,False
+SAM3_sequential,ALL_TOOLS,total_path_length,(14),-0.4247160778522351,0.03432527923729181,True
+SAM3_sequential,ALL_TOOLS,total_path_length,(15),-0.2901235270689092,0.15947974659394173,False
+SAM3_sequential,ALL_TOOLS,total_path_length,(16),-0.4644789015748357,0.019327332589303203,True
+SAM3_sequential,ALL_TOOLS,total_path_length,(17),-0.3336963172312813,0.1030637123677071,False
+SAM3_sequential,ALL_TOOLS,total_usage_time,(4),-0.387208982376006,0.05583933373088665,False
+SAM3_sequential,ALL_TOOLS,total_usage_time,(5),-0.3346308418533327,0.10204340568712811,False
+SAM3_sequential,ALL_TOOLS,total_usage_time,(6),-0.4123762637983234,0.04051075082278862,True
+SAM3_sequential,ALL_TOOLS,total_usage_time,(7),-0.3358149165265176,0.10076143522787476,False
+SAM3_sequential,ALL_TOOLS,total_usage_time,(14),-0.44835133444260317,0.024586953644497287,True
+SAM3_sequential,ALL_TOOLS,total_usage_time,(15),-0.413759207285568,0.039776614050762285,True
+SAM3_sequential,ALL_TOOLS,total_usage_time,(16),-0.23138029582692388,0.2657691939650427,False
+SAM3_sequential,ALL_TOOLS,total_usage_time,(17),-0.09211459568085396,0.661439573585887,False
+YOLO26,capsulorhexis forceps,path_length,(4),-0.03466876226407682,0.8693231479734906,False
+YOLO26,capsulorhexis forceps,path_length,(5),-0.16386929807974054,0.43379620704614374,False
+YOLO26,capsulorhexis forceps,path_length,(6),-0.1581954735899865,0.4500945943490165,False
+YOLO26,capsulorhexis forceps,path_length,(7),-0.22007840718595115,0.2904724631653222,False
+YOLO26,capsulorhexis forceps,path_length,(14),-0.4943211661754179,0.012013321405985303,True
+YOLO26,capsulorhexis forceps,path_length,(15),-0.35261167136067423,0.08384057371373066,False
+YOLO26,capsulorhexis forceps,path_length,(16),-0.3664322851918208,0.07160529765090687,False
+YOLO26,capsulorhexis forceps,path_length,(17),-0.48650279913174427,0.013661000019525901,True
+YOLO26,capsulorhexis forceps,usage_time,(4),-0.11556254088025607,0.5822649044039645,False
+YOLO26,capsulorhexis forceps,usage_time,(5),-0.11948802984981079,0.5694253374073042,False
+YOLO26,capsulorhexis forceps,usage_time,(6),-0.23847967643690468,0.2509639869531239,False
+YOLO26,capsulorhexis forceps,usage_time,(7),-0.3488262870753558,0.08745201985104765,False
+YOLO26,capsulorhexis forceps,usage_time,(14),-0.5064082773213598,0.00979140628334253,True
+YOLO26,capsulorhexis forceps,usage_time,(15),-0.3201502977026145,0.11871517439340802,False
+YOLO26,capsulorhexis forceps,usage_time,(16),-0.3018209204785897,0.1425687756862212,False
+YOLO26,capsulorhexis forceps,usage_time,(17),-0.4402478640699825,0.02763554427120381,True
+YOLO26,cystotome needle,path_length,(4),-0.32482686039399433,0.11312709465482441,False
+YOLO26,cystotome needle,path_length,(5),-0.020562903028816623,0.9222810582373554,False
+YOLO26,cystotome needle,path_length,(6),-0.5105659537687356,0.009110967944844483,True
+YOLO26,cystotome needle,path_length,(7),-0.5093097795998659,0.009312269286912412,True
+YOLO26,cystotome needle,path_length,(14),-0.533471869415097,0.006028285456274491,True
+YOLO26,cystotome needle,path_length,(15),-0.45784664806959224,0.021366597784028985,True
+YOLO26,cystotome needle,path_length,(16),-0.28665978847593987,0.16474800894031558,False
+YOLO26,cystotome needle,path_length,(17),-0.6111029179510014,0.0011739492867803036,True
+YOLO26,cystotome needle,usage_time,(4),-0.2959391894950312,0.1509036082467043,False
+YOLO26,cystotome needle,usage_time,(5),-0.03428479630509051,0.8707584852695762,False
+YOLO26,cystotome needle,usage_time,(6),-0.4474149330924982,0.0249246885659358,True
+YOLO26,cystotome needle,usage_time,(7),-0.46970835670424915,0.01783371197595804,True
+YOLO26,cystotome needle,usage_time,(14),-0.4987280350015199,0.01115939921071618,True
+YOLO26,cystotome needle,usage_time,(15),-0.4327595305599599,0.030716167201974898,True
+YOLO26,cystotome needle,usage_time,(16),-0.32307108327733114,0.11520195307524955,False
+YOLO26,cystotome needle,usage_time,(17),-0.5097264304061554,0.009245095268487604,True
+YOLO26,diamond keratome iso,path_length,(4),-0.24314938128981867,0.24152444855538086,False
+YOLO26,diamond keratome iso,path_length,(5),0.08551319963904584,0.6844325020483439,False
+YOLO26,diamond keratome iso,path_length,(6),-0.3700988450544116,0.0686009007260971,False
+YOLO26,diamond keratome iso,path_length,(7),-0.16023745286618013,0.44419194281474894,False
+YOLO26,diamond keratome iso,path_length,(14),-0.3434766482822847,0.0927538437205888,False
+YOLO26,diamond keratome iso,path_length,(15),-0.19534715505477385,0.34938156607503157,False
+YOLO26,diamond keratome iso,path_length,(16),-0.11724907706326235,0.5767331028687103,False
+YOLO26,diamond keratome iso,path_length,(17),-0.2726856346290818,0.1872417563021093,False
+YOLO26,diamond keratome iso,usage_time,(4),-0.3353894597489104,0.10122068213313698,False
+YOLO26,diamond keratome iso,usage_time,(5),0.02391600998190819,0.9096548748328532,False
+YOLO26,diamond keratome iso,usage_time,(6),-0.41558292039144396,0.038824633083439974,True
+YOLO26,diamond keratome iso,usage_time,(7),-0.2673575896156176,0.196349906897994,False
+YOLO26,diamond keratome iso,usage_time,(14),-0.39083949057874723,0.05338591681378496,False
+YOLO26,diamond keratome iso,usage_time,(15),-0.2923773551491253,0.15611624413767533,False
+YOLO26,diamond keratome iso,usage_time,(16),-0.19488772092519357,0.350538505636062,False
+YOLO26,diamond keratome iso,usage_time,(17),-0.4000826702499268,0.047517860749502164,True
+YOLO26,diamond keratome straight,path_length,(4),-0.05817415392940215,0.7823844290797032,False
+YOLO26,diamond keratome straight,path_length,(5),-0.2268523491262402,0.27549881422369954,False
+YOLO26,diamond keratome straight,path_length,(6),-0.030261513370633496,0.8858213418823747,False
+YOLO26,diamond keratome straight,path_length,(7),0.1897766134196478,0.3635615523133093,False
+YOLO26,diamond keratome straight,path_length,(14),-0.06630168930445232,0.7528504258790184,False
+YOLO26,diamond keratome straight,path_length,(15),-0.033294883896870804,0.8744607869134214,False
+YOLO26,diamond keratome straight,path_length,(16),-0.1569404744214826,0.45374282588504633,False
+YOLO26,diamond keratome straight,path_length,(17),-0.01476085096096982,0.9441703175845043,False
+YOLO26,diamond keratome straight,usage_time,(4),-0.1447876879556684,0.48986233380526,False
+YOLO26,diamond keratome straight,usage_time,(5),-0.15398322381429347,0.4624006244191468,False
+YOLO26,diamond keratome straight,usage_time,(6),-0.07967730884120683,0.7049897636231196,False
+YOLO26,diamond keratome straight,usage_time,(7),0.07823415133008237,0.7101051833915225,False
+YOLO26,diamond keratome straight,usage_time,(14),-0.059948863854169,0.7759088811121054,False
+YOLO26,diamond keratome straight,usage_time,(15),0.0697502179762192,0.7404177780290995,False
+YOLO26,diamond keratome straight,usage_time,(16),-0.11185988487801163,0.5944898424328148,False
+YOLO26,diamond keratome straight,usage_time,(17),-0.1916573954299727,0.3587368876415666,False
+YOLO26,forceps,path_length,(4),0.3004626062886658,0.1444636469095313,False
+YOLO26,forceps,path_length,(5),0.037553380809940536,0.8585530441182787,False
+YOLO26,forceps,path_length,(6),0.4484841676276118,0.024539345117124006,True
+YOLO26,forceps,path_length,(7),0.45464095085946027,0.02241307395008337,True
+YOLO26,forceps,path_length,(14),0.37678443020453434,0.06337250319557464,False
+YOLO26,forceps,path_length,(15),0.5352068981872604,0.005835840297133509,True
+YOLO26,forceps,path_length,(16),0.28284415601736107,0.17069165691918495,False
+YOLO26,forceps,path_length,(17),0.5104562476458709,0.00912840273973333,True
+YOLO26,forceps,usage_time,(4),0.08089377861617925,0.7006874976117246,False
+YOLO26,forceps,usage_time,(5),-0.0580370430699081,0.7828853101393123,False
+YOLO26,forceps,usage_time,(6),-0.019774434198748313,0.9252528190830229,False
+YOLO26,forceps,usage_time,(7),-0.16093484986175585,0.4421855001881003,False
+YOLO26,forceps,usage_time,(14),-0.12045431452335226,0.5662842573559642,False
+YOLO26,forceps,usage_time,(15),0.08805147604748713,0.675557900732652,False
+YOLO26,forceps,usage_time,(16),0.3836017387519801,0.05836288957335305,False
+YOLO26,forceps,usage_time,(17),0.2036043123700763,0.32897582598728214,False
+YOLO26,viscoelastic cannula,path_length,(4),-0.14448096357313656,0.4907922167419846,False
+YOLO26,viscoelastic cannula,path_length,(5),-0.0717066089685713,0.7333923942262736,False
+YOLO26,viscoelastic cannula,path_length,(6),-0.08504642370900674,0.6860689723684331,False
+YOLO26,viscoelastic cannula,path_length,(7),-0.16418512395784207,0.4328984414819486,False
+YOLO26,viscoelastic cannula,path_length,(14),-0.19843350552736316,0.34166834157943915,False
+YOLO26,viscoelastic cannula,path_length,(15),-0.3981341661080355,0.04871072028276859,True
+YOLO26,viscoelastic cannula,path_length,(16),-0.061008476438739696,0.7720494642292928,False
+YOLO26,viscoelastic cannula,path_length,(17),-0.13073663467708646,0.5333504211806013,False
+YOLO26,viscoelastic cannula,usage_time,(4),-0.3062996427750495,0.13644704223991994,False
+YOLO26,viscoelastic cannula,usage_time,(5),-0.006829200854149646,0.974154563598035,False
+YOLO26,viscoelastic cannula,usage_time,(6),-0.19026665025131273,0.36230085603896195,False
+YOLO26,viscoelastic cannula,usage_time,(7),-0.13762576567054408,0.5118034300692121,False
+YOLO26,viscoelastic cannula,usage_time,(14),-0.24095497099751245,0.24593085077487822,False
+YOLO26,viscoelastic cannula,usage_time,(15),-0.2175330408092834,0.2962284156982522,False
+YOLO26,viscoelastic cannula,usage_time,(16),-0.031182110179800288,0.8823711119613629,False
+YOLO26,viscoelastic cannula,usage_time,(17),-0.09232113064874826,0.6607248584502834,False
+YOLO26,ALL_TOOLS,total_path_length,(4),-0.1502313031443329,0.4735074695630619,False
+YOLO26,ALL_TOOLS,total_path_length,(5),-0.047795211939924316,0.8205242985767393,False
+YOLO26,ALL_TOOLS,total_path_length,(6),-0.3385383134825712,0.09785835098393991,False
+YOLO26,ALL_TOOLS,total_path_length,(7),-0.3560683553191349,0.08064215634900389,False
+YOLO26,ALL_TOOLS,total_path_length,(14),-0.5305824996132437,0.006360586181012391,True
+YOLO26,ALL_TOOLS,total_path_length,(15),-0.3302944769707582,0.10684176808221779,False
+YOLO26,ALL_TOOLS,total_path_length,(16),-0.2335949339632199,0.26109182797988,False
+YOLO26,ALL_TOOLS,total_path_length,(17),-0.4278581493212963,0.03287723408162172,True
+YOLO26,ALL_TOOLS,total_usage_time,(4),-0.25423758993656337,0.22005477992214817,False
+YOLO26,ALL_TOOLS,total_usage_time,(5),-0.054623099359913496,0.7953834253825887,False
+YOLO26,ALL_TOOLS,total_usage_time,(6),-0.39746612739484116,0.04912504148143743,True
+YOLO26,ALL_TOOLS,total_usage_time,(7),-0.4268796892583074,0.033322835454217374,True
+YOLO26,ALL_TOOLS,total_usage_time,(14),-0.5405856260788507,0.0052717259844182575,True
+YOLO26,ALL_TOOLS,total_usage_time,(15),-0.3550462743850287,0.08157808744983105,False
+YOLO26,ALL_TOOLS,total_usage_time,(16),-0.29956178185225296,0.14573019966171472,False
+YOLO26,ALL_TOOLS,total_usage_time,(17),-0.4695701889752065,0.01787192431730054,True

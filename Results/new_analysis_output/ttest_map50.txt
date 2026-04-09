@@ -1,0 +1,28 @@
+Welch's t-test on mAP@50
+================================================================================
+
+SAM3_simultaneous vs YOLO26
+  SAM3_simultaneous    (n=25): 67.81% +/- 17.98%
+  YOLO26               (n=25): 57.63% +/- 29.83%
+  t=1.433, p=0.15985
+
+SAM3_sequential vs YOLO26
+  SAM3_sequential      (n=25): 61.81% +/- 24.29%
+  YOLO26               (n=25): 57.63% +/- 29.83%
+  t=0.532, p=0.59722
+
+SAM3_simultaneous: Expert vs Novice
+  expert               (n=5): 59.99% +/- 18.01%
+  novice               (n=20): 69.77% +/- 17.43%
+  t=-0.992, p=0.36149
+
+SAM3_sequential: Expert vs Novice
+  expert               (n=5): 57.80% +/- 17.80%
+  novice               (n=20): 62.81% +/- 25.56%
+  t=-0.470, p=0.65128
+
+YOLO26: Expert vs Novice
+  expert               (n=5): 9.96% +/- 6.16%
+  novice               (n=20): 69.55% +/- 19.81%
+  t=-10.853, p=0.00000 ***
+

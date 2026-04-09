@@ -1,0 +1,53 @@
+Mann-Whitney U: Expert (P1) vs Novice (P2-P5) on Motion Metrics
+================================================================================
+
+--- SAM3_simultaneous ---
+
+  ALL_TOOLS                      total_path_length         Exp= 19004.2+/-4755.6  Nov= 24790.8+/-14605.3  p=0.4467
+  ALL_TOOLS                      total_usage_time          Exp=   158.3+/-  28.4  Nov=   208.8+/- 142.0  p=0.7671
+  capsulorhexis forceps          path_length               Exp=  5752.1+/-3007.2  Nov=  9975.3+/-5250.8  p=0.0970
+  capsulorhexis forceps          usage_time                Exp=    51.7+/-  10.6  Nov=    76.3+/-  39.4  p=0.0832
+  cystotome needle               path_length               Exp=  3282.8+/-2179.3  Nov=  4148.9+/-2787.7  p=0.4467
+  cystotome needle               usage_time                Exp=    27.6+/-  12.7  Nov=    34.8+/-  23.1  p=0.5867
+  diamond keratome iso           path_length               Exp=   639.5+/- 345.5  Nov=  3623.2+/-6133.5  p=0.0289 *
+  diamond keratome iso           usage_time                Exp=     7.8+/-   2.6  Nov=    22.3+/-  38.4  p=0.2086
+  diamond keratome straight      path_length               Exp=  1746.6+/- 805.5  Nov=   708.7+/- 577.8  p=0.0096 *
+  diamond keratome straight      usage_time                Exp=    12.9+/-   3.3  Nov=     6.4+/-   3.0  p=0.0025 *
+  forceps                        path_length               Exp=  6174.3+/-2577.3  Nov=  3793.0+/-2179.5  p=0.0970
+  forceps                        usage_time                Exp=    47.8+/-   7.7  Nov=    36.0+/-  19.5  p=0.3706
+  viscoelastic cannula           path_length               Exp=  1408.8+/- 458.8  Nov=  2541.6+/-2826.6  p=0.7671
+  viscoelastic cannula           usage_time                Exp=    10.3+/-   3.7  Nov=    33.1+/-  54.6  p=0.2344
+
+--- SAM3_sequential ---
+
+  ALL_TOOLS                      total_path_length         Exp= 13686.6+/-4175.7  Nov= 14112.8+/-8374.9  p=0.8180
+  ALL_TOOLS                      total_usage_time          Exp=   107.2+/-  23.6  Nov=   137.3+/- 116.2  p=1.0000
+  capsulorhexis forceps          path_length               Exp=     0.0+/-   0.0  Nov=   311.4+/-1357.4  p=0.6892
+  capsulorhexis forceps          usage_time                Exp=     0.0+/-   0.0  Nov=     2.4+/-  10.5  p=0.6892
+  cystotome needle               path_length               Exp=  3267.0+/-2132.7  Nov=  3700.8+/-2002.0  p=0.7173
+  cystotome needle               usage_time                Exp=    28.6+/-  14.4  Nov=    34.4+/-  22.9  p=0.6343
+  diamond keratome iso           path_length               Exp=   640.9+/- 346.9  Nov=  3013.2+/-4372.5  p=0.0289 *
+  diamond keratome iso           usage_time                Exp=     7.8+/-   2.6  Nov=    23.7+/-  45.4  p=0.3414
+  diamond keratome straight      path_length               Exp=  1768.7+/- 829.8  Nov=   690.1+/- 468.2  p=0.0122 *
+  diamond keratome straight      usage_time                Exp=    12.9+/-   3.3  Nov=     6.2+/-   2.8  p=0.0016 *
+  forceps                        path_length               Exp=  6574.8+/-3327.4  Nov=  3806.1+/-2295.3  p=0.0832
+  forceps                        usage_time                Exp=    47.5+/-   7.0  Nov=    36.2+/-  19.9  p=0.3590
+  viscoelastic cannula           path_length               Exp=  1435.1+/- 512.0  Nov=  2591.2+/-2448.2  p=0.4876
+  viscoelastic cannula           usage_time                Exp=    10.3+/-   3.7  Nov=    34.4+/-  58.2  p=0.1967
+
+--- YOLO26 ---
+
+  ALL_TOOLS                      total_path_length         Exp=  8344.2+/-2865.5  Nov= 20142.5+/-7547.2  p=0.0003 *
+  ALL_TOOLS                      total_usage_time          Exp=    19.8+/-   7.6  Nov=   117.4+/-  39.7  p=0.0000 *
+  capsulorhexis forceps          path_length               Exp=  4588.7+/-1473.3  Nov=  9848.3+/-4227.2  p=0.0031 *
+  capsulorhexis forceps          usage_time                Exp=    12.6+/-   6.4  Nov=    62.6+/-  22.6  p=0.0000 *
+  cystotome needle               path_length               Exp=     0.0+/-   0.0  Nov=  3813.1+/-2887.7  p=0.0007 *
+  cystotome needle               usage_time                Exp=     0.0+/-   0.0  Nov=    18.8+/-  12.9  p=0.0007 *
+  diamond keratome iso           path_length               Exp=     4.3+/-   8.6  Nov=  1978.4+/-1393.3  p=0.0010 *
+  diamond keratome iso           usage_time                Exp=     0.0+/-   0.1  Nov=    10.1+/-   5.6  p=0.0008 *
+  diamond keratome straight      path_length               Exp=    40.3+/-  68.7  Nov=   258.3+/- 218.8  p=0.0167 *
+  diamond keratome straight      usage_time                Exp=     0.1+/-   0.2  Nov=     2.7+/-   2.3  p=0.0058 *
+  forceps                        path_length               Exp=  3544.1+/-2434.0  Nov=  2737.3+/-2059.8  p=0.4076
+  forceps                        usage_time                Exp=     6.3+/-   5.1  Nov=    12.4+/-   5.8  p=0.0710
+  viscoelastic cannula           path_length               Exp=   166.8+/- 146.9  Nov=  1507.1+/- 979.3  p=0.0008 *
+  viscoelastic cannula           usage_time                Exp=     0.8+/-   0.7  Nov=    10.8+/-   5.0  p=0.0008 *

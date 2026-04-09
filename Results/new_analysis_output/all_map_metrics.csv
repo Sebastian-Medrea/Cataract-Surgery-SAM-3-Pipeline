@@ -1,0 +1,523 @@
+participant,trial,video_id,skill_level,tool,mAP50,mAP75,mAP50_95,precision,recall,f1,frames,method
+P1,1,P1.1,expert,capsulorhexis forceps,0.8945,0.6284,0.5546,0.8945,0.8945,0.8945,218,SAM3_simultaneous
+P1,1,P1.1,expert,cystotome needle,0.9044,0.3676,0.4331,0.9044,0.9044,0.9044,136,SAM3_simultaneous
+P1,1,P1.1,expert,diamond keratome iso,1.0,0.4483,0.5517,1.0,1.0,1.0,29,SAM3_simultaneous
+P1,1,P1.1,expert,diamond keratome straight,1.0,0.98,0.776,1.0,1.0,1.0,50,SAM3_simultaneous
+P1,1,P1.1,expert,forceps,0.0987,0.0987,0.0822,0.0987,0.0987,0.0987,152,SAM3_simultaneous
+P1,1,P1.1,expert,viscoelastic cannula,0.987,0.7662,0.6883,0.987,0.987,0.987,77,SAM3_simultaneous
+P1,1,P1.1,expert,OVERALL,0.6737,0.4254,0.4007,0.5674,0.7372,0.6413,583,SAM3_simultaneous
+P1,2,P1.2,expert,capsulorhexis forceps,0.8161,0.3046,0.3764,0.8161,0.8161,0.8161,174,SAM3_simultaneous
+P1,2,P1.2,expert,cystotome needle,0.5093,0.0833,0.2,0.5093,0.5093,0.5093,108,SAM3_simultaneous
+P1,2,P1.2,expert,diamond keratome iso,0.8889,0.4444,0.4444,0.8889,0.8889,0.8889,18,SAM3_simultaneous
+P1,2,P1.2,expert,diamond keratome straight,0.825,0.35,0.38,0.825,0.825,0.825,40,SAM3_simultaneous
+P1,2,P1.2,expert,forceps,0.5495,0.5405,0.3991,0.5495,0.5495,0.5495,111,SAM3_simultaneous
+P1,2,P1.2,expert,viscoelastic cannula,0.8378,0.6486,0.5811,0.8378,0.8378,0.8378,37,SAM3_simultaneous
+P1,2,P1.2,expert,OVERALL,0.6767,0.3151,0.3456,0.6426,0.6912,0.666,430,SAM3_simultaneous
+P1,3,P1.3,expert,capsulorhexis forceps,0.0056,0.0056,0.0044,0.0056,0.0056,0.0056,180,SAM3_simultaneous
+P1,3,P1.3,expert,cystotome needle,0.9606,0.8976,0.789,0.9606,0.9606,0.9606,127,SAM3_simultaneous
+P1,3,P1.3,expert,diamond keratome iso,0.9524,0.7857,0.6786,0.9524,0.9524,0.9524,42,SAM3_simultaneous
+P1,3,P1.3,expert,diamond keratome straight,0.9425,0.8161,0.769,0.9425,0.9425,0.9425,87,SAM3_simultaneous
+P1,3,P1.3,expert,forceps,0.1049,0.0864,0.0852,0.1049,0.1049,0.1049,162,SAM3_simultaneous
+P1,3,P1.3,expert,viscoelastic cannula,1.0,0.9024,0.8707,1.0,1.0,1.0,41,SAM3_simultaneous
+P1,3,P1.3,expert,OVERALL,0.3716,0.3368,0.3037,0.4449,0.4734,0.4587,510,SAM3_simultaneous
+P1,4,P1.4,expert,capsulorhexis forceps,0.0036,0.0036,0.0033,0.0036,0.0036,0.0036,275,SAM3_simultaneous
+P1,4,P1.4,expert,cystotome needle,0.95,0.5667,0.525,0.95,0.95,0.95,60,SAM3_simultaneous
+P1,4,P1.4,expert,diamond keratome iso,1.0,0.6857,0.62,1.0,1.0,1.0,35,SAM3_simultaneous
+P1,4,P1.4,expert,diamond keratome straight,0.9608,0.549,0.5275,0.9608,0.9608,0.9608,51,SAM3_simultaneous
+P1,4,P1.4,expert,forceps,0.9912,0.4159,0.4504,0.9912,0.9912,0.9912,113,SAM3_simultaneous
+P1,4,P1.4,expert,viscoelastic cannula,0.95,0.65,0.6225,0.95,0.95,0.95,40,SAM3_simultaneous
+P1,4,P1.4,expert,OVERALL,0.4201,0.2239,0.2236,0.4763,0.5087,0.492,488,SAM3_simultaneous
+P1,5,P1.5,expert,capsulorhexis forceps,0.974,0.6979,0.6219,0.974,0.974,0.974,192,SAM3_simultaneous
+P1,5,P1.5,expert,cystotome needle,0.899,0.4646,0.4667,0.899,0.899,0.899,99,SAM3_simultaneous
+P1,5,P1.5,expert,diamond keratome iso,0.8868,0.4906,0.4792,0.8868,0.8868,0.8868,53,SAM3_simultaneous
+P1,5,P1.5,expert,diamond keratome straight,0.8444,0.4889,0.4689,0.8444,0.8444,0.8444,45,SAM3_simultaneous
+P1,5,P1.5,expert,forceps,0.4924,0.4545,0.3614,0.4924,0.4924,0.4924,132,SAM3_simultaneous
+P1,5,P1.5,expert,viscoelastic cannula,1.0,0.9667,0.8467,1.0,1.0,1.0,30,SAM3_simultaneous
+P1,5,P1.5,expert,OVERALL,0.8576,0.5949,0.5379,0.7849,0.8276,0.8057,453,SAM3_simultaneous
+P2,1,P2.1,novice,capsulorhexis forceps,0.8046,0.5667,0.5569,0.8046,0.8046,0.8046,517,SAM3_simultaneous
+P2,1,P2.1,novice,cystotome needle,0.9052,0.6209,0.5422,0.9052,0.9052,0.9052,211,SAM3_simultaneous
+P2,1,P2.1,novice,diamond keratome iso,0.962,0.8354,0.6266,0.962,0.962,0.962,79,SAM3_simultaneous
+P2,1,P2.1,novice,diamond keratome straight,0.2,0.2,0.14,0.2,0.2,0.2,5,SAM3_simultaneous
+P2,1,P2.1,novice,forceps,0.7,0.24,0.292,0.7,0.7,0.7,50,SAM3_simultaneous
+P2,1,P2.1,novice,viscoelastic cannula,0.1235,0.0123,0.0407,0.1235,0.1235,0.1235,162,SAM3_simultaneous
+P2,1,P2.1,novice,OVERALL,0.75,0.5164,0.4825,0.3787,0.744,0.5019,1020,SAM3_simultaneous
+P2,2,P2.2,novice,capsulorhexis forceps,0.4529,0.2786,0.2625,0.4529,0.4529,0.4529,499,SAM3_simultaneous
+P2,2,P2.2,novice,cystotome needle,0.9779,0.7072,0.6011,0.9779,0.9779,0.9779,181,SAM3_simultaneous
+P2,2,P2.2,novice,diamond keratome iso,0.7312,0.5054,0.4452,0.7312,0.7312,0.7312,93,SAM3_simultaneous
+P2,2,P2.2,novice,diamond keratome straight,0.6744,0.0233,0.207,0.6744,0.6744,0.6744,43,SAM3_simultaneous
+P2,2,P2.2,novice,forceps,0.0175,0.0175,0.0123,0.0175,0.0175,0.0175,57,SAM3_simultaneous
+P2,2,P2.2,novice,viscoelastic cannula,0.7079,0.2697,0.3629,0.7079,0.7079,0.7079,89,SAM3_simultaneous
+P2,2,P2.2,novice,OVERALL,0.5066,0.3148,0.2924,0.2855,0.6345,0.3938,910,SAM3_simultaneous
+P2,3,P2.3,novice,capsulorhexis forceps,0.9953,0.8531,0.6948,0.9953,0.9953,0.9953,211,SAM3_simultaneous
+P2,3,P2.3,novice,cystotome needle,0.9301,0.5753,0.5323,0.9301,0.9301,0.9301,186,SAM3_simultaneous
+P2,3,P2.3,novice,diamond keratome iso,0.4545,0.303,0.2687,0.4545,0.4545,0.4545,99,SAM3_simultaneous
+P2,3,P2.3,novice,diamond keratome straight,0.9231,0.0769,0.3846,0.9231,0.9231,0.9231,13,SAM3_simultaneous
+P2,3,P2.3,novice,viscoelastic cannula,0.8,0.3636,0.4018,0.8,0.8,0.8,55,SAM3_simultaneous
+P2,3,P2.3,novice,OVERALL,0.8564,0.5966,0.5285,0.5918,0.8688,0.704,564,SAM3_simultaneous
+P2,4,P2.4,novice,capsulorhexis forceps,0.9648,0.7714,0.6633,0.9648,0.9648,0.9648,455,SAM3_simultaneous
+P2,4,P2.4,novice,cystotome needle,0.9741,0.6379,0.5509,0.9741,0.9741,0.9741,116,SAM3_simultaneous
+P2,4,P2.4,novice,diamond keratome iso,0.0448,0.0149,0.0209,0.0448,0.0448,0.0448,67,SAM3_simultaneous
+P2,4,P2.4,novice,diamond keratome straight,0.0909,0.0909,0.0727,0.0909,0.0909,0.0909,11,SAM3_simultaneous
+P2,4,P2.4,novice,forceps,0.9672,0.4918,0.5164,0.9672,0.9672,0.9672,61,SAM3_simultaneous
+P2,4,P2.4,novice,viscoelastic cannula,0.625,0.15,0.2475,0.625,0.625,0.625,40,SAM3_simultaneous
+P2,4,P2.4,novice,OVERALL,0.8579,0.6211,0.549,0.8533,0.8533,0.8533,739,SAM3_simultaneous
+P2,5,P2.5,novice,capsulorhexis forceps,0.9954,0.922,0.7651,0.9954,0.9954,0.9954,218,SAM3_simultaneous
+P2,5,P2.5,novice,cystotome needle,0.9695,0.8168,0.6679,0.9695,0.9695,0.9695,131,SAM3_simultaneous
+P2,5,P2.5,novice,diamond keratome iso,0.7571,0.6286,0.4957,0.7571,0.7571,0.7571,70,SAM3_simultaneous
+P2,5,P2.5,novice,diamond keratome straight,0.9,0.15,0.315,0.9,0.9,0.9,20,SAM3_simultaneous
+P2,5,P2.5,novice,forceps,0.2174,0.1652,0.1391,0.2174,0.2174,0.2174,115,SAM3_simultaneous
+P2,5,P2.5,novice,viscoelastic cannula,0.0119,0.0119,0.0083,0.0119,0.0119,0.0119,84,SAM3_simultaneous
+P2,5,P2.5,novice,OVERALL,0.5772,0.5097,0.4231,0.4878,0.6912,0.572,558,SAM3_simultaneous
+P3,1,P3.1,novice,capsulorhexis forceps,0.9643,0.7955,0.6769,0.9643,0.9643,0.9643,308,SAM3_simultaneous
+P3,1,P3.1,novice,cystotome needle,0.9243,0.5081,0.5189,0.9243,0.9243,0.9243,185,SAM3_simultaneous
+P3,1,P3.1,novice,diamond keratome iso,0.98,0.83,0.623,0.98,0.98,0.98,100,SAM3_simultaneous
+P3,1,P3.1,novice,diamond keratome straight,0.7692,0.1538,0.3308,0.7692,0.7692,0.7692,13,SAM3_simultaneous
+P3,1,P3.1,novice,forceps,1.0,0.9792,0.8271,1.0,1.0,1.0,48,SAM3_simultaneous
+P3,1,P3.1,novice,viscoelastic cannula,0.9583,0.5,0.5062,0.9583,0.9583,0.9583,48,SAM3_simultaneous
+P3,1,P3.1,novice,OVERALL,0.9544,0.7069,0.6197,0.9544,0.9544,0.9544,691,SAM3_simultaneous
+P3,2,P3.2,novice,capsulorhexis forceps,0.97,0.6824,0.603,0.97,0.97,0.97,233,SAM3_simultaneous
+P3,2,P3.2,novice,cystotome needle,0.9406,0.5347,0.5347,0.9406,0.9406,0.9406,202,SAM3_simultaneous
+P3,2,P3.2,novice,diamond keratome iso,0.7925,0.5283,0.4642,0.7925,0.7925,0.7925,53,SAM3_simultaneous
+P3,2,P3.2,novice,diamond keratome straight,0.8095,0.119,0.2833,0.8095,0.8095,0.8095,42,SAM3_simultaneous
+P3,2,P3.2,novice,forceps,0.6053,0.5526,0.4096,0.6053,0.6053,0.6053,114,SAM3_simultaneous
+P3,2,P3.2,novice,viscoelastic cannula,0.9762,0.8333,0.65,0.9762,0.9762,0.9762,42,SAM3_simultaneous
+P3,2,P3.2,novice,OVERALL,0.8653,0.5734,0.5198,0.8135,0.8776,0.8443,603,SAM3_simultaneous
+P3,3,P3.3,novice,capsulorhexis forceps,0.4221,0.1364,0.1844,0.4221,0.4221,0.4221,308,SAM3_simultaneous
+P3,3,P3.3,novice,cystotome needle,0.37,0.14,0.184,0.37,0.37,0.37,100,SAM3_simultaneous
+P3,3,P3.3,novice,diamond keratome iso,0.7447,0.4255,0.4,0.7447,0.7447,0.7447,47,SAM3_simultaneous
+P3,3,P3.3,novice,diamond keratome straight,0.0833,0.0833,0.0667,0.0833,0.0833,0.0833,12,SAM3_simultaneous
+P3,3,P3.3,novice,forceps,0.7429,0.3429,0.3686,0.7429,0.7429,0.7429,35,SAM3_simultaneous
+P3,3,P3.3,novice,viscoelastic cannula,0.6364,0.2727,0.3121,0.6364,0.6364,0.6364,33,SAM3_simultaneous
+P3,3,P3.3,novice,OVERALL,0.4641,0.185,0.2203,0.4673,0.4647,0.466,523,SAM3_simultaneous
+P3,4,P3.4,novice,capsulorhexis forceps,0.7921,0.4516,0.4552,0.7921,0.7921,0.7921,279,SAM3_simultaneous
+P3,4,P3.4,novice,cystotome needle,0.0312,0.0,0.0117,0.0312,0.0312,0.0312,128,SAM3_simultaneous
+P3,4,P3.4,novice,diamond keratome iso,0.9792,0.6875,0.55,0.9792,0.9792,0.9792,48,SAM3_simultaneous
+P3,4,P3.4,novice,diamond keratome straight,0.8125,0.0,0.2875,0.8125,0.8125,0.8125,16,SAM3_simultaneous
+P3,4,P3.4,novice,forceps,0.9608,0.9216,0.7647,0.9608,0.9608,0.9608,51,SAM3_simultaneous
+P3,4,P3.4,novice,viscoelastic cannula,0.8065,0.5161,0.4516,0.8065,0.8065,0.8065,31,SAM3_simultaneous
+P3,4,P3.4,novice,OVERALL,0.6415,0.3966,0.3791,0.6492,0.6492,0.6492,537,SAM3_simultaneous
+P3,5,P3.5,novice,capsulorhexis forceps,0.9752,0.7327,0.6594,0.9752,0.9752,0.9752,202,SAM3_simultaneous
+P3,5,P3.5,novice,cystotome needle,0.8824,0.4622,0.495,0.8824,0.8824,0.8824,119,SAM3_simultaneous
+P3,5,P3.5,novice,diamond keratome iso,0.9778,0.7111,0.56,0.9778,0.9778,0.9778,45,SAM3_simultaneous
+P3,5,P3.5,novice,diamond keratome straight,0.6923,0.0769,0.2154,0.6923,0.6923,0.6923,13,SAM3_simultaneous
+P3,5,P3.5,novice,forceps,0.8837,0.4419,0.4488,0.8837,0.8837,0.8837,43,SAM3_simultaneous
+P3,5,P3.5,novice,viscoelastic cannula,0.4857,0.2286,0.2486,0.4857,0.4857,0.4857,35,SAM3_simultaneous
+P3,5,P3.5,novice,OVERALL,0.8986,0.58,0.5458,0.8972,0.8972,0.8972,444,SAM3_simultaneous
+P4,1,P4.1,novice,capsulorhexis forceps,0.971,0.8261,0.679,0.971,0.971,0.971,276,SAM3_simultaneous
+P4,1,P4.1,novice,cystotome needle,0.9293,0.4205,0.4661,0.9293,0.9293,0.9293,283,SAM3_simultaneous
+P4,1,P4.1,novice,diamond keratome iso,0.8,0.375,0.4175,0.8,0.8,0.8,40,SAM3_simultaneous
+P4,1,P4.1,novice,diamond keratome straight,0.7812,0.4688,0.425,0.7812,0.7812,0.7812,32,SAM3_simultaneous
+P4,1,P4.1,novice,forceps,0.3137,0.3039,0.1941,0.3137,0.3137,0.3137,102,SAM3_simultaneous
+P4,1,P4.1,novice,viscoelastic cannula,0.5625,0.225,0.255,0.5625,0.5625,0.5625,80,SAM3_simultaneous
+P4,1,P4.1,novice,OVERALL,0.8168,0.5283,0.4834,0.7447,0.818,0.7796,741,SAM3_simultaneous
+P4,2,P4.2,novice,capsulorhexis forceps,0.9758,0.8763,0.7282,0.9758,0.9758,0.9758,372,SAM3_simultaneous
+P4,2,P4.2,novice,cystotome needle,0.018,0.006,0.0054,0.018,0.018,0.018,167,SAM3_simultaneous
+P4,2,P4.2,novice,diamond keratome iso,0.963,0.1852,0.3963,0.963,0.963,0.963,27,SAM3_simultaneous
+P4,2,P4.2,novice,diamond keratome straight,0.4737,0.1053,0.1921,0.4737,0.4737,0.4737,38,SAM3_simultaneous
+P4,2,P4.2,novice,forceps,0.3939,0.2626,0.2283,0.3939,0.3939,0.3939,99,SAM3_simultaneous
+P4,2,P4.2,novice,viscoelastic cannula,0.027,0.027,0.0162,0.027,0.027,0.027,37,SAM3_simultaneous
+P4,2,P4.2,novice,OVERALL,0.5952,0.51,0.4295,0.5792,0.6081,0.5933,675,SAM3_simultaneous
+P4,3,P4.3,novice,capsulorhexis forceps,0.9694,0.8502,0.7202,0.9694,0.9694,0.9694,327,SAM3_simultaneous
+P4,3,P4.3,novice,cystotome needle,0.7008,0.5354,0.4693,0.7008,0.7008,0.7008,127,SAM3_simultaneous
+P4,3,P4.3,novice,diamond keratome iso,0.8529,0.3824,0.3824,0.8529,0.8529,0.8529,34,SAM3_simultaneous
+P4,3,P4.3,novice,diamond keratome straight,0.3636,0.1515,0.1758,0.3636,0.3636,0.3636,33,SAM3_simultaneous
+P4,3,P4.3,novice,forceps,0.0543,0.0109,0.0239,0.0543,0.0543,0.0543,92,SAM3_simultaneous
+P4,3,P4.3,novice,viscoelastic cannula,0.8776,0.1837,0.3755,0.8776,0.8776,0.8776,49,SAM3_simultaneous
+P4,3,P4.3,novice,OVERALL,0.7655,0.6034,0.5321,0.6923,0.7477,0.719,595,SAM3_simultaneous
+P4,4,P4.4,novice,capsulorhexis forceps,0.9715,0.8078,0.7502,0.9715,0.9715,0.9715,281,SAM3_simultaneous
+P4,4,P4.4,novice,cystotome needle,0.8276,0.2529,0.3667,0.8276,0.8276,0.8276,87,SAM3_simultaneous
+P4,4,P4.4,novice,diamond keratome iso,0.963,0.9259,0.7944,0.963,0.963,0.963,54,SAM3_simultaneous
+P4,4,P4.4,novice,diamond keratome straight,0.48,0.04,0.116,0.48,0.48,0.48,25,SAM3_simultaneous
+P4,4,P4.4,novice,forceps,0.0549,0.022,0.0242,0.0549,0.0549,0.0549,91,SAM3_simultaneous
+P4,4,P4.4,novice,viscoelastic cannula,0.8788,0.6667,0.6091,0.8788,0.8788,0.8788,33,SAM3_simultaneous
+P4,4,P4.4,novice,OVERALL,0.7645,0.5484,0.5325,0.7227,0.7758,0.7483,501,SAM3_simultaneous
+P4,5,P4.5,novice,capsulorhexis forceps,0.992,0.804,0.7148,0.992,0.992,0.992,250,SAM3_simultaneous
+P4,5,P4.5,novice,cystotome needle,0.9759,0.6386,0.5747,0.9759,0.9759,0.9759,83,SAM3_simultaneous
+P4,5,P4.5,novice,diamond keratome iso,0.9744,0.6923,0.5872,0.9744,0.9744,0.9744,39,SAM3_simultaneous
+P4,5,P4.5,novice,diamond keratome straight,0.7222,0.2222,0.2722,0.7222,0.7222,0.7222,18,SAM3_simultaneous
+P4,5,P4.5,novice,forceps,0.3,0.1429,0.16,0.3,0.3,0.3,70,SAM3_simultaneous
+P4,5,P4.5,novice,viscoelastic cannula,1.0,0.7,0.58,1.0,1.0,1.0,20,SAM3_simultaneous
+P4,5,P4.5,novice,OVERALL,0.9159,0.6764,0.6084,0.8627,0.8771,0.8698,428,SAM3_simultaneous
+P5,1,P5.1,novice,capsulorhexis forceps,0.8199,0.5287,0.4904,0.8199,0.8199,0.8199,261,SAM3_simultaneous
+P5,1,P5.1,novice,cystotome needle,0.0118,0.0118,0.0106,0.0118,0.0118,0.0118,85,SAM3_simultaneous
+P5,1,P5.1,novice,diamond keratome iso,0.0323,0.0,0.0032,0.0323,0.0323,0.0323,31,SAM3_simultaneous
+P5,1,P5.1,novice,diamond keratome straight,0.8667,0.3,0.37,0.8667,0.8667,0.8667,30,SAM3_simultaneous
+P5,1,P5.1,novice,forceps,0.011,0.0,0.0011,0.011,0.011,0.011,91,SAM3_simultaneous
+P5,1,P5.1,novice,viscoelastic cannula,0.8533,0.4267,0.464,0.8533,0.8533,0.8533,75,SAM3_simultaneous
+P5,1,P5.1,novice,OVERALL,0.4976,0.3071,0.2914,0.4687,0.5358,0.5,512,SAM3_simultaneous
+P5,2,P5.2,novice,capsulorhexis forceps,0.9612,0.4417,0.5015,0.9612,0.9612,0.9612,206,SAM3_simultaneous
+P5,2,P5.2,novice,cystotome needle,0.0111,0.0111,0.0078,0.0111,0.0111,0.0111,90,SAM3_simultaneous
+P5,2,P5.2,novice,diamond keratome iso,0.8095,0.0476,0.3238,0.8095,0.8095,0.8095,21,SAM3_simultaneous
+P5,2,P5.2,novice,diamond keratome straight,0.8529,0.1176,0.3059,0.8529,0.8529,0.8529,34,SAM3_simultaneous
+P5,2,P5.2,novice,forceps,0.0842,0.0211,0.0411,0.0842,0.0842,0.0842,95,SAM3_simultaneous
+P5,2,P5.2,novice,viscoelastic cannula,0.9265,0.5735,0.5588,0.9265,0.9265,0.9265,68,SAM3_simultaneous
+P5,2,P5.2,novice,OVERALL,0.585,0.274,0.3097,0.543,0.6089,0.574,459,SAM3_simultaneous
+P5,3,P5.3,novice,capsulorhexis forceps,0.9086,0.3371,0.4177,0.9086,0.9086,0.9086,175,SAM3_simultaneous
+P5,3,P5.3,novice,cystotome needle,0.4935,0.026,0.1325,0.4935,0.4935,0.4935,77,SAM3_simultaneous
+P5,3,P5.3,novice,diamond keratome iso,0.4,0.1,0.15,0.4,0.4,0.4,10,SAM3_simultaneous
+P5,3,P5.3,novice,diamond keratome straight,0.7333,0.0,0.2633,0.7333,0.7333,0.7333,30,SAM3_simultaneous
+P5,3,P5.3,novice,forceps,0.0353,0.0,0.0129,0.0353,0.0353,0.0353,85,SAM3_simultaneous
+P5,3,P5.3,novice,viscoelastic cannula,0.6119,0.2388,0.2627,0.6119,0.6119,0.6119,67,SAM3_simultaneous
+P5,3,P5.3,novice,OVERALL,0.5613,0.1714,0.2363,0.5225,0.6,0.5586,404,SAM3_simultaneous
+P5,4,P5.4,novice,capsulorhexis forceps,0.0042,0.0,0.0013,0.0042,0.0042,0.0042,237,SAM3_simultaneous
+P5,4,P5.4,novice,cystotome needle,0.6452,0.2419,0.2871,0.6452,0.6452,0.6452,62,SAM3_simultaneous
+P5,4,P5.4,novice,diamond keratome iso,0.1111,0.1111,0.0778,0.1111,0.1111,0.1111,9,SAM3_simultaneous
+P5,4,P5.4,novice,diamond keratome straight,0.9,0.4333,0.4433,0.9,0.9,0.9,30,SAM3_simultaneous
+P5,4,P5.4,novice,forceps,0.5663,0.2048,0.2301,0.5663,0.5663,0.5663,83,SAM3_simultaneous
+P5,4,P5.4,novice,viscoelastic cannula,0.9848,0.7424,0.6697,0.9848,0.9848,0.9848,66,SAM3_simultaneous
+P5,4,P5.4,novice,OVERALL,0.3073,0.1565,0.1607,0.3261,0.3613,0.3428,449,SAM3_simultaneous
+P5,5,P5.5,novice,capsulorhexis forceps,0.8925,0.4393,0.4659,0.8925,0.8925,0.8925,214,SAM3_simultaneous
+P5,5,P5.5,novice,cystotome needle,0.8824,0.2941,0.3725,0.8824,0.8824,0.8824,51,SAM3_simultaneous
+P5,5,P5.5,novice,diamond keratome iso,0.7857,0.3929,0.4286,0.7857,0.7857,0.7857,28,SAM3_simultaneous
+P5,5,P5.5,novice,diamond keratome straight,0.9714,0.6857,0.5543,0.9714,0.9714,0.9714,35,SAM3_simultaneous
+P5,5,P5.5,novice,forceps,0.0213,0.0106,0.0085,0.0213,0.0213,0.0213,94,SAM3_simultaneous
+P5,5,P5.5,novice,viscoelastic cannula,0.9833,0.8,0.7033,0.9833,0.9833,0.9833,60,SAM3_simultaneous
+P5,5,P5.5,novice,OVERALL,0.7727,0.4189,0.4223,0.6513,0.7324,0.6895,419,SAM3_simultaneous
+P1,1,P1.1,expert,capsulorhexis_forceps,0.945,0.6789,0.5995,0.945,0.945,0.945,218,SAM3_sequential
+P1,1,P1.1,expert,cystotome needle,0.8897,0.4118,0.4529,0.8897,0.8897,0.8897,136,SAM3_sequential
+P1,1,P1.1,expert,diamond keratome iso,1.0,0.5172,0.5862,1.0,1.0,1.0,29,SAM3_sequential
+P1,1,P1.1,expert,diamond keratome straight,1.0,0.98,0.786,1.0,1.0,1.0,50,SAM3_sequential
+P1,1,P1.1,expert,forceps,0.0987,0.0987,0.0822,0.0987,0.0987,0.0987,152,SAM3_sequential
+P1,1,P1.1,expert,viscoelastic cannula,0.987,0.9091,0.7571,0.987,0.987,0.987,77,SAM3_sequential
+P1,1,P1.1,expert,OVERALL,0.69,0.4563,0.4261,0.5907,0.7674,0.6675,583,SAM3_sequential
+P1,2,P1.2,expert,capsulorhexis_forceps,0.7701,0.2989,0.3661,0.7701,0.7701,0.7701,174,SAM3_sequential
+P1,2,P1.2,expert,cystotome needle,0.6273,0.1182,0.2409,0.6273,0.6273,0.6273,110,SAM3_sequential
+P1,2,P1.2,expert,diamond keratome iso,0.8889,0.3889,0.4333,0.8889,0.8889,0.8889,18,SAM3_sequential
+P1,2,P1.2,expert,diamond keratome straight,0.85,0.45,0.4175,0.85,0.85,0.85,40,SAM3_sequential
+P1,2,P1.2,expert,forceps,0.5495,0.5405,0.3991,0.5495,0.5495,0.5495,111,SAM3_sequential
+P1,2,P1.2,expert,viscoelastic cannula,0.8378,0.6486,0.5811,0.8378,0.8378,0.8378,37,SAM3_sequential
+P1,2,P1.2,expert,OVERALL,0.6574,0.2992,0.3307,0.6534,0.7026,0.6771,432,SAM3_sequential
+P1,3,P1.3,expert,capsulorhexis_forceps,0.0056,0.0056,0.0044,0.0056,0.0056,0.0056,180,SAM3_sequential
+P1,3,P1.3,expert,cystotome needle,0.9764,0.9213,0.7992,0.9764,0.9764,0.9764,127,SAM3_sequential
+P1,3,P1.3,expert,diamond keratome iso,0.9524,0.7857,0.7071,0.9524,0.9524,0.9524,42,SAM3_sequential
+P1,3,P1.3,expert,diamond keratome straight,0.9425,0.7586,0.7437,0.9425,0.9425,0.9425,87,SAM3_sequential
+P1,3,P1.3,expert,forceps,0.1049,0.0864,0.0852,0.1049,0.1049,0.1049,162,SAM3_sequential
+P1,3,P1.3,expert,viscoelastic cannula,1.0,0.9024,0.8707,1.0,1.0,1.0,41,SAM3_sequential
+P1,3,P1.3,expert,OVERALL,0.4167,0.3676,0.335,0.4479,0.4766,0.4618,510,SAM3_sequential
+P1,4,P1.4,expert,capsulorhexis_forceps,0.0036,0.0036,0.0033,0.0036,0.0036,0.0036,275,SAM3_sequential
+P1,4,P1.4,expert,cystotome needle,0.9667,0.6167,0.5767,0.9667,0.9667,0.9667,60,SAM3_sequential
+P1,4,P1.4,expert,diamond keratome iso,1.0,0.8286,0.6543,1.0,1.0,1.0,35,SAM3_sequential
+P1,4,P1.4,expert,diamond keratome straight,0.9608,0.549,0.5373,0.9608,0.9608,0.9608,51,SAM3_sequential
+P1,4,P1.4,expert,forceps,0.5575,0.2832,0.2513,0.5575,0.5575,0.5575,113,SAM3_sequential
+P1,4,P1.4,expert,viscoelastic cannula,0.95,0.675,0.655,0.95,0.95,0.95,40,SAM3_sequential
+P1,4,P1.4,expert,OVERALL,0.3253,0.2013,0.1865,0.4026,0.4251,0.4136,488,SAM3_sequential
+P1,5,P1.5,expert,capsulorhexis_forceps,0.974,0.7396,0.638,0.974,0.974,0.974,192,SAM3_sequential
+P1,5,P1.5,expert,cystotome needle,0.9091,0.5455,0.504,0.9091,0.9091,0.9091,99,SAM3_sequential
+P1,5,P1.5,expert,diamond keratome iso,0.8868,0.4717,0.483,0.8868,0.8868,0.8868,53,SAM3_sequential
+P1,5,P1.5,expert,diamond keratome straight,0.6,0.2667,0.2822,0.6,0.6,0.6,45,SAM3_sequential
+P1,5,P1.5,expert,forceps,0.4924,0.4545,0.3614,0.4924,0.4924,0.4924,132,SAM3_sequential
+P1,5,P1.5,expert,viscoelastic cannula,1.0,0.9667,0.8467,1.0,1.0,1.0,30,SAM3_sequential
+P1,5,P1.5,expert,OVERALL,0.8008,0.5778,0.5091,0.7676,0.8094,0.788,453,SAM3_sequential
+P2,1,P2.1,novice,capsulorhexis_forceps,0.3017,0.2959,0.2433,0.3017,0.3017,0.3017,517,SAM3_sequential
+P2,1,P2.1,novice,cystotome needle,0.0097,0.0049,0.0049,0.0097,0.0097,0.0097,206,SAM3_sequential
+P2,1,P2.1,novice,diamond keratome iso,0.9747,0.8354,0.6468,0.9747,0.9747,0.9747,79,SAM3_sequential
+P2,1,P2.1,novice,diamond keratome straight,0.25,0.25,0.175,0.25,0.25,0.25,4,SAM3_sequential
+P2,1,P2.1,novice,forceps,0.28,0.22,0.194,0.28,0.28,0.28,50,SAM3_sequential
+P2,1,P2.1,novice,viscoelastic cannula,0.0602,0.012,0.0181,0.0602,0.0602,0.0602,166,SAM3_sequential
+P2,1,P2.1,novice,OVERALL,0.1316,0.11,0.0922,0.1402,0.2752,0.1858,1020,SAM3_sequential
+P2,2,P2.2,novice,capsulorhexis_forceps,0.6613,0.499,0.4347,0.6613,0.6613,0.6613,499,SAM3_sequential
+P2,2,P2.2,novice,cystotome needle,0.8066,0.6243,0.5039,0.8066,0.8066,0.8066,181,SAM3_sequential
+P2,2,P2.2,novice,diamond keratome iso,0.4731,0.4516,0.3312,0.4731,0.4731,0.4731,93,SAM3_sequential
+P2,2,P2.2,novice,diamond keratome straight,0.6977,0.0233,0.207,0.6977,0.6977,0.6977,43,SAM3_sequential
+P2,2,P2.2,novice,forceps,0.0175,0.0175,0.0123,0.0175,0.0175,0.0175,57,SAM3_sequential
+P2,2,P2.2,novice,viscoelastic cannula,0.7528,0.3933,0.4213,0.7528,0.7528,0.7528,89,SAM3_sequential
+P2,2,P2.2,novice,OVERALL,0.4548,0.304,0.2732,0.3004,0.6974,0.42,912,SAM3_sequential
+P2,3,P2.3,novice,capsulorhexis_forceps,0.1745,0.0991,0.0915,0.1745,0.1745,0.1745,212,SAM3_sequential
+P2,3,P2.3,novice,cystotome needle,0.9677,0.5699,0.5516,0.9677,0.9677,0.9677,186,SAM3_sequential
+P2,3,P2.3,novice,diamond keratome iso,0.4545,0.2929,0.2758,0.4545,0.4545,0.4545,99,SAM3_sequential
+P2,3,P2.3,novice,diamond keratome straight,0.9231,0.0769,0.3846,0.9231,0.9231,0.9231,13,SAM3_sequential
+P2,3,P2.3,novice,viscoelastic cannula,0.8727,0.4,0.4509,0.8727,0.8727,0.8727,55,SAM3_sequential
+P2,3,P2.3,novice,OVERALL,0.561,0.3216,0.3171,0.388,0.5689,0.4613,566,SAM3_sequential
+P2,4,P2.4,novice,capsulorhexis_forceps,0.9014,0.7133,0.6163,0.9014,0.9014,0.9014,436,SAM3_sequential
+P2,4,P2.4,novice,cystotome needle,0.9741,0.6207,0.556,0.9741,0.9741,0.9741,116,SAM3_sequential
+P2,4,P2.4,novice,diamond keratome iso,0.8955,0.1493,0.3582,0.8955,0.8955,0.8955,67,SAM3_sequential
+P2,4,P2.4,novice,diamond keratome straight,0.0909,0.0909,0.0727,0.0909,0.0909,0.0909,11,SAM3_sequential
+P2,4,P2.4,novice,forceps,0.9672,0.4918,0.5164,0.9672,0.9672,0.9672,61,SAM3_sequential
+P2,4,P2.4,novice,viscoelastic cannula,0.875,0.275,0.4,0.875,0.875,0.875,40,SAM3_sequential
+P2,4,P2.4,novice,OVERALL,0.9097,0.5986,0.5582,0.9042,0.9042,0.9042,720,SAM3_sequential
+P2,5,P2.5,novice,capsulorhexis_forceps,0.9954,0.922,0.7628,0.9954,0.9954,0.9954,218,SAM3_sequential
+P2,5,P2.5,novice,cystotome needle,0.9847,0.7863,0.6702,0.9847,0.9847,0.9847,131,SAM3_sequential
+P2,5,P2.5,novice,diamond keratome iso,0.7571,0.6286,0.4886,0.7571,0.7571,0.7571,70,SAM3_sequential
+P2,5,P2.5,novice,diamond keratome straight,0.75,0.15,0.28,0.75,0.75,0.75,20,SAM3_sequential
+P2,5,P2.5,novice,forceps,0.2174,0.1652,0.1391,0.2174,0.2174,0.2174,115,SAM3_sequential
+P2,5,P2.5,novice,viscoelastic cannula,0.622,0.5854,0.4268,0.622,0.622,0.622,82,SAM3_sequential
+P2,5,P2.5,novice,OVERALL,0.6181,0.5447,0.4499,0.5426,0.768,0.636,558,SAM3_sequential
+P3,1,P3.1,novice,capsulorhexis_forceps,0.9351,0.8084,0.6714,0.9351,0.9351,0.9351,308,SAM3_sequential
+P3,1,P3.1,novice,cystotome needle,0.1492,0.0608,0.0724,0.1492,0.1492,0.1492,181,SAM3_sequential
+P3,1,P3.1,novice,diamond keratome iso,0.98,0.82,0.625,0.98,0.98,0.98,100,SAM3_sequential
+P3,1,P3.1,novice,diamond keratome straight,0.7692,0.2308,0.3692,0.7692,0.7692,0.7692,13,SAM3_sequential
+P3,1,P3.1,novice,forceps,1.0,0.9792,0.8271,1.0,1.0,1.0,48,SAM3_sequential
+P3,1,P3.1,novice,viscoelastic cannula,0.9583,0.4583,0.5167,0.9583,0.9583,0.9583,48,SAM3_sequential
+P3,1,P3.1,novice,OVERALL,0.7373,0.5924,0.5016,0.7407,0.7407,0.7407,687,SAM3_sequential
+P3,2,P3.2,novice,capsulorhexis_forceps,0.9513,0.6903,0.6111,0.9513,0.9513,0.9513,226,SAM3_sequential
+P3,2,P3.2,novice,cystotome needle,0.9505,0.5,0.5228,0.9505,0.9505,0.9505,202,SAM3_sequential
+P3,2,P3.2,novice,diamond keratome iso,0.3396,0.2264,0.2,0.3396,0.3396,0.3396,53,SAM3_sequential
+P3,2,P3.2,novice,diamond keratome straight,0.7143,0.0952,0.2524,0.7143,0.7143,0.7143,42,SAM3_sequential
+P3,2,P3.2,novice,forceps,0.6106,0.5575,0.4133,0.6106,0.6106,0.6106,113,SAM3_sequential
+P3,2,P3.2,novice,viscoelastic cannula,0.9762,0.8333,0.6595,0.9762,0.9762,0.9762,42,SAM3_sequential
+P3,2,P3.2,novice,OVERALL,0.8613,0.5613,0.5177,0.8128,0.8776,0.844,595,SAM3_sequential
+P3,3,P3.3,novice,capsulorhexis_forceps,0.0096,0.0032,0.0026,0.0096,0.0096,0.0096,311,SAM3_sequential
+P3,3,P3.3,novice,cystotome needle,0.0098,0.0098,0.0059,0.0098,0.0098,0.0098,102,SAM3_sequential
+P3,3,P3.3,novice,diamond keratome iso,0.8421,0.6316,0.5632,0.8421,0.8421,0.8421,19,SAM3_sequential
+P3,3,P3.3,novice,diamond keratome straight,0.0833,0.0833,0.0667,0.0833,0.0833,0.0833,12,SAM3_sequential
+P3,3,P3.3,novice,forceps,0.7429,0.3429,0.3686,0.7429,0.7429,0.7429,35,SAM3_sequential
+P3,3,P3.3,novice,viscoelastic cannula,0.5526,0.2105,0.2632,0.5526,0.5526,0.5526,38,SAM3_sequential
+P3,3,P3.3,novice,OVERALL,0.1198,0.0668,0.0651,0.1315,0.1308,0.1311,505,SAM3_sequential
+P3,4,P3.4,novice,capsulorhexis_forceps,0.9104,0.5986,0.5581,0.9104,0.9104,0.9104,279,SAM3_sequential
+P3,4,P3.4,novice,cystotome needle,0.9766,0.5625,0.5656,0.9766,0.9766,0.9766,128,SAM3_sequential
+P3,4,P3.4,novice,diamond keratome iso,0.9792,0.625,0.5333,0.9792,0.9792,0.9792,48,SAM3_sequential
+P3,4,P3.4,novice,diamond keratome straight,0.75,0.0,0.275,0.75,0.75,0.75,16,SAM3_sequential
+P3,4,P3.4,novice,forceps,0.9608,0.9216,0.7647,0.9608,0.9608,0.9608,51,SAM3_sequential
+P3,4,P3.4,novice,viscoelastic cannula,0.8065,0.4839,0.4419,0.8065,0.8065,0.8065,31,SAM3_sequential
+P3,4,P3.4,novice,OVERALL,0.9274,0.5996,0.5622,0.9259,0.9259,0.9259,537,SAM3_sequential
+P3,5,P3.5,novice,capsulorhexis_forceps,0.9505,0.7327,0.6441,0.9505,0.9505,0.9505,202,SAM3_sequential
+P3,5,P3.5,novice,cystotome needle,0.8824,0.4454,0.4908,0.8824,0.8824,0.8824,119,SAM3_sequential
+P3,5,P3.5,novice,diamond keratome iso,0.9556,0.6444,0.5467,0.9556,0.9556,0.9556,45,SAM3_sequential
+P3,5,P3.5,novice,diamond keratome straight,0.8462,0.0769,0.2308,0.8462,0.8462,0.8462,13,SAM3_sequential
+P3,5,P3.5,novice,forceps,0.8837,0.4419,0.4488,0.8837,0.8837,0.8837,43,SAM3_sequential
+P3,5,P3.5,novice,viscoelastic cannula,0.4857,0.2286,0.2486,0.4857,0.4857,0.4857,35,SAM3_sequential
+P3,5,P3.5,novice,OVERALL,0.8874,0.5687,0.5365,0.8884,0.8884,0.8884,444,SAM3_sequential
+P4,1,P4.1,novice,capsulorhexis_forceps,0.9746,0.8297,0.6812,0.9746,0.9746,0.9746,276,SAM3_sequential
+P4,1,P4.1,novice,cystotome needle,0.8657,0.2226,0.3548,0.8657,0.8657,0.8657,283,SAM3_sequential
+P4,1,P4.1,novice,diamond keratome iso,0.775,0.325,0.3925,0.775,0.775,0.775,40,SAM3_sequential
+P4,1,P4.1,novice,diamond keratome straight,0.8438,0.5312,0.4656,0.8438,0.8438,0.8438,32,SAM3_sequential
+P4,1,P4.1,novice,forceps,0.3137,0.3039,0.1941,0.3137,0.3137,0.3137,102,SAM3_sequential
+P4,1,P4.1,novice,viscoelastic cannula,0.4875,0.2,0.2225,0.4875,0.4875,0.4875,80,SAM3_sequential
+P4,1,P4.1,novice,OVERALL,0.7895,0.4507,0.4394,0.72,0.7909,0.7538,741,SAM3_sequential
+P4,2,P4.2,novice,capsulorhexis_forceps,0.9758,0.8656,0.7237,0.9758,0.9758,0.9758,372,SAM3_sequential
+P4,2,P4.2,novice,cystotome needle,0.8247,0.2597,0.4006,0.8247,0.8247,0.8247,154,SAM3_sequential
+P4,2,P4.2,novice,diamond keratome iso,1.0,0.1852,0.3889,1.0,1.0,1.0,27,SAM3_sequential
+P4,2,P4.2,novice,diamond keratome straight,0.5526,0.1053,0.2184,0.5526,0.5526,0.5526,38,SAM3_sequential
+P4,2,P4.2,novice,forceps,0.3939,0.2626,0.2283,0.3939,0.3939,0.3939,99,SAM3_sequential
+P4,2,P4.2,novice,viscoelastic cannula,0.4865,0.1351,0.2162,0.4865,0.4865,0.4865,37,SAM3_sequential
+P4,2,P4.2,novice,OVERALL,0.8184,0.5789,0.5374,0.7788,0.8184,0.7981,662,SAM3_sequential
+P4,3,P4.3,novice,capsulorhexis_forceps,0.9755,0.8563,0.7165,0.9755,0.9755,0.9755,327,SAM3_sequential
+P4,3,P4.3,novice,cystotome needle,0.8898,0.6457,0.5559,0.8898,0.8898,0.8898,127,SAM3_sequential
+P4,3,P4.3,novice,diamond keratome iso,1.0,0.7059,0.6118,1.0,1.0,1.0,34,SAM3_sequential
+P4,3,P4.3,novice,diamond keratome straight,0.5152,0.1515,0.2455,0.5152,0.5152,0.5152,33,SAM3_sequential
+P4,3,P4.3,novice,forceps,0.0543,0.0109,0.0239,0.0543,0.0543,0.0543,92,SAM3_sequential
+P4,3,P4.3,novice,viscoelastic cannula,0.8776,0.1837,0.3837,0.8776,0.8776,0.8776,49,SAM3_sequential
+P4,3,P4.3,novice,OVERALL,0.8147,0.6366,0.555,0.7427,0.8021,0.7712,595,SAM3_sequential
+P4,4,P4.4,novice,capsulorhexis_forceps,0.3088,0.2868,0.2599,0.3088,0.3088,0.3088,272,SAM3_sequential
+P4,4,P4.4,novice,cystotome needle,0.8391,0.2644,0.3759,0.8391,0.8391,0.8391,87,SAM3_sequential
+P4,4,P4.4,novice,diamond keratome iso,0.9815,0.9259,0.7944,0.9815,0.9815,0.9815,54,SAM3_sequential
+P4,4,P4.4,novice,diamond keratome straight,0.44,0.08,0.12,0.44,0.44,0.44,25,SAM3_sequential
+P4,4,P4.4,novice,forceps,0.0549,0.022,0.0242,0.0549,0.0549,0.0549,91,SAM3_sequential
+P4,4,P4.4,novice,viscoelastic cannula,0.8788,0.697,0.6152,0.8788,0.8788,0.8788,33,SAM3_sequential
+P4,4,P4.4,novice,OVERALL,0.3958,0.2591,0.2592,0.4222,0.4537,0.4374,492,SAM3_sequential
+P4,5,P4.5,novice,capsulorhexis_forceps,0.984,0.776,0.7024,0.984,0.984,0.984,250,SAM3_sequential
+P4,5,P4.5,novice,cystotome needle,0.9759,0.6627,0.5675,0.9759,0.9759,0.9759,83,SAM3_sequential
+P4,5,P4.5,novice,diamond keratome iso,0.9744,0.7436,0.5949,0.9744,0.9744,0.9744,39,SAM3_sequential
+P4,5,P4.5,novice,diamond keratome straight,0.8333,0.1667,0.2944,0.8333,0.8333,0.8333,18,SAM3_sequential
+P4,5,P4.5,novice,forceps,0.3,0.1429,0.16,0.3,0.3,0.3,70,SAM3_sequential
+P4,5,P4.5,novice,viscoelastic cannula,1.0,0.7,0.575,1.0,1.0,1.0,20,SAM3_sequential
+P4,5,P4.5,novice,OVERALL,0.9136,0.6659,0.6003,0.8663,0.8771,0.8716,428,SAM3_sequential
+P5,1,P5.1,novice,capsulorhexis_forceps,0.7893,0.5249,0.4782,0.7893,0.7893,0.7893,261,SAM3_sequential
+P5,1,P5.1,novice,cystotome needle,0.0128,0.0128,0.0115,0.0128,0.0128,0.0128,78,SAM3_sequential
+P5,1,P5.1,novice,diamond keratome iso,0.1,0.0,0.01,0.1,0.1,0.1,10,SAM3_sequential
+P5,1,P5.1,novice,diamond keratome straight,0.9,0.3,0.3733,0.9,0.9,0.9,30,SAM3_sequential
+P5,1,P5.1,novice,forceps,0.011,0.0,0.0011,0.011,0.011,0.011,91,SAM3_sequential
+P5,1,P5.1,novice,viscoelastic cannula,0.9333,0.48,0.5107,0.9333,0.9333,0.9333,75,SAM3_sequential
+P5,1,P5.1,novice,OVERALL,0.495,0.3134,0.2926,0.4935,0.5406,0.516,505,SAM3_sequential
+P5,2,P5.2,novice,capsulorhexis_forceps,0.8883,0.3883,0.4568,0.8883,0.8883,0.8883,206,SAM3_sequential
+P5,2,P5.2,novice,cystotome needle,0.0111,0.0111,0.0078,0.0111,0.0111,0.0111,90,SAM3_sequential
+P5,2,P5.2,novice,diamond keratome iso,0.8095,0.0476,0.3333,0.8095,0.8095,0.8095,21,SAM3_sequential
+P5,2,P5.2,novice,diamond keratome straight,0.8235,0.1765,0.3088,0.8235,0.8235,0.8235,34,SAM3_sequential
+P5,2,P5.2,novice,forceps,0.0842,0.0211,0.0411,0.0842,0.0842,0.0842,95,SAM3_sequential
+P5,2,P5.2,novice,viscoelastic cannula,0.8529,0.4412,0.4574,0.8529,0.8529,0.8529,68,SAM3_sequential
+P5,2,P5.2,novice,OVERALL,0.5212,0.2184,0.2614,0.5069,0.5684,0.5359,459,SAM3_sequential
+P5,3,P5.3,novice,capsulorhexis_forceps,0.9086,0.3314,0.412,0.9086,0.9086,0.9086,175,SAM3_sequential
+P5,3,P5.3,novice,cystotome needle,0.4805,0.026,0.1377,0.4805,0.4805,0.4805,77,SAM3_sequential
+P5,3,P5.3,novice,diamond keratome iso,0.0909,0.0909,0.0727,0.0909,0.0909,0.0909,11,SAM3_sequential
+P5,3,P5.3,novice,diamond keratome straight,0.8667,0.0,0.2933,0.8667,0.8667,0.8667,30,SAM3_sequential
+P5,3,P5.3,novice,forceps,0.0353,0.0,0.0129,0.0353,0.0353,0.0353,85,SAM3_sequential
+P5,3,P5.3,novice,viscoelastic cannula,0.5821,0.2388,0.2612,0.5821,0.5821,0.5821,67,SAM3_sequential
+P5,3,P5.3,novice,OVERALL,0.5866,0.1813,0.2483,0.5057,0.6,0.5488,404,SAM3_sequential
+P5,4,P5.4,novice,capsulorhexis_forceps,0.0042,0.0,0.0013,0.0042,0.0042,0.0042,237,SAM3_sequential
+P5,4,P5.4,novice,cystotome needle,0.6452,0.2419,0.2952,0.6452,0.6452,0.6452,62,SAM3_sequential
+P5,4,P5.4,novice,diamond keratome iso,0.8889,0.4444,0.4444,0.8889,0.8889,0.8889,9,SAM3_sequential
+P5,4,P5.4,novice,diamond keratome straight,0.8333,0.4667,0.4367,0.8333,0.8333,0.8333,30,SAM3_sequential
+P5,4,P5.4,novice,forceps,0.1205,0.012,0.0554,0.1205,0.1205,0.1205,83,SAM3_sequential
+P5,4,P5.4,novice,viscoelastic cannula,0.9697,0.5758,0.5682,0.9697,0.9697,0.9697,66,SAM3_sequential
+P5,4,P5.4,novice,OVERALL,0.2149,0.0869,0.1038,0.2667,0.2954,0.2803,449,SAM3_sequential
+P5,5,P5.5,novice,capsulorhexis forceps,0.9486,0.4953,0.5056,0.9486,0.9486,0.9486,214,SAM3_sequential
+P5,5,P5.5,novice,cystotome needle,0.8824,0.2745,0.3667,0.8824,0.8824,0.8824,51,SAM3_sequential
+P5,5,P5.5,novice,diamond keratome iso,0.8571,0.4286,0.425,0.8571,0.8571,0.8571,28,SAM3_sequential
+P5,5,P5.5,novice,diamond keratome straight,0.9714,0.7143,0.56,0.9714,0.9714,0.9714,35,SAM3_sequential
+P5,5,P5.5,novice,forceps,0.0213,0.0106,0.0085,0.0213,0.0213,0.0213,94,SAM3_sequential
+P5,5,P5.5,novice,viscoelastic cannula,0.9833,0.7833,0.6967,0.9833,0.9833,0.9833,60,SAM3_sequential
+P5,5,P5.5,novice,OVERALL,0.8037,0.4451,0.4414,0.6834,0.7614,0.7203,419,SAM3_sequential
+P1,1,P1.1,expert,capsulorhexis forceps,0.0032,0.0,0.0004,0.0909,0.0138,0.0239,218,YOLO26
+P1,1,P1.1,expert,cystotome needle,0.0,0.0,0.0,0.0,0.0,0.0,136,YOLO26
+P1,1,P1.1,expert,diamond keratome iso,0.0345,0.0,0.0069,1.0,0.0345,0.0667,29,YOLO26
+P1,1,P1.1,expert,diamond keratome straight,0.0,0.0,0.0,0.0,0.0,0.0,50,YOLO26
+P1,1,P1.1,expert,forceps,0.2358,0.0101,0.0619,0.8039,0.2697,0.4039,152,YOLO26
+P1,1,P1.1,expert,viscoelastic cannula,0.0,0.0,0.0,0.0,0.0,0.0,77,YOLO26
+P1,1,P1.1,expert,OVERALL,0.0495,0.0028,0.0131,0.5631,0.0876,0.1516,583,YOLO26
+P1,2,P1.2,expert,capsulorhexis forceps,0.0546,0.025,0.0254,0.52,0.0747,0.1307,174,YOLO26
+P1,2,P1.2,expert,cystotome needle,0.0,0.0,0.0,0.0,0.0,0.0,111,YOLO26
+P1,2,P1.2,expert,diamond keratome iso,0.0,0.0,0.0,0.0,0.0,0.0,18,YOLO26
+P1,2,P1.2,expert,diamond keratome straight,0.0,0.0,0.0,0.0,0.0,0.0,41,YOLO26
+P1,2,P1.2,expert,forceps,0.0,0.0,0.0,0.0,0.0,0.0,111,YOLO26
+P1,2,P1.2,expert,viscoelastic cannula,0.0,0.0,0.0,0.0,0.0,0.0,37,YOLO26
+P1,2,P1.2,expert,OVERALL,0.0172,0.0083,0.0082,0.4815,0.0264,0.0501,433,YOLO26
+P1,3,P1.3,expert,capsulorhexis forceps,0.3487,0.1202,0.154,0.8667,0.3611,0.5098,180,YOLO26
+P1,3,P1.3,expert,cystotome needle,0.0,0.0,0.0,0.0,0.0,0.0,127,YOLO26
+P1,3,P1.3,expert,diamond keratome iso,0.0,0.0,0.0,0.0,0.0,0.0,42,YOLO26
+P1,3,P1.3,expert,diamond keratome straight,0.0,0.0,0.0,0.0,0.0,0.0,88,YOLO26
+P1,3,P1.3,expert,forceps,0.0119,0.0013,0.0052,0.2,0.0247,0.044,162,YOLO26
+P1,3,P1.3,expert,viscoelastic cannula,0.0976,0.0976,0.0689,1.0,0.0976,0.1778,41,YOLO26
+P1,3,P1.3,expert,OVERALL,0.1224,0.0368,0.0501,0.8137,0.1297,0.2237,510,YOLO26
+P1,4,P1.4,expert,capsulorhexis forceps,0.3383,0.1064,0.1494,0.9412,0.3441,0.5039,279,YOLO26
+P1,4,P1.4,expert,cystotome needle,0.0,0.0,0.0,0.0,0.0,0.0,60,YOLO26
+P1,4,P1.4,expert,diamond keratome iso,0.0,0.0,0.0,0.0,0.0,0.0,35,YOLO26
+P1,4,P1.4,expert,diamond keratome straight,0.0,0.0,0.0,0.0,0.0,0.0,51,YOLO26
+P1,4,P1.4,expert,forceps,0.0201,0.0201,0.0129,0.6,0.0265,0.0508,113,YOLO26
+P1,4,P1.4,expert,viscoelastic cannula,0.2,0.2,0.1769,1.0,0.2,0.3333,40,YOLO26
+P1,4,P1.4,expert,OVERALL,0.1941,0.072,0.0906,0.9421,0.1972,0.3262,492,YOLO26
+P1,5,P1.5,expert,capsulorhexis forceps,0.1686,0.0208,0.0616,0.8095,0.1771,0.2906,192,YOLO26
+P1,5,P1.5,expert,cystotome needle,0.0,0.0,0.0,0.0,0.0,0.0,99,YOLO26
+P1,5,P1.5,expert,diamond keratome iso,0.0,0.0,0.0,0.0,0.0,0.0,53,YOLO26
+P1,5,P1.5,expert,diamond keratome straight,0.0444,0.0,0.0067,0.6667,0.0444,0.0833,45,YOLO26
+P1,5,P1.5,expert,forceps,0.0956,0.0576,0.0583,0.7143,0.1136,0.1961,132,YOLO26
+P1,5,P1.5,expert,viscoelastic cannula,0.1667,0.1667,0.1583,1.0,0.1667,0.2857,30,YOLO26
+P1,5,P1.5,expert,OVERALL,0.1148,0.0282,0.0481,0.8354,0.1198,0.2095,453,YOLO26
+P2,1,P2.1,novice,capsulorhexis forceps,0.7489,0.6485,0.5636,0.9725,0.7524,0.8484,517,YOLO26
+P2,1,P2.1,novice,cystotome needle,0.896,0.644,0.5756,0.9795,0.9052,0.9409,211,YOLO26
+P2,1,P2.1,novice,diamond keratome iso,0.5063,0.4039,0.3855,1.0,0.5063,0.6723,79,YOLO26
+P2,1,P2.1,novice,diamond keratome straight,0.5,0.0056,0.1386,0.8333,0.5,0.625,20,YOLO26
+P2,1,P2.1,novice,forceps,0.905,0.7592,0.6431,0.9661,0.9194,0.9421,62,YOLO26
+P2,1,P2.1,novice,viscoelastic cannula,0.4781,0.06,0.1759,0.9,0.488,0.6328,166,YOLO26
+P2,1,P2.1,novice,OVERALL,0.7675,0.5632,0.5176,0.9612,0.7744,0.8577,1032,YOLO26
+P2,2,P2.2,novice,capsulorhexis forceps,0.8577,0.7387,0.6238,0.9435,0.868,0.9042,500,YOLO26
+P2,2,P2.2,novice,cystotome needle,0.805,0.7289,0.6161,0.9733,0.8066,0.8822,181,YOLO26
+P2,2,P2.2,novice,diamond keratome iso,0.9033,0.7082,0.6987,0.9348,0.9053,0.9198,95,YOLO26
+P2,2,P2.2,novice,diamond keratome straight,0.6977,0.4338,0.4319,1.0,0.6977,0.8219,43,YOLO26
+P2,2,P2.2,novice,forceps,0.8207,0.2814,0.3732,0.8393,0.8246,0.8319,57,YOLO26
+P2,2,P2.2,novice,viscoelastic cannula,0.6952,0.6008,0.5533,0.9538,0.6966,0.8052,89,YOLO26
+P2,2,P2.2,novice,OVERALL,0.834,0.6818,0.6029,0.9442,0.8415,0.8899,912,YOLO26
+P2,3,P2.3,novice,capsulorhexis forceps,0.9896,0.8334,0.7677,0.9767,0.9906,0.9836,212,YOLO26
+P2,3,P2.3,novice,cystotome needle,0.898,0.8093,0.7031,0.9767,0.8984,0.9359,187,YOLO26
+P2,3,P2.3,novice,diamond keratome iso,0.9195,0.8412,0.7457,0.9787,0.92,0.9485,100,YOLO26
+P2,3,P2.3,novice,diamond keratome straight,0.9231,0.5405,0.5086,0.9231,0.9231,0.9231,13,YOLO26
+P2,3,P2.3,novice,viscoelastic cannula,0.901,0.7608,0.6516,0.9434,0.9091,0.9259,55,YOLO26
+P2,3,P2.3,novice,OVERALL,0.9362,0.8056,0.7176,0.9726,0.9383,0.9551,567,YOLO26
+P2,4,P2.4,novice,capsulorhexis forceps,0.9802,0.9257,0.811,0.9868,0.9803,0.9835,457,YOLO26
+P2,4,P2.4,novice,cystotome needle,0.8145,0.4383,0.4466,0.8167,0.8448,0.8305,116,YOLO26
+P2,4,P2.4,novice,diamond keratome iso,0.9697,0.7931,0.6976,0.9701,0.9701,0.9701,67,YOLO26
+P2,4,P2.4,novice,diamond keratome straight,0.9091,0.2078,0.4597,1.0,0.9091,0.9524,11,YOLO26
+P2,4,P2.4,novice,forceps,0.9836,0.9412,0.8023,0.9524,0.9836,0.9677,61,YOLO26
+P2,4,P2.4,novice,viscoelastic cannula,1.0,0.8703,0.746,1.0,1.0,1.0,40,YOLO26
+P2,4,P2.4,novice,OVERALL,0.9574,0.8381,0.7382,0.9562,0.9588,0.9575,741,YOLO26
+P2,5,P2.5,novice,capsulorhexis forceps,0.9633,0.9124,0.8149,1.0,0.9633,0.9813,218,YOLO26
+P2,5,P2.5,novice,cystotome needle,0.9924,0.9733,0.8535,1.0,0.9924,0.9962,131,YOLO26
+P2,5,P2.5,novice,diamond keratome iso,0.7429,0.7429,0.6898,0.9811,0.7429,0.8455,70,YOLO26
+P2,5,P2.5,novice,diamond keratome straight,0.7,0.55,0.5255,0.875,0.7,0.7778,20,YOLO26
+P2,5,P2.5,novice,forceps,0.6402,0.4972,0.4732,0.9487,0.6435,0.7668,115,YOLO26
+P2,5,P2.5,novice,viscoelastic cannula,0.6071,0.5805,0.4914,0.9808,0.6071,0.75,84,YOLO26
+P2,5,P2.5,novice,OVERALL,0.8319,0.7773,0.6948,0.9852,0.8323,0.9023,558,YOLO26
+P3,1,P3.1,novice,capsulorhexis forceps,0.9208,0.8137,0.7225,0.963,0.9256,0.9439,309,YOLO26
+P3,1,P3.1,novice,cystotome needle,0.4927,0.4475,0.4037,0.949,0.4947,0.6503,188,YOLO26
+P3,1,P3.1,novice,diamond keratome iso,0.93,0.9022,0.81,1.0,0.93,0.9637,100,YOLO26
+P3,1,P3.1,novice,diamond keratome straight,0.6923,0.3923,0.3511,1.0,0.6923,0.8182,13,YOLO26
+P3,1,P3.1,novice,forceps,0.9592,0.9152,0.9082,1.0,0.9592,0.9792,49,YOLO26
+P3,1,P3.1,novice,viscoelastic cannula,0.9792,0.8052,0.7163,1.0,0.9792,0.9895,48,YOLO26
+P3,1,P3.1,novice,OVERALL,0.8101,0.7247,0.6508,0.9729,0.8133,0.886,696,YOLO26
+P3,2,P3.2,novice,capsulorhexis forceps,0.9699,0.7935,0.6872,0.9912,0.97,0.9805,233,YOLO26
+P3,2,P3.2,novice,cystotome needle,0.4703,0.4597,0.3967,0.9794,0.4703,0.6355,202,YOLO26
+P3,2,P3.2,novice,diamond keratome iso,0.717,0.6961,0.5393,1.0,0.717,0.8352,53,YOLO26
+P3,2,P3.2,novice,diamond keratome straight,0.881,0.5433,0.5156,0.9737,0.881,0.925,42,YOLO26
+P3,2,P3.2,novice,forceps,0.9016,0.8922,0.7371,0.9043,0.9123,0.9083,114,YOLO26
+P3,2,P3.2,novice,viscoelastic cannula,0.9762,0.8116,0.719,1.0,0.9762,0.988,42,YOLO26
+P3,2,P3.2,novice,OVERALL,0.7883,0.6893,0.5873,0.9731,0.7901,0.8721,603,YOLO26
+P3,3,P3.3,novice,capsulorhexis forceps,0.1406,0.0015,0.0289,0.4125,0.3183,0.3593,311,YOLO26
+P3,3,P3.3,novice,cystotome needle,0.1057,0.0,0.0217,0.4681,0.2157,0.2953,102,YOLO26
+P3,3,P3.3,novice,diamond keratome iso,0.0573,0.0005,0.0112,0.25,0.1731,0.2045,52,YOLO26
+P3,3,P3.3,novice,diamond keratome straight,0.4777,0.0625,0.1065,0.6429,0.5625,0.6,16,YOLO26
+P3,3,P3.3,novice,forceps,0.2508,0.2508,0.1921,0.5882,0.2703,0.3704,37,YOLO26
+P3,3,P3.3,novice,viscoelastic cannula,0.2209,0.0278,0.0759,0.4839,0.3947,0.4348,38,YOLO26
+P3,3,P3.3,novice,OVERALL,0.1319,0.0036,0.0289,0.426,0.295,0.3486,540,YOLO26
+P3,4,P3.4,novice,capsulorhexis forceps,0.9547,0.4779,0.493,0.9745,0.9606,0.9675,279,YOLO26
+P3,4,P3.4,novice,cystotome needle,0.4657,0.3866,0.323,0.9524,0.4688,0.6283,128,YOLO26
+P3,4,P3.4,novice,diamond keratome iso,0.9583,0.9361,0.6801,1.0,0.9583,0.9787,48,YOLO26
+P3,4,P3.4,novice,diamond keratome straight,1.0,0.0,0.2918,0.9412,1.0,0.9697,16,YOLO26
+P3,4,P3.4,novice,forceps,0.9785,0.8967,0.8035,0.9259,0.9804,0.9524,51,YOLO26
+P3,4,P3.4,novice,viscoelastic cannula,0.9677,0.6865,0.5911,1.0,0.9677,0.9836,31,YOLO26
+P3,4,P3.4,novice,OVERALL,0.8462,0.5433,0.4977,0.9691,0.8499,0.9056,537,YOLO26
+P3,5,P3.5,novice,capsulorhexis forceps,0.9498,0.4027,0.4665,0.9796,0.9505,0.9648,202,YOLO26
+P3,5,P3.5,novice,cystotome needle,0.3191,0.2263,0.225,0.95,0.3193,0.478,119,YOLO26
+P3,5,P3.5,novice,diamond keratome iso,0.8862,0.2339,0.3589,0.9756,0.8889,0.9302,45,YOLO26
+P3,5,P3.5,novice,diamond keratome straight,0.8141,0.3962,0.4565,0.8462,0.8462,0.8462,13,YOLO26
+P3,5,P3.5,novice,forceps,0.78,0.7133,0.702,0.85,0.7907,0.8193,43,YOLO26
+P3,5,P3.5,novice,viscoelastic cannula,0.9714,0.8701,0.7661,1.0,0.9714,0.9855,35,YOLO26
+P3,5,P3.5,novice,OVERALL,0.7607,0.4026,0.4232,0.9588,0.7637,0.8502,444,YOLO26
+P4,1,P4.1,novice,capsulorhexis forceps,0.8592,0.7332,0.6271,0.838,0.8623,0.85,276,YOLO26
+P4,1,P4.1,novice,cystotome needle,0.1454,0.1084,0.0955,0.6143,0.1519,0.2436,283,YOLO26
+P4,1,P4.1,novice,diamond keratome iso,0.7623,0.7479,0.6495,0.4521,0.825,0.5841,40,YOLO26
+P4,1,P4.1,novice,diamond keratome straight,0.0,0.0,0.0,0.0,0.0,0.0,32,YOLO26
+P4,1,P4.1,novice,forceps,0.3507,0.3181,0.2799,0.8605,0.3627,0.5103,102,YOLO26
+P4,1,P4.1,novice,viscoelastic cannula,0.7688,0.2501,0.3571,0.9254,0.775,0.8435,80,YOLO26
+P4,1,P4.1,novice,OVERALL,0.5574,0.4342,0.387,0.846,0.5609,0.6746,741,YOLO26
+P4,2,P4.2,novice,capsulorhexis forceps,0.8814,0.8407,0.7034,0.985,0.8817,0.9305,372,YOLO26
+P4,2,P4.2,novice,cystotome needle,0.6643,0.4294,0.408,0.8643,0.6875,0.7658,176,YOLO26
+P4,2,P4.2,novice,diamond keratome iso,0.8519,0.7372,0.6061,1.0,0.8519,0.92,27,YOLO26
+P4,2,P4.2,novice,diamond keratome straight,0.0,0.0,0.0,0.0,0.0,0.0,38,YOLO26
+P4,2,P4.2,novice,forceps,0.463,0.4381,0.3911,0.92,0.4646,0.6174,99,YOLO26
+P4,2,P4.2,novice,viscoelastic cannula,0.7297,0.4965,0.4259,0.9643,0.7297,0.8308,37,YOLO26
+P4,2,P4.2,novice,OVERALL,0.7254,0.6193,0.5312,0.9513,0.7303,0.8263,684,YOLO26
+P4,3,P4.3,novice,capsulorhexis forceps,0.8467,0.8285,0.7063,0.9858,0.8471,0.9112,327,YOLO26
+P4,3,P4.3,novice,cystotome needle,0.8476,0.5336,0.5317,0.973,0.8504,0.9076,127,YOLO26
+P4,3,P4.3,novice,diamond keratome iso,0.8824,0.8824,0.7643,0.9677,0.8824,0.9231,34,YOLO26
+P4,3,P4.3,novice,diamond keratome straight,0.0,0.0,0.0,0.0,0.0,0.0,33,YOLO26
+P4,3,P4.3,novice,forceps,0.408,0.2534,0.2319,0.9268,0.413,0.5714,92,YOLO26
+P4,3,P4.3,novice,viscoelastic cannula,0.786,0.6899,0.5609,0.907,0.7959,0.8478,49,YOLO26
+P4,3,P4.3,novice,OVERALL,0.743,0.6341,0.5568,0.9724,0.7447,0.8435,595,YOLO26
+P4,4,P4.4,novice,capsulorhexis forceps,0.8874,0.614,0.6042,0.9617,0.8901,0.9245,282,YOLO26
+P4,4,P4.4,novice,cystotome needle,0.6437,0.4658,0.4059,1.0,0.6437,0.7832,87,YOLO26
+P4,4,P4.4,novice,diamond keratome iso,0.9626,0.3718,0.5146,0.9811,0.963,0.972,54,YOLO26
+P4,4,P4.4,novice,diamond keratome straight,0.96,0.8219,0.5882,1.0,0.96,0.9796,25,YOLO26
+P4,4,P4.4,novice,forceps,0.1908,0.1459,0.1393,0.6923,0.1978,0.3077,91,YOLO26
+P4,4,P4.4,novice,viscoelastic cannula,0.6364,0.4737,0.4327,1.0,0.6364,0.7778,33,YOLO26
+P4,4,P4.4,novice,OVERALL,0.735,0.4653,0.4634,0.9569,0.7378,0.8332,502,YOLO26
+P4,5,P4.5,novice,capsulorhexis forceps,0.8799,0.52,0.5186,0.9865,0.88,0.9302,250,YOLO26
+P4,5,P4.5,novice,cystotome needle,0.215,0.1102,0.1151,0.9474,0.2169,0.3529,83,YOLO26
+P4,5,P4.5,novice,diamond keratome iso,0.8974,0.8718,0.6447,1.0,0.8974,0.9459,39,YOLO26
+P4,5,P4.5,novice,diamond keratome straight,0.6111,0.2407,0.3086,1.0,0.6111,0.7586,18,YOLO26
+P4,5,P4.5,novice,forceps,0.3438,0.0515,0.1263,0.8966,0.3662,0.52,71,YOLO26
+P4,5,P4.5,novice,viscoelastic cannula,0.55,0.3064,0.3411,1.0,0.55,0.7097,20,YOLO26
+P4,5,P4.5,novice,OVERALL,0.666,0.4003,0.3876,0.9787,0.6674,0.7936,429,YOLO26
+P5,1,P5.1,novice,capsulorhexis forceps,0.8667,0.7235,0.6389,0.9087,0.874,0.8911,262,YOLO26
+P5,1,P5.1,novice,cystotome needle,0.3636,0.3499,0.29,1.0,0.3636,0.5333,99,YOLO26
+P5,1,P5.1,novice,diamond keratome iso,0.7742,0.7742,0.6772,1.0,0.7742,0.8727,31,YOLO26
+P5,1,P5.1,novice,diamond keratome straight,0.0,0.0,0.0,0.0,0.0,0.0,30,YOLO26
+P5,1,P5.1,novice,forceps,0.2429,0.0,0.0688,0.4941,0.4615,0.4773,91,YOLO26
+P5,1,P5.1,novice,viscoelastic cannula,0.7445,0.5905,0.5237,0.9655,0.7467,0.8421,75,YOLO26
+P5,1,P5.1,novice,OVERALL,0.6193,0.4565,0.4276,0.8413,0.6582,0.7385,527,YOLO26
+P5,2,P5.2,novice,capsulorhexis forceps,0.6209,0.4092,0.3943,0.971,0.6291,0.7635,213,YOLO26
+P5,2,P5.2,novice,cystotome needle,0.243,0.189,0.1712,0.9167,0.2444,0.386,90,YOLO26
+P5,2,P5.2,novice,diamond keratome iso,0.7237,0.7237,0.6375,0.55,0.8462,0.6667,26,YOLO26
+P5,2,P5.2,novice,diamond keratome straight,0.0147,0.0,0.0044,0.5,0.0294,0.0556,34,YOLO26
+P5,2,P5.2,novice,forceps,0.4833,0.033,0.1401,0.7727,0.5368,0.6335,95,YOLO26
+P5,2,P5.2,novice,viscoelastic cannula,0.7059,0.3617,0.3678,0.9796,0.7059,0.8205,68,YOLO26
+P5,2,P5.2,novice,OVERALL,0.5948,0.2733,0.3113,0.9547,0.6008,0.7375,466,YOLO26
+P5,3,P5.3,novice,capsulorhexis forceps,0.0571,0.0015,0.0123,0.2479,0.1714,0.2027,175,YOLO26
+P5,3,P5.3,novice,cystotome needle,0.0741,0.0005,0.0155,0.4231,0.1429,0.2136,77,YOLO26
+P5,3,P5.3,novice,diamond keratome iso,0.0909,0.0909,0.0818,1.0,0.0909,0.1667,11,YOLO26
+P5,3,P5.3,novice,diamond keratome straight,0.0,0.0,0.0,0.0,0.0,0.0,30,YOLO26
+P5,3,P5.3,novice,forceps,0.8138,0.0513,0.2488,0.7717,0.8353,0.8023,85,YOLO26
+P5,3,P5.3,novice,viscoelastic cannula,0.5075,0.307,0.2938,1.0,0.5075,0.6733,67,YOLO26
+P5,3,P5.3,novice,OVERALL,0.2434,0.0218,0.0753,0.5504,0.3438,0.4232,404,YOLO26
+P5,4,P5.4,novice,capsulorhexis forceps,0.9526,0.851,0.711,0.9826,0.9536,0.9679,237,YOLO26
+P5,4,P5.4,novice,cystotome needle,0.5014,0.3773,0.3694,0.9167,0.5156,0.66,64,YOLO26
+P5,4,P5.4,novice,diamond keratome iso,0.9545,0.8025,0.7578,1.0,0.9545,0.9767,22,YOLO26
+P5,4,P5.4,novice,diamond keratome straight,0.2333,0.0222,0.0686,1.0,0.2333,0.3784,30,YOLO26
+P5,4,P5.4,novice,forceps,0.3868,0.2488,0.2377,0.7,0.506,0.5874,83,YOLO26
+P5,4,P5.4,novice,viscoelastic cannula,0.6119,0.5069,0.5107,0.9762,0.6119,0.7523,67,YOLO26
+P5,4,P5.4,novice,OVERALL,0.7226,0.6007,0.529,0.9345,0.7376,0.8244,451,YOLO26
+P5,5,P5.5,novice,capsulorhexis forceps,0.8506,0.7236,0.6362,0.8932,0.8598,0.8762,214,YOLO26
+P5,5,P5.5,novice,cystotome needle,0.2807,0.2179,0.213,1.0,0.2807,0.4384,57,YOLO26
+P5,5,P5.5,novice,diamond keratome iso,0.9643,0.9246,0.7889,1.0,0.9643,0.9818,28,YOLO26
+P5,5,P5.5,novice,diamond keratome straight,0.2,0.1633,0.1311,1.0,0.2,0.3333,35,YOLO26
+P5,5,P5.5,novice,forceps,0.4466,0.3889,0.3011,0.9767,0.4468,0.6131,94,YOLO26
+P5,5,P5.5,novice,viscoelastic cannula,0.6333,0.5035,0.4444,1.0,0.6333,0.7755,60,YOLO26
+P5,5,P5.5,novice,OVERALL,0.6384,0.5395,0.4676,0.9349,0.6475,0.7651,425,YOLO26
